@@ -1,0 +1,57 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Test Details,Appendix Reference
+1,11.1754386,11.24,1.06,0,1.06,1,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+2,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+3,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+4,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+5,11.1754386,11.24,1.06,0,1.06,1,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+6,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+7,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+8,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+9,19.61754386,12.04,1.06,0,1.06,1,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+10,19.61754386,12.04,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+11,19.61754386,12.04,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+12,19.61754386,12.04,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+13,19.61754386,12.04,1.06,0,1.06,1,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+14,19.61754386,12.04,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+15,19.61754386,12.04,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+16,19.61754386,12.04,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+17,11.1754386,11.24,1.06,0,1.06,-1,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+18,11.1754386,11.24,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+19,11.1754386,11.24,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+20,11.1754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+21,11.1754386,11.24,1.06,0,1.06,-1,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+22,11.1754386,11.24,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+23,11.1754386,11.24,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+24,11.1754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+25,19.61754386,12.04,1.06,0,1.06,-1,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+26,19.61754386,12.04,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+27,19.61754386,12.04,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+28,19.61754386,12.04,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 52 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+29,19.61754386,12.04,1.06,0,1.06,-1,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+30,19.61754386,12.04,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+31,19.61754386,12.04,1.06,0,1.06,-0.5,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+32,19.61754386,12.04,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 47 FROM 15s TO 18s change to 50,Appendix change to CSR Fgrid Steps
+33,19.61754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 50.5,Appendix change to CSR Fgrid Steps
+34,19.61754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 49.5,Appendix change to CSR Fgrid Steps
+35,19.61754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 49,Appendix change to CSR Fgrid Steps
+36,19.61754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 48,Appendix change to CSR Fgrid Steps
+37,19.61754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 51,Appendix change to CSR Fgrid Steps
+38,19.61754386,11.24,1.06,0,1.06,-0.05,50 FROM 5s TO 8s change to 52,Appendix change to CSR Fgrid Steps
+39,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 50.5,Appendix change to CSR Fgrid Steps
+40,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 49.5,Appendix change to CSR Fgrid Steps
+41,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 49,Appendix change to CSR Fgrid Steps
+42,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 48,Appendix change to CSR Fgrid Steps
+43,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 51,Appendix change to CSR Fgrid Steps
+44,11.1754386,11.24,1.06,0,1.06,0.05,50 FROM 5s TO 8s change to 52,Appendix change to CSR Fgrid Steps
+45,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 50.5,Appendix change to CSR Fgrid Steps
+46,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 49.5,Appendix change to CSR Fgrid Steps
+47,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 49,Appendix change to CSR Fgrid Steps
+48,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 48,Appendix change to CSR Fgrid Steps
+49,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 51,Appendix change to CSR Fgrid Steps
+50,11.1754386,11.24,1.06,0,1.06,0.5,50 FROM 5s TO 8s change to 52,Appendix change to CSR Fgrid Steps
+51,11.1754386,11.24,1.06,0,1.06,0,50 FROM 5s TO 8s change to 50.5,Appendix change to CSR Fgrid Steps
+52,11.1754386,11.24,1.06,0,1.06,0,50 FROM 5s TO 8s change to 49.5,Appendix change to CSR Fgrid Steps
+53,11.1754386,11.24,1.06,0,1.06,0,50 FROM 5s TO 8s change to 49,Appendix change to CSR Fgrid Steps
+54,11.1754386,11.24,1.06,0,1.06,0,50 FROM 5s TO 8s change to 48,Appendix change to CSR Fgrid Steps
+55,11.1754386,11.24,1.06,0,1.06,0,50 FROM 5s TO 8s change to 51,Appendix change to CSR Fgrid Steps
+56,11.1754386,11.24,1.06,0,1.06,0,50 FROM 5s TO 8s change to 52,Appendix change to CSR Fgrid Steps

@@ -1,0 +1,4 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],PwrAtRateMax [MW/min],Appendix Reference ,Results
+Test 167 p1,10,14,0,-1,60000,PSSE DMAT Appendix G Active power reference change tests - Charging,Acceptable
+Test 168 p1,3,14,0,-1,60000,PSSE DMAT Appendix G Active power reference change tests - Charging,Acceptable
+Test 169 p1,8.5,4.208,0,-1,60000,PSSE DMAT Appendix G Active power reference change tests - Charging,Acceptable

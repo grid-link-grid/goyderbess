@@ -1,0 +1,38 @@
+\contentsline {chapter}{Disclaimer}{i}{chapter*.2}%
+\contentsline {chapter}{Revision History}{iv}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Purpose}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Project Overview}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Results}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Flat runs - DMAT 3.2.3}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Balanced faults - DMAT 3.2.4}{4}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Unbalanced faults - DMAT 3.2.5}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Multiple fault ride-through (PSCAD) - DMAT 3.2.6}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Temporary over-voltage - DMAT 3.2.9}{8}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Voltage reference step changes - DMAT 3.2.10}{9}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Active power reference changes - DMAT 3.2.11}{12}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Grid frequency controller test - DMAT 3.2.12}{12}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Grid voltage change response tests - DMAT 3.2.14}{13}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Grid oscillation rejection tests - DMAT 3.2.15}{13}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Grid voltage angle change response tests - DMAT 3.2.16}{13}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Active power reference change tests (POC SCR=1) - DMAT 3.2.17}{15}{section.3.12}%
+\contentsline {section}{\numberline {3.13}FRT tests at SCR=1 - DMAT 3.2.18}{15}{section.3.13}%
+\contentsline {section}{\numberline {3.14}FRT tests at site specific SCR - DMAT 3.2.19}{15}{section.3.14}%
+\contentsline {section}{\numberline {3.15}Additional tests for South Australian Connections}{16}{section.3.15}%
+\contentsline {chapter}{\numberline {4}Appendices}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Appendix A: Flat runs}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Appendix B: Balanced faults}{22}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Appendix C: Unbalanced faults}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Appendix D: Multiple fault ride-through tests}{22}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Appendix E: Temporary over-voltage tests}{22}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Appendix F: Voltage reference step change tests}{22}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Appendix G: Active power reference change tests}{22}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Appendix H: Grid frequency controller tests}{22}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Appendix I: Grid voltage change response tests}{22}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Appendix J: Grid oscillation rejection tests}{22}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Appendix K: Grid voltage angle change response tests}{22}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Appendix L: Active power reference change tests (POC SCR=1)}{22}{section.4.12}%
+\contentsline {section}{\numberline {4.13}Appendix M: FRT tests at SCR=1}{22}{section.4.13}%
+\contentsline {section}{\numberline {4.14}Appendix N: FRT tests at site-specific SCR}{22}{section.4.14}%
+\contentsline {section}{\numberline {4.15}Appendix O: Input power source step change tests}{22}{section.4.15}%
+\contentsline {section}{\numberline {4.16}Appendix P: Power factor reference step change tests}{22}{section.4.16}%
+\contentsline {section}{\numberline {4.17}Appendix Q: Reactive power reference step change tests}{22}{section.4.17}%

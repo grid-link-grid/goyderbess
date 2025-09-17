@@ -1,0 +1,13 @@
+No;Item;Comment
+
+1;5.3.9 Package;The studies performed during the 5.3.9 process were limited in scope and there is a risk that compliance issues have been inadvertently introduced through the substantial equipment changes (inverter changes, inverter transformer changes, main transformer change, MV reticulation change, etc). Some regressions have already been identified in the 5.3.9 package.
+
+2;5.3.4A letter;The original 5.3.4A letter\cite{aemo-534a} and extension letters\cite{aemo-534a-extension-jan22}\cite{aemo-534a-extension-apr22}\cite{aemo-534a-extension-jun22no1}\cite{aemo-534a-extension-jun22no2}\cite{aemo-534a-extension-oct23} have an expiry date of 24/04/2022. It is assumed that a Connection Agreement has been entered into by this stage or that another extension letter has been received. if this has not taken place, AEMO may impose additional restrictions or request re-assessment of the Connection Application.
+
+3;Reactive Capability;The new reactive capability curve presented in the 5.3.9 package\cite{539-old-new-benchmarking-pscad} shows substantially less reactive headroom. If there were any issue with the way studies were prepared or if there are any changes to the reticulation as part of detailed design, non-compliances to s5.2.5.1 and s5.2.5.4 could be seen. In particular, the harmonic studies report was performed early in the R0 process and not repeated at 5.3.9, so a substantially smaller or larger filter may be designed as part of the construction phase harmonic studies, resulting in a non-compliance.
+
+4;Outstanding model issues;A number of modelling issues are outstanding. In particular, there are a series of model fixes, investigations and updates that need to be actioned by SMA, which should be included in procurement contracts with SMA.\newline~\newline~In addition, there are a number of issues that relate to controller tuning, such as high frequency \ac{HVRT} and \ac{LVRT} re-triggering during certain faults. These should be reviewed during R1 studies.
+
+5;Plant design;\ac{GPS} studies have been performed with assumptions about the reticulation impedance and X/R ratio as well as the transformer impedance. Consideration should be given to the impact to \ac{GPS} compliance when changing any of the parameters from their R0 values.
+
+6;Additional committed generators in the area;AEMO has identified\cite{aemo-534a-extension-apr22} that several new solar farms have become committed and two large wind farms have had modifications since the FIA was performed, which will necessitate a repeat of the \ac{FIA}. This may reveal wide area stability issues or constraints that may increase the complexity of the connection scope on AEMO's end.

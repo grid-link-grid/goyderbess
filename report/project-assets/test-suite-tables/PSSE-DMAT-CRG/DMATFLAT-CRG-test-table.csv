@@ -1,0 +1,11 @@
+Test Type,Test Num,SCR,Fault Level,X/R,Appendix Reference ,Results
+Flat Run,Test 1 p1,17.8,1068,4.01518,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 1 p2,5,300,6,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 2 p1,17.8,1068,14,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 2 p2,5,300,3,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 3 p1,17.8,1068,4.01518,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 3 p2,5,300,6,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 4 p1,17.8,1068,4.01518,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 4 p2,5,300,6,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 5 p1,17.8,1068,4.01518,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable
+Flat Run,Test 5 p2,5,300,6,PSSE DMAT Appendix None Flat run tests - Charging,Acceptable

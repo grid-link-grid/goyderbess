@@ -1,0 +1,37 @@
+To assess this clause, a series of 'envelope' tests were performed, where the system frequency was initialised at 50Hz, then ramped to the furthest extent of the \ac{OFRT} or \ac{UFRT} ride-through bands, then gradually ramped down such that each band is sustained for the required duration. The results are then analysed to confirm that no generating units tripped during the study.
+
+To implement these tests, $F_{\mathrm{grid}}$ is driven with a time-series signal $F_{\mathrm{grid}_{\mathrm{1}}}, F_{\mathrm{grid}_{\mathrm{2}}}, F_{\mathrm{grid}_{\mathrm{3}}}, \dots, F_{\mathrm{grid}_{\mathrm{n}}}$, as shown in Figure~\ref{fig:s5253-assessment-methodology}. The assessment is performed on an infinite grid.
+
+\begin{figure}[H]
+	\centering
+	
+	\newcommand{\bushere}[3]{% length, text above, text below}
+	% Optional arguments do nto work in paths
+	%
+	% starting point; draw an edge and then two nodes
+	% save the position
+	coordinate(tmp)
+	% go up and do an edge down
+	++(0,#1) node[anchor=base, font=\footnotesize]{#2} edge[ultra thick] ++(0, {-2*#1})
+	% edges do not move the current point, go down to position the node
+	++(0,{-2*#1}) node[below]{#3}
+	% go back to where we started
+	(tmp)
+	}
+	
+	\ctikzset{sources/fill=gray!20, resistors/fill=gray!20}
+	\resizebox{0.7\linewidth}{!}{ % Set width to \linewidth
+	\begin{tikzpicture}[semithick]% default line width
+		% Buses and branches
+		\draw (0,0)
+		node[left, font=\footnotesize]{Generator} ++(1.5,0) \bushere{1.5}{Connection Point}{} coordinate(poc);
+		\draw (poc) -- ++(1,0) node[vsourcesinshape, rotate=90]{} coordinate(vgrid) ++(0.5,0) node[right]{$V_{\text{grid}}$};
+		\draw (poc) -- ++(-1,0) node[vsourcesinshape, rotate=90]{};
+		% Fault
+		\draw[blue, font=\footnotesize, <-] (vgrid) ++(0, -0.5) -- ++(0, -0.5) -- ++(0.5,0) node[right]{$F_{\mathrm{grid}_{\mathrm{1}}}, F_{\mathrm{grid}_{\mathrm{2}}}, F_{\mathrm{grid}_{\mathrm{3}}}, \dots, F_{\mathrm{grid}_{\mathrm{n}}}$};
+		
+	\end{tikzpicture}
+	}	
+	\caption{s5.2.5.3 assessment methodology}
+	\label{fig:s5253-assessment-methodology}
+\end{figure}

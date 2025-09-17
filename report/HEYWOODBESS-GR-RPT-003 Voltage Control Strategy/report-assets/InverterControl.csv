@@ -1,0 +1,80 @@
+Parameter,Value
+Compliance with standard (StandardVer),1
+Frequency Type (FreTyp),0
+Global protection for Fequency and Voltage. (Gp),1
+SPOV (pov),0
+P control mode (PfEnable),0
+Negtive Current Injection (Nci),1
+Inverter ID (InvNo),1
+Switching Type (SwType),SwType
+PW control slope [%/Hz] (Dpw),40
+PW control frequency 1 [Hz] (fUp),49
+PW control frequency 2 [Hz] (fUup),49.5
+PW control frequency 3 [Hz] (fLow),50.5
+PW control frequency 4 [Hz] (fFdr),51
+QU control slope [pu/pu] (Dqu),1
+QU control voltage 1 [pu] (OvU),0.8
+QU control voltage 2 [pu] (OvL),0.9
+QU control voltage 3 [pu] (UvU),1.1
+QU control voltage 4 [pu] (UvL),1.2
+Current gain for LVRT (Kf),4
+Threshold voltage for LVRT [pu] (Vlvrt),0.82
+Current gain for HVRT (Pf),6
+Threshold voltage for HVRT [pu] (Vhvrt),1.18
+Hysteresis width [pu] (Hys),0.02
+P recovery time [ms] (P_rise),100
+Command frozen time [s] (T_frt),0.1
+K factor for Negtive Current Injection (Kneg),2
+FRT Mode (FRT_Mode),0
+Kp for current loop (Kp),0.1
+Ki for current loop (Ki),2
+Kp for PLL (Kp_pll),0.8
+Ki for PLL (Ki_pll),0.01
+Over Voltage1 (Ov1),1.17
+Over Voltage2 (Ov2),1.2
+Over Voltage3 (Ov3),1.25
+Over Voltage4 (Ov4),1.3
+Over Voltage5 (Ov5),1.4
+OV Time1 (OvT1),1200000
+OV Time2 (OvT2),20000
+OV Time3 (OvT3),2000
+OV Time4 (OvT4),500
+OV Time5 (OvT5),500
+Under Voltage1 (Uv1),0.8
+Under Voltage2 (Uv2),0.7
+Under Voltage3 (Uv3),0.5
+Under Voltage4 (Uv4),0.3
+Under Voltage5 (Uv5),0.3
+UV Time1 (UvT1),30000
+UV Time2 (UvT2),20000
+UV Time3 (UvT3),8000
+UV Time4 (UvT4),5000
+UV Time5 (UvT5),5000
+Over Freq1 (Of1),52
+Over Freq2 (Of2),52.1
+Over Freq3 (Of3),53
+Over Freq4 (Of4),53
+Over Freq5 (Of5),53
+OF Time1 (OfT1),601000
+OF Time2 (OfT2),1000
+OF Time3 (OfT3),60000
+OF Time4 (OfT4),60000
+OF Time5 (OfT5),60000
+Under Freq1 (Uf1),48
+Under Freq2 (Uf2),47
+Under Freq3 (Uf3),46.9
+Under Freq4 (Uf4),46
+Under Freq5 (Uf5),46
+UF Time1 (UfT1),601000
+UF Time2 (UfT2),120000
+UF Time3 (UfT3),1000
+UF Time4 (UfT4),60000
+UF Time5 (UfT5),60000
+Active power droop coefficient [pu/Hz] (mp),4
+Reactive power droop coefficient [pu/pu] (nq),0.15
+Inertia time constant [s] (Tj),0.01
+Excitation time constant [s] (Te),0.01
+Imax for Frequency Response [pu] (FImax),1.2
+Imin for Frequency Response [pu] (FImin),-1.2
+Voltage reference [pu] (vr),1
+Frequency reference [pu] (fr),1

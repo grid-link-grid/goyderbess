@@ -1,0 +1,21 @@
+Parameter,Value
+Transformer Name (Name),Unit TX
+3 Phase Transformer MVA (Tmva),1.725
+Base operation frequency (f),50
+Winding \#1 Type (YD1),1
+Winding \#2 Type (YD2),0
+Delta Lags or Leads Y (Lead),1
+Positive sequence leakage reactance (Xl),0.08
+Ideal Transformer Model (Ideal),1
+No load losses (NLL),0.001
+Copper losses (CuL),0.01
+Tap changer on winding (Tap),0
+Winding 1 Line to Line voltage (RMS) (V1),33
+Winding 2 Line to Line voltage (RMS) (V2),0.69
+Saturation Enabled (Enab),0
+Saturation Placed on Winding (Sat),1
+Air core reactance (Xair),0.2
+In rush decay time constant (Tdc),1
+Knee voltage (Xknee),1.25
+Time to release flux clipping (Txk),0.1
+Magnetizing current (Im1),0.4

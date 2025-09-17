@@ -1,0 +1,164 @@
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.3)  14 FEB 2025 17:50
+ restricted system commands enabled.
+**s5252-clause.tex
+(./s5252-clause.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
+Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/texlive/2024/texmf-var/luatex-ca
+che/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "c:/texlive/2024/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-
+28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/texlive/2024/texmf-var/luatex-ca
+che/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 	\begin{itemize}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--5
+[] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
+luaotfload | db : Font names database loaded from C:/texlive/2024/texmf-var/luat
+ex-cache/generic/names/luaotfload-names.luc.gz
+Overfull \hbox (32.39003pt too wide) in paragraph at lines 12--19
+ [] 
+ []
+
+
+Overfull \hbox (12.20784pt too wide) in paragraph at lines 28--28
+[]\TU/lmr/bx/n/10 Har-monic Or-
+ []
+
+
+Overfull \hbox (19.96783pt too wide) in paragraph at lines 28--28
+[]\TU/lmr/bx/n/10 Har-monic Volt-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 28--28
+\TU/lmr/bx/n/10 age Lim-its
+ []
+
+
+Overfull \hbox (12.20784pt too wide) in paragraph at lines 28--28
+[]\TU/lmr/bx/n/10 Har-monic Or-
+ []
+
+
+Overfull \hbox (19.96783pt too wide) in paragraph at lines 28--28
+[]\TU/lmr/bx/n/10 Har-monic Volt-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 28--28
+\TU/lmr/bx/n/10 age Lim-its
+ []
+
+
+Overfull \hbox (12.20784pt too wide) in paragraph at lines 28--28
+[]\TU/lmr/bx/n/10 Har-monic Or-
+ []
+
+
+Overfull \hbox (19.96783pt too wide) in paragraph at lines 28--29
+[]\TU/lmr/bx/n/10 Har-monic Volt-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 28--29
+\TU/lmr/bx/n/10 age Lim-its
+ []
+
+
+Overfull \hbox (341.43301pt too wide) in paragraph at lines 26--49
+ [] 
+ []
+
+! Undefined control sequence.
+<recently read> \multirow 
+          
+l.58 				\multirow
+                {2}{*}{\textbf{Nominal Supply Voltage (kV)}} & \multicolumn{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (9.1312pt too wide) in paragraph at lines 60--60
+[]\TU/lmr/m/it/10 No con-tin-gency
+ []
+
+
+Overfull \hbox (4.51122pt too wide) in paragraph at lines 60--60
+\TU/lmr/m/it/10 tin-gency event
+ []
+
+
+Overfull \hbox (399.58832pt too wide) in paragraph at lines 56--65
+ [] 
+ []
+
+)
+! Emergency stop.
+<*> s5252-clause.tex
+                 
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 33 strings out of 475910
+ 100000,1977958 words of node,token memory allocated 31151 words of node memory still in use:
+   452 hlist, 122 vlist, 300 rule, 36 disc, 132 local_par, 1 dir, 6 math, 1394 g
+lue, 29 kern, 285 penalty, 1225 glyph, 614 attribute, 39 glue_spec, 614 attribut
+e_list nodes
+   avail lists: 1:1,2:3,4:34,5:32,6:1,8:1,9:4,10:33
+ 22784 multiletter control sequences out of 65536+600000
+ 26 fonts using 1476743 bytes
+ 20i,9n,22p,275b,295s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

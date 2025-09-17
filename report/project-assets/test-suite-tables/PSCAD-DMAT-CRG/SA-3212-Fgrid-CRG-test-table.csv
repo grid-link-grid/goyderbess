@@ -1,0 +1,19 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 170 p1,1.88,1.6,0,-0.66,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 171 p1,1.88,1.6,0,-0.5,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 173 p1,1.88,1.6,0,-0.05,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 170 p2,1.88,1.6,0,-0.66,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 171 p2,1.88,1.6,0,-0.5,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 173 p2,1.88,1.6,0,-0.05,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 170 p3,1.88,1.6,0,-0.66,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 171 p3,1.88,1.6,0,-0.5,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 173 p3,1.88,1.6,0,-0.05,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 170 p4,1.88,1.6,0,-0.66,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 171 p4,1.88,1.6,0,-0.5,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 173 p4,1.88,1.6,0,-0.05,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 174 p4,1.88,1.6,0,-0.66,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 175 p1,1.88,1.6,0,-0.5,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 177 p1,1.88,1.6,0,-0.05,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 174 p2,1.88,1.6,0,-0.66,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 175 p2,1.88,1.6,0,-0.5,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable
+Test 177 p2,1.88,1.6,0,-0.05,SA PSCAD DMAT Appendix J Grid frequency controller tests - Charging,Acceptable

@@ -1,0 +1,3 @@
+Case,Test No,Vpoc [pu],Qpoc [pu],Ppoc [pu],Test Type,
+1,1,1.06,0,1,Vref change -5%,Appendix AC WANVref Steps
+1,2,1.06,0,1,Vref change +5% ,Appendix AC WANVref Steps

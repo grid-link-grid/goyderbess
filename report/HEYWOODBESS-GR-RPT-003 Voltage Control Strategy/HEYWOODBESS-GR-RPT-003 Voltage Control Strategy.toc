@@ -1,0 +1,20 @@
+\contentsline {chapter}{Disclaimer}{i}{chapter*.1}%
+\contentsline {chapter}{Revision History}{iii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Project overview}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Voltage control strategy}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Plant layout}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Control scheme configuration}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Power plant controller}{4}{subsection.2.2.1}%
+\contentsline {subsubsection}{Reactive power control modes}{4}{section*.9}%
+\contentsline {subsubsection}{Voltage droop control}{4}{section*.11}%
+\contentsline {subsubsection}{Remote reactive power control}{6}{section*.14}%
+\contentsline {subsubsection}{Power factor control}{6}{section*.16}%
+\contentsline {subsection}{\numberline {2.2.2}OLTC control}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Inverter level control}{7}{subsection.2.2.3}%
+\contentsline {subsubsection}{Reactive power control}{7}{section*.19}%
+\contentsline {subsubsection}{Fault ride through mode}{7}{section*.20}%
+\contentsline {chapter}{\numberline {3}Reactive capability}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Voltage protection}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Control mode switching}{12}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Control block diagrams and communications delays}{13}{chapter.6}%

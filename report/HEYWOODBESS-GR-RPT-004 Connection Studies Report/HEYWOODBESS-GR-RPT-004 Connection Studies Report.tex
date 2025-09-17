@@ -1,0 +1,1031 @@
+\documentclass{../grid-link-report}
+\usepackage{multirow}
+\usepackage{graphicx} % for \resizebox
+\usepackage{float}
+
+\SetClassAssetsDir{../class-assets}
+\newcommand{\projectassetsdir}{../project-assets}
+\newcommand{\analysisdir}{report-assets/analysis}
+\project{Heywood BESS}
+\client{Atmos}
+\title{Connection Study Report}
+\docnumber{HEYWOODBESS-GR-RPT-004}
+\issueddate{25 July 2025}
+\revision{1-0-0}
+
+\revisionhistorycsvpath{report-assets/revisionhistory.csv}
+\clientlogopath{\projectassetsdir/client-logo.jpg}
+
+\colorlet{Line}{red}
+\colorlet{Intermediate}{yellow}
+\colorlet{Low}{green}
+
+
+
+
+\begin{document}
+	% Draft commands
+	
+
+	%\adddraftstamp
+	
+	%\listoftodos  % Generates the to-do list here
+	
+	\frontmatter
+	\maketitle
+	
+	\makedisclaimer
+	\clearpage
+	\tableofcontents
+	\makerevisionhistorypage
+	%	\makeaboutgridlink
+	
+	\mainmatter
+	
+	
+	\chapter{Purpose}
+
+	
+	This document has been prepared as part of the application for Registration for \ac{Heywood BESS}. It presents a technical assessment of the compliance of the generating system to its agreed \ac{GPS} for \ac{GPS} clauses that have been assessed as part of the Connection Studies undertaken at R0 stage, such as fault performance. Table \ref{tab:access-standard-summary} provides a summary of the NER clauses assessed and identifies which clauses are examined in this report.
+	
+	% Access standards summary table
+{%
+	\thicktablelines
+	\begin{longtable}{|>{\columncolor{gray!20}}C{3cm}|C{5cm}|C{2cm}|C{2cm}|C{2cm}|} 
+		\caption{Summary of access standards}
+		\label{tab:access-standard-summary}
+		\\	
+		\toprule
+		
+		\rowcolor{tableheaderblue}
+		\bfseries \bfseries \color{white}Clause & \bfseries \color{white}Description & \bfseries \color{white}Version & \bfseries \color{white}Standard & \bfseries \color{white}In Scope \\
+		\endhead
+		\bottomrule \endfoot
+		\csvreader[
+		separator=comma,
+		late after line=\\\hline,
+		late after last line=,
+		before reading={\catcode`\#=12},
+		after reading={\catcode`\#=6}]%
+		{\projectassetsdir/access_standards_summary.csv}{1=\CSVClause,2=\CSVDescription,3=\CSVVersion,4=\CSVStandard,5=\CSVInScope}{\CSVClause & \CSVDescription & \CSVVersion & \CSVStandard & \CSVInScope}
+		
+	\end{longtable}
+}
+
+	
+	\chapter{Project Overview}
+	
+	\input{\projectassetsdir/project-description.tex}
+	
+	\chapter{Performance Standards}
+	\section{[S5.2.5.1] Reactive Power Capability and Power Factor Requirements}
+	\label{sec:s5251}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5251-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+	Reactive capability studies have been performed on a full, detailed model of the plant (including 
+	all cables, inverters and transformers), based on inverter reactive capability curves supplied by 
+	the OEM. Powerfactory is capable of interpolating between these curves, allowing for accurate 
+	reactive power output to be calculated based on the individual terminal voltages of each inverter\footnote{Note that Powerfactory is not capable of doing the same for active power, so invalid active power values are
+		removed in post-processing.}.\\
+	For each ambient temperature and connection point voltage to be studied, the appropriate capability curve for the inverter is applied and the connection point voltage is fixed to the target level. With the transformers permitted to tap, the case is first solved with all inverters exporting as much reactive power as possible without leaving their range of terminal voltages for which they are able to individually maintain Continuous Uninterrupted Operation (CUO). This study is repeated with all inverters importing as much reactive power as possible while maintaining CUO. Both processes are then repeated for all levels of inverter active power dispatch and a complete reactive capability curve is developed by recording the connection point active and reactive power outputs for all studies.\\
+	To confirm CUO is maintained at a generating system level for s5.2.5.4, the same study is repeated, but prior to recording the results, the transformer On-Load Tap Changers (OLTCs) are then allowed to tap at most twice, and the connection point voltage is stepped to the extents of the CUO voltage band or ±10\%, 
+	whichever is less onerous\footnote{Per AEMO recommended rule change.}. The results for these studies are recorded as alternative, more onerous ”CUO curves.”. A maximum of two taps was allowed for these tests as with a total time per tap of 10 seconds, the OLTC is actually capable of performing 6 taps in a given 60 second window. This ensures that the plant is able to "exit" the withstand regions seen in Figure \ref{fig:s5254-cuo-summary-pscad}, preventing tripping of the inverter and ensuring CUO is maintained. \\
+	The remainder of the s5.2.5.1 clause consists of restrictions around the following:
+	\begin{enumerate}[label=(\arabic*)]
+		\item How much active and reactive power can be imported or exported by the generating system when the inverters are connected but not generating active power, which allows for the consideration of the inverters’ ability to provide reactive power when state of charge is maintained, but does not allow for the filters to be out of service as they are required to offset the harmonics produced by inverters. In the operations phase, this would be a time when the generator has bid out, is curtailed.
+		
+		\item When the inverters are disconnected, which allows for the disconnection of the harmonic filter and even the 33kV circuit breaker, as this would only occur if there was a significant problem with the control system or a planned maintenance outage of the whole generating system.
+	\end{enumerate}
+	\subsection{Results}
+		The reactive capability curves for HEYWOODBESS at 35°C, 40°C and 50°C are shown in Figures \ref{fig:pq-curve-35degC}, \ref{fig:pq-curve-40degC} and \ref{fig:pq-curve-50degC}. Detailed results in .xslx format can be found in the Capability Curves folder.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{\projectassetsdir/capability-curves/new_Heywood reactive capability curve- 35C.png}
+		\caption{35°C Reactive capability curve for HEYWOODBESS}
+		\label{fig:pq-curve-35degC}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{\projectassetsdir/capability-curves/new_Heywood reactive capability curve- 40C.png}
+		\caption{40°C Reactive capability curve for HEYWOODBESS}
+		\label{fig:pq-curve-40degC}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{\projectassetsdir/capability-curves/Heywood reactive capability curve- 50C.png}
+		\caption{50°C Reactive capability curve for HEYWOODBESS}
+		\label{fig:pq-curve-50degC}
+	\end{figure}
+
+	To assess compliance with the second part of this clause a study in PowerFactory was conducted to examine the power flow at the point of connection when auxiliary loads are connected, but the inverters and harmonic filters are disconnected. The results of this have been included in Table \ref{tab:5251-poc-flows} which demonstrate that Heywood BESS is compliant.
+	
+	\begin{table}[H]
+		\centering
+		\caption{Point of connection power flows}
+		\label{tab:5251-poc-flows}
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			\textbf{Status of Inverters} & \textbf{Status of Aux Loads}  & \textbf{Status of HFs} & \textbf{Power flow at the POC} \\
+			\hline
+			OFF & ON	& OFF & $P_{meas}$=1.5 MW, $Q_{meas}$=0 MVAr \\
+			\hline
+		\end{tabular}			
+	\end{table}	
+	
+	
+	\section{[S5.2.5.2] Quality of Electricity Generated and Balancing Load Current Voltage Fluctuations Harmonics and Voltage Notching}	
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5252-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment}
+	The Harmonic Emissions Assessment and Filter Design is currently unavailable at the R0 stage.
+	
+	\section{[S5.2.5.3] Generating System Response to Frequency Disturbances}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5253-clause.tex}
+	\end{tcolorbox}
+	
+	
+	\subsection{Assessment Methodology}
+	\input{\classassetsdir/methodologies/s5253-methodology.tex}
+	
+	All assessments for this clause have been performed in PSCAD.
+	
+	\subsection{Results}
+	
+	The under-frequency and over-frequency ride through performance of the generating system during the envelope tests (performed in PSCAD) relative to the agreed access standard is shown  in Figure \ref{fig:s5253-pscad-frt}. The project was able to remain connected and in continuous uninterrupted operation for the applied "envelope tests" to simulate the frequency withstand requirements of S5.2.5.3.  A summary of the envelope tests performed to produce this plot are shown in Table \ref{tab:s5253-test-suite}. The full results have been provided in Appendix \ref{Grid Frequency Disturbance Withstand Tests [S5.2.5.3]}. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{\analysisdir/pscad/s5253_ride_through_results.png}
+		\caption{Frequency ride-through performance}
+		\label{fig:s5253-pscad-frt}
+	\end{figure}
+
+	
+	\begin{table}[H]
+		\centering
+		\caption{s5.2.5.3 frequency ride-through test suite}
+		\label{tab:s5253-test-suite}
+		\autoscaledtable{H}{\projectassetsdir/test-suite-tables/CSR/5253-test-table.csv}
+	\end{table}
+	
+	\section{[S5.2.5.4] Generating System Response to Voltage Disturbances}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5254-clause.tex}
+	\end{tcolorbox}
+	
+	\subsection{Assessment Methodology}
+	\label{s5254-method}
+	\input{\classassetsdir/methodologies/s5254-methodology.tex}
+	
+	All assessments for this clause have been performed in PSCAD.
+	
+	\subsection{Results}
+	The under-voltage and over-voltage ride through performance of the generating system during the envelope tests relative to the agreed access standard is shown in Figure \ref{fig:s5254_ride_through_results}. This plot illustrates the connection point voltage for all envelope tests over simulation time. Please refer to results of the envelope tests in Appendix \ref{tab:s5254-envelope-and-withstand-test-suite}, which demonstrate that the solar farm was able to remain connected for at least the duration required by the access standard through simulation \footnote{Please note that for the first HVRT step down to 1.3pu the reason the trace is seen to be thicker for this segment is because several envelope test results have been overlayed, which have small variations in point of connection voltage}.
+
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{\analysisdir/pscad/s5254_ride_through_results.png}
+		\caption{Over-voltage ride-through performance}
+		\label{fig:s5254_ride_through_results}
+	\end{figure}
+	
+
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.4 envelope withstand test suite}
+		{tab:s5254-envelope-and-withstand-test-suite}
+		{\projectassetsdir/test-suite-tables/CSR/5254-Withstand-test-table.csv}
+	}
+	
+	The ability of the generating system and the individual generating units to maintain \ac{CUO} can be confirmed through the combination of the following: reactive capability studies (presented in \ref{sec:s5251}) and the chart in Figure \ref{fig:s5254-cuo-summary-pscad}, which shows that the inverter terminal voltages settle within the continuous operating limits prior to any protection timers operating for all \ac{CUO} test cases in Table \ref{tab:s5254-cuo-test-suite}. All test cases have been overlayed on the plot to demonstrate that all inverters settle to within their continuous operating voltage limits for all \ac{CUO} tests.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{\analysisdir/pscad/cuo_summary.png}
+		\caption{Inverter CUO performance summary plot (PSCAD)}
+		\label{fig:s5254-cuo-summary-pscad}
+	\end{figure}
+	
+
+
+	Please refer to Appendix \ref{Continuous Uninterrupted Operation [S5.2.5.4]} which includes the results for each test.
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.4 CUO test suite (PSCAD)}
+		{tab:s5254-cuo-test-suite}
+		{\projectassetsdir/test-suite-tables/CSR/5254-CUO-test-table.csv}
+	}
+
+	\section{[S5.2.5.5] Generating System Response to Disturbances Following Contingency Events}
+	\subsection{Negotiated Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5255-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+	\input{\classassetsdir/methodologies/s5255-methodology.tex}
+
+	
+	All SMIB assessments for this clause have been performed in PSCAD and all wide-area contingency assessments have been performed in PSS/E.
+	
+	\subsection{Results}
+	
+	
+	\subsubsection{SMIB studies}
+	The list of faults performed in SMIB studies has been provided in Tables \ref{tab:s5255-smib-bal-fault-test-suite-pscad} and \ref{tab:s5255-smib-unbal-fault-test-suite-pscad}.
+
+	
+	Figure \ref{fig:5255-pscad-pos-diqdv-poc} shows the amount of positive and negative sequence $i_{\text{q}}$ injection at the inverter terminals to the change in connection point voltage across all faults studied. It can be read as follows:
+	
+	\begin{itemize}
+		\item Grey circles indicate that the generating system is supplying more than the \textit{maximum continuous current} of the generating system\footnote{The current associated with maximum active power and maximum reactive power while at 1.0pu voltage.}, which automatically fulfills the GPS requirement for reactive current injection, regardless of the additional $i_{\text{q}}$ injected.
+		\item Red markers indicate the amount of additional $i_{\text{q}}$ injected for a particular fault. For compliance, the marker should be above the access standard characteristic (for faults) or below the characteristic (for \ac{TOV} tests).
+	\end{itemize}
+	
+	We note that for all tests studied, the generating system was capable of providing sufficient positive sequence reactive current.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{\analysisdir/pscad/diqdv_characteristic.png}
+		\caption{POC Positive Sequence Reactive Current Injection Performance}
+		\label{fig:5255-pscad-pos-diqdv-poc}
+	\end{figure}
+	
+
+	
+	The full list of balanced faults, unbalanced faults, and TOV tests assessed can be found in Tables \ref{tab:s5255-smib-bal-fault-test-suite-pscad}, \ref{tab:s5255-smib-unbal-fault-test-suite-pscad}, and \ref{tab:s5255-smib-tov-test-suite-pscad} respectively.
+	
+	
+	{
+		\fontsize{6.5}{9}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.5 balanced fault test suite (PSCAD)}
+		{tab:s5255-smib-bal-fault-test-suite-pscad}
+		{\projectassetsdir/test-suite-tables/CSR/5255-balFaults-test-table.csv}
+	}
+	
+	{
+		\fontsize{6.5}{9}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.5 unbalanced fault test suite (PSCAD)}
+		{tab:s5255-smib-unbal-fault-test-suite-pscad}
+		{\projectassetsdir/test-suite-tables/CSR/5255-UnbalFaults-test-table.csv}
+	}
+
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.5 TOV test suite (PSCAD)}
+		{tab:s5255-smib-tov-test-suite-pscad}
+		{\projectassetsdir/test-suite-tables/CSR/5255-TOV-test-table.csv}
+	}
+
+	The corresponding $i_{\text{q}}$ rise time, settle time and active power recovery times have been prepared below. Analysis was undertaken across all balanced and unbalanced faults in order to determine the positive and negative sequence current rise and settle times, in addition to the generating systems active power recovery time. Please refer to Table \ref{tab:s5255-smib-fault-test-suite-analysis-pscad}. 
+	
+	All faults were found to be compliant with the requirement for a 40ms $i_{\text{q}}$ rise time. For faults entering FRT, 15 faults have a settling time greater than 70ms, and 198 faults are slightly over 70ms, with the maximum settling time being 132ms.
+	
+	For a select number of temporary over-voltage and balanced/unbalanced faults, the reactive current settle time was found to exceed 70ms. By examining the reactive current waveform for these tests we see that there is a spike in reactive current approximately 80ms into the disturbance. The calculation for reactive current settle time is sensitive to this behaviour and as a consequence we arrive at a value larger than 70ms. This behaviour has been queried with SMA to which SMA has confirmed that this phenomenon is known and unavoidable. The spike introduced shortly after application of the disturbance is due to the Phase-Locked Loop (PLL) responding to changes in the network voltage phase angle. While PLLs can be tuned, it is SMAs advice that regardless of the parameters selected for the PLL mechanism, signal filtering will always be required and therefore some time delays in obtaining the phase angle of the network during fast transients will always be present. Please refer to SMAs technical memo on this subject \cite{sma-iq-settle}. This phenomenon will be discussed further with ElectraNet to understand whether it requires an amendment the exiting GPS or whether it is understood to be a modelling artifact. 
+	
+	
+
+	{
+		\fontsize{6.5}{7}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.5 Fault test suite analysis (PSCAD)}
+		{tab:s5255-smib-fault-test-suite-analysis-pscad}
+		{\analysisdir/pscad/S5255 POC Faults Rise Settle Recovery Analysis/s5255_rise_settle_recovery_times.csv}
+	}
+
+	
+
+	
+	\subsubsection{Multiple fault disturbances}
+	Compliance to the MFRT requirements of this clause have been demonstrated in PSCAD SMIB. The test suite defined in Section 3.2.6 of the PSCAD Dynamic Model Acceptance Test Guideline (DMAT) \cite{dmat-guideline} was performed and supporting results have been provided with the pscad dmat report \cite{pscad-mfrt-dmat}. All tests demonstrate that HEYWOOD BESS was capable of riding through all applied successive faults. Additionally, please refer to the provided letter of NER compliance \cite{ner-compliance} provided by SMA which confirms the ride through capability of the inverters for successive faults.
+	
+	
+	
+	\subsubsection{WAN studies}
+	\label{subsubsec:WAN-results}
+	%	Generators in the vicinity of Goorambat East Solar Farm were solved in accordance with their reactive power control mode. This ensures that the recorded network voltages are more in line with what would be expected in reality at steady state. These control modes and corresponding setpoints have been provided in the table below.
+%	
+%	\begin{table}[H]
+%		\centering
+%		\caption{Nearby large scale generator reactive power control modes and setpoints.}
+%		\label{tab:control-modes}
+%		\includegraphics[width=0.8\textwidth]{report-assets/case information/generator_control_modes.png}
+%	\end{table}
+	%\newpage
+	The list of faults evaluated in WAN studies was limited to those studied as part of R0 - as directed by ElectraNet. The 3phg faults,2phg faults with circuit breaker failure (CBF) timings (as per NER Table S5.1a.2), and 1phg faults with auto-reclose to nearby fault contingencies considered for the wide area network assessment are summarised in the table below. \ref{tab:wide-area-contingencies}. Please note that for contingencies 37–43, which are trip tests, faults are applied to trip transformers or generators in order to assess their impact on the system.
+
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Wide area studies test suite (PSSE) - Line Contingencies}
+		{tab:wide-area-contingencies}
+		{\projectassetsdir/test-suite-tables/General-Contingencies-test-table.csv}
+	}
+	
+	The trip contingencies are summarised in Tables \ref{tab:Other-Contingencies}.
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Wide area studies test suite (PSSE) - Other Contingencies}
+		{tab:Other-Contingencies}
+		{\projectassetsdir/test-suite-tables/Other-Contigencies.csv}
+	}
+
+	
+	As these faults were tested on the wide area network, they were generally less severe than the most severe faults tested in the SMIB environment, which left no retained voltage at the point of connection. These faults have been analysed to determine the stability of the model, and the network, including the ability to recover to a stable operating point following the contingency.
+	
+	
+	
+	The integrated resource system performed well in all disturbances tested, with the network voltage control not being negatively impacted by the presence of Heywood BESS. The results for each case have been prepared in Appendices \ref{WAN Case 1 - Wide Area Network Contingency Results [S5.2.5.5]} through \ref{WAN Case 4 - Wide Area Network Contingency Results [S5.2.5.5]}.
+	
+	
+	\section{[S5.2.5.6] Quality of Electricity Generated and Continuous Uninterrupted Operation}
+	\subsection{Negotiated Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5256-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment}
+	
+	
+	
+	
+	S5.2.5.6 is not assessed through simulation software. Compliance to this clause is confirmed through a letter supplied by the inverter OEM. SMA have prepared a NER compliance report which covers the ability of their inverters to meet the automatic access standard for S5.2.5.6. \cite{SMA-NER-compliance-report}
+	
+	\section{[S5.2.5.7] Partial Load Rejection}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5257-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+	
+	To assess the integrated resource system's performance under a Partial Load Rejection scenario, a resistive load  was applied at the point of connection (POC). The performance of the plant was monitored before and after this disturbance to identify any loss of synchronization or voltage stability.
+	
+	
+	
+	\subsection{Results}
+	
+	This clause was assessed using resistive load applying at the connection point, shown in Table \ref{tab:plr-test-suite}.
+	
+		{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Partial Load Rejection Test Summary}
+		{tab:plr-test-suite}
+		{\projectassetsdir/test-suite-tables/CSR/5257-PLR-test-table.csv}
+	}
+
+	The integrated resource system performed well in all disturbances tested, with the network voltage control not being negatively impacted by the partial load rejection. The results have been prepared in Appendices \ref{XXXX}.
+	
+	\section{[S5.2.5.8] Protection of Generating Systems from Power System Disturbances}
+	\subsection{Minimum Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5258-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+%	Clause s5.2.5.8(b) is assessed without any additional tests being run, as a frequency ramp to 52.0 Hz is already performed under s5.2.5.11, for which the methodology is described in Section \ref{subsec:s52511-assessment-methodology}. All assessments for this sub-clause have been performed in PSCAD and PSSE.
+
+	\subsubsection{Active Power Reduction by Half [S5.2.5.8(b)]}
+	This clause was assessed using the test suite from section \ref{sec:s52511} [S5.2.5.11] where a grid frequency disturbance was applied and the change in active power output of the generating system was monitored. As demonstrated in \ref{sec:s52511}, a frequency droop percentage of 5\% has been configured for Heywood BESS. As a result, depending on the pre-disturbance active power output of the generating system, the reduction in active power when exposed to a system frequency $\geq$ 51.0 Hz may not always be $\leq$ 0.5 pu.
+	
+	As such compliance to this clause will be achieve through the implementation of a SCADA solution. This frequency control scheme will become active when the generating system experiences a frequency above 51 Hz for an extended period of time. Through interfacing with the Power Plant Manager, this scheme will ensure that the generating system's active power output is reduced by half within 3 seconds. This proposed SCADA solution will not be assessed as part of this report.
+
+	
+	\subsubsection{Frequency and Voltage Protection [S5.2.5.8(d)]}
+	The generating systems ability to trip off for over-voltage voltage and over-frequency disturbances has been assessed for this clause. Frequency disturbances were applied in accordance with the methodology discussed in \ref{subsec:s52511-assessment-methodology}. Voltage disturbances were applied in accordance with the methodology described in \ref{s5254-method}. In order to test the response of the inverter protection, the impedances between the inverter terminals and the point of connection were reduced significantly to ensure that the voltage seen by the inverter approximates that of the point of connection.
+	
+	\subsection{Results} 
+	\subsubsection{Active Power Reduction by Half [S5.2.5.8(b)]}
+	
+	With a frequency droop of 5\% a reduction in active power of at least 50\% in active power is not observed when in certain operating conditions. For evidence of this response, please refer to section \ref{sec:s52511} [S5.2.5.11] Frequency Control. A full set of results is available in Appendix \ref{Grid Frequency Disturbance Step Tests [S5.2.5.11] (PSCAD)}.
+	
+	\subsubsection{Frequency and Voltage Protection [S5.2.5.8(d)]}
+	A summary of whether the generating system successfully tripped when exposed to voltage and frequency disturbances has been summarised in Tables \ref{tab:voltage-prot} and \ref{tab:frequency-prot}. The results for this section have been provided in Appendix \ref{Frequency Protection Tests [S5.2.5.8]} and \ref{Voltage Protection Tests [S5.2.5.8]}.
+	
+	%{
+	%	\fontsize{7}{9}\selectfont
+	%	\autoscaledlongtable
+	%	{Voltage Protection Trip Summary}
+	%	{tab:voltage-prot}
+	%	{\analysisdir/pscad/s5258-voltage-protection.csv}
+%	}
+
+%	{
+	%	\fontsize{7}{9}\selectfont
+%		\autoscaledlongtable
+%		{Frequency Protection Trip Summary}
+%		{tab:frequency-prot}
+%		{\analysisdir/pscad/s5258-frequency-protection.csv}
+%	}
+	
+	
+	
+	\section{[S5.2.5.9] Protection Systems that Impact on Power System Security}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s5259-clause.tex}
+ 	\end{tcolorbox}
+	\subsection{Assessment}
+	Note that compliance with this clause is subject to detailed design, which is not available at the R0 stage.	
+	\section{[S5.2.5.10] Protection to Trip Plant for Unstable Operation}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s52510-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment}
+	Note that compliance with this clause is subject to detailed design, which is not available at the R0 stage.
+
+	\section{[S5.2.5.11] Frequency Control}
+	\label{sec:s52511}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s52511-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+	\label{subsec:s52511-assessment-methodology}
+	\input{\classassetsdir/methodologies/s52511-methodology.tex}
+	
+	All assessments for this clause have been performed in PSCAD and PSSE.
+	
+	\subsection{FCAS Assessment Methodology}
+	To assess compliance with AEMO's requirements for BESSes providing FCAS the generating system's response to a selection of frequency disturbances was compared to the expected behaviour outlined in section 3.3 of Battery Energy Storage System requirements for contingency FCAS registration \cite{aemo-fcas}.
+	
+	\subsection{Results}
+	The tests performed for this clause have been presented in Table \ref{tab:s52511-frequency-controller-test-suite-pscad} and have been provided in Appendix \ref{Grid Frequency Disturbance Step Tests [S5.2.5.11] (PSCAD)}. For completeness these tests were also performed in PSSE and have been provided in Appendix \ref{Grid Frequency Disturbance Step Tests [S5.2.5.11] (PSSE)}. To confirm the compliance of the generating system to the configured droop characteristic, the steady-state change in active power has been plotted against the associated change in frequency in Figure \ref{fig:52511-frequency-droop-validation-pscad} for all simulations that were run for this clause. The markers on the plot can be understood as follows:
+	
+	\begin{itemize}
+		\item Grey circles indicate that the active power controller reached saturation (either due to it already being saturated or by supplying/reducing so much active power that it reached saturation), which automatically fulfills the GPS requirement for frequency control.
+		\item Red markers indicate the amount of active power transfer increase or decrease for a particular frequency disturbance. For compliance, the marker should be on the access standard characteristic.
+	\end{itemize}
+	
+	The results provided demonstrate that Heywood BESS is configured with a frequency droop percentage of 4.97\%. Additionally, we see that the plant does not increase its active power in response to an increase in frequency. Conversely, we see that the plant does not reduce active power for a reduction in frequency. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{\analysisdir/pscad/dpdf_characteristic.png}
+		\caption{s5.2.5.11 frequency droop characteristic validation (PSCAD)}
+		\label{fig:52511-frequency-droop-validation-pscad}
+	\end{figure}
+	
+	{
+		\fontsize{5}{7}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.11 frequency droop controller test suite (PSCAD)}
+		{tab:s52511-frequency-controller-test-suite-pscad}
+		{\projectassetsdir/test-suite-tables/CSR/52511-Fgrid-test-table.csv}
+	}
+
+	\subsection{FCAS Results}
+	The tests performed for this clause have been presented in Table \ref{tab:FCAS-test-suite} and have been provided in \ref{FCAS Tests [S5.2.5.11]}. For all tests, we see the response of the generating system aligns with the expectations outlined in \cite{aemo-fcas}.
+	
+	{
+		\fontsize{5}{7}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.11 FCAS test suite (PSCAD)}
+		{tab:FCAS-test-suite}
+		{\projectassetsdir/test-suite-tables/CSR/FCAS-test-table.csv}
+	}
+	
+	
+	
+	\section{[S5.2.5.12] Impact on Network Capability}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s52512-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+	\label{sec:s52512}
+	This clause is assessed through analysis of the WAN contingency test results available in the WAN studies section on page \pageref{subsubsec:WAN-results} of this report. To ensure compliance with this clause, the contingencies are applied with the generating system out of service and in service, and the results are overlayed and compared.
+	
+	In order to assess the impact of the project on the South Australian electrical network, four wide area cases were prepared based on recommendations provided by ElectraNet.
+	
+	For each case, the interconnector flows are characterised by the below.
+	
+	\begin{enumerate}
+		\item SA light load - Interconnectors exporting 850 MW. Barker Inlet and Snapper Point in service.
+		\item SA light-medium load - Interconnectors exporting 850 MW. Barker Inlet, Snapper Point, and QPS 5 in service.
+		\item SA medium-high load - Interconnectors importing 750 MW. Barker Inlet, Snapper Point, Pelican unit \#1, and QPS 5 in service.
+		\item SA high load - Interconnectors importing 1,300 MW. Barker Inlet, Snapper Point, Pelican units \#1 and \#2, and QPS 5 in service.
+	\end{enumerate}
+	
+	The interconnectors and corresponding limits applicable to this project have been prepared below.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Interconnector & Flow direction & Nominal Capacity (MW) \\ \hline
+			Heywood (VIC-SA) & Towards VIC & 550 \\ \hline
+			Heywood (VIC-SA) & Towards SA & 600 \\ \hline
+			PEC (SA-VIC-NSW) & Towards NSW & 800 \\ \hline
+			PEC (SA-VIC-NSW) & Towards SA & 800 \\ \hline
+			Murraylink (VIC-SA) & Towards Vic & 200 \\ \hline
+			Murraylink (VIC-SA) & Towards SA & 220 \\ \hline
+		\end{tabular}
+		\caption{Interconnector flows applicable to this project}
+		\label{tab:case-interconnector-flow}
+	\end{table}
+	The list of faults evaluated in WAN studies was limited to those studied as part of R0 - as directed by ElectraNet.
+	
+	Faults were carried out using AEMO's OPDMS snapshots, which incorporated nearby generation and the generator SMIB model, and evaluated performance of the generator for disturbances on the wide area network. A variety of faults were tested, including:
+	
+	\begin{itemize}
+		\item Three-phase-to-ground faults with circuit breaker failure clearance times
+		\item Two-phase-to-ground faults
+	\end{itemize}
+	
+	The contingencies considered for wide are network assessment are presented in Table \ref{tab:wide-area-contingencies}.
+	
+	\subsection{Results}
+	
+	
+	The generating system was found not to reduce any inter-regional or intra-regional power transfer capability below the level that would apply with the generating system out of service. The results of the contingencies with the generating system in and out of service are available in Appendices \ref{WAN Case 1 - Wide Area Network Contingency Overlays [S5.2.5.12]} through \ref{WAN Case 4 - Wide Area Network Contingency Overlays [S5.2.5.12]}.
+	  
+	\section{[S5.2.5.13] Voltage and Reactive Power Control}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s52513-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+	
+	\input{\classassetsdir/methodologies/s52513-methodology.tex}
+	
+	All SMIB assessments for this clause have been performed in PSCAD and all wide-area assessments have been performed in PSS/E. All tests undertaken as part of this clause have been characterised as either "Saturated" or "Un-saturated". Saturating tests are those for which the reference step is limited by the reactive power controller. Unsaturated tests are those for which the reference step stays within the reactive power limits of the reactive power controller. Please note that as the voltage droop configured for this plant is 2\% on a base of 23.7 MVAr, all voltage steps applied result in operation of the reactive power controllers limits. 
+	
+	\subsection{SMIB study results}
+	
+	\subsubsection{Oscillation Rejection}
+	Oscillation rejection analysis has been performed to ensure that the generating system acts to adequately damp oscillations seen at the connection point in accordance with section (1) of this GPS clause. Please refer to the results in Appendix \ref{Grid oscillation rejection tests [S5.2.5.13]} which demonstrate the generators response to oscillations of varying frequency.
+	
+	\subsubsection{Connection point voltage disturbance tests (droop mode)}
+	\label{subsec:s52513-vgrid-steps-droop-mode}
+	
+	The connection point voltage disturbance tests performed for this clause have been presented in Table \ref{tab:s52513-vgrid-droop-step-table}. Figure \ref{fig:s52513-vgrid-droop-saturated-step-summary-plot} shows the active power, reactive power and connection point voltages along with the distribution of rise and settling times (as applicable). The results show compliance to the GPS requirements for all tests.
+	
+	Figure \ref{fig:s52513-vdroop-controller-accuracy} presents a summary of all $Q_{\mathrm{POC}}$ measurements against $V_{\mathrm{POC}}$ measurements at the end of each connection point voltage disturbance tests after the controllers have settled. It can be seen from this chart that the controller always accurately regulates to the intended voltage droop characteristic.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{\analysisdir/pscad/Vgrid droop step disturbance tracking saturated.png}
+		\caption{s5.2.5.13 Connection point voltage disturbance step test performance summary (droop mode)}
+		\label{fig:s52513-vgrid-droop-saturated-step-summary-plot}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{\analysisdir/pscad/vdroop_characteristic.png}
+		\caption{Voltage droop controller characteristic accuracy}
+		\label{fig:s52513-vdroop-controller-accuracy}
+	\end{figure}
+	
+	{
+		\fontsize{7}{8}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 Connection point voltage disturbance step test suite (droop mode)}
+		{tab:s52513-vgrid-droop-step-table}
+		{\projectassetsdir/test-suite-tables/CSR/52513-Vgrid-droop-test-table.csv}
+	}
+
+	Table \ref{tab:s52513-vgrid-droop-step-results-table} shows the rise and settling times for each test performed. Please note that tests 9-12 are limiter tests, while tests 1 through 8 are non-limiter tests. As seen from the table below the generating system has settling time for reactive power and voltage of less than 5.0s for all cases considered. Please note that active power settle time has not been assessed for any tests in which the change in active power is $\leq$ 0.1pu. Reactive power rise time remains below 2 seconds for all non-limiter tests.
+	
+	{
+		\fontsize{6.5}{11}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 Voltage grid disturbance step test results (droop mode)}
+		{tab:s52513-vgrid-droop-step-results-table}
+		{report-assets/analysis/pscad/Vgrid droop step disturbance tracking saturated.csv}
+	}
+	
+	
+	\subsubsection{Voltage reference step tests}
+	
+	The connection point voltage reference step tests performed for this clause have been presented in Table \ref{tab:s52513-vref-step-table}. Figure \ref{fig:s52513-vref-step-saturated-summary-plot} shows the active power, reactive power and connection point voltages along with the distribution of rise and settling times (as applicable) The results show compliance to the GPS requirements for all tests.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{\analysisdir/pscad/Vref step disturbance tracking saturated.png}
+		\caption{s5.2.5.13 Voltage reference step test performance summary}
+		\label{fig:s52513-vref-step-saturated-summary-plot}
+	\end{figure}
+	
+	{
+		\fontsize{9}{8}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 Voltage reference step test suite}
+		{tab:s52513-vref-step-table}
+		{\projectassetsdir/test-suite-tables/CSR/52513-Vref-test-table.csv}
+	}
+
+	Table \ref{tab:s52513-vref-step-results-table} shows the rise and settling times for each test performed. Please note that active power settling times were not assessed as the change in active power was found to be $\leq$ 0.1 pu for all tests performed.
+	
+	{
+		\fontsize{6.5}{11}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 Voltage reference step test results}
+		{tab:s52513-vref-step-results-table}
+		{report-assets/analysis/pscad/Vref step disturbance tracking saturated.csv}
+	}
+	
+	\subsubsection{Reactive power reference step tests}
+	
+	The connection point reactive power reference step tests performed for this clause have been presented in Table \ref{tab:s52513-qref-step-table}. Figure \ref{fig:s52513-qref-step-saturated-summary-plot} shows the active power, reactive power and connection point voltages along with the distribution of rise and settling times (as applicable). The results show compliance to the GPS requirements for all tests.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{\analysisdir/pscad/Qref step disturbance tracking saturated.png}
+		\caption{s5.2.5.13 VAr reference step test performance summary}
+		\label{fig:s52513-qref-step-saturated-summary-plot}
+	\end{figure}
+	
+
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 VAr reference step test suite}
+		{tab:s52513-qref-step-table}
+		{\projectassetsdir/test-suite-tables/CSR/52513-Qref-test-table.csv}
+	}
+
+	
+	Table \ref{tab:s52513-qref-step-results-table-sat} shows the rise and settling times for each test performed. Please note that active power settling time was not assessed for this clause as the change in active power for all tests was negligible. The table below demonstrates compliance for all reactive power reference steps performed.
+	
+	{
+		\fontsize{6.5}{9}\selectfont
+			\autoscaledlongtable%
+			{s5.2.5.13 VAr reference step test results (saturated)}%
+			{tab:s52513-qref-step-results-table-sat}%
+			{report-assets/analysis/pscad/Qref step disturbance tracking saturated.csv}%
+	}
+	
+
+	
+	\subsubsection{Power factor reference step tests}
+	
+	The connection point power factor power reference step tests performed for this clause have been presented in Table \ref{tab:s52513-pfref-step-table}. Figure  \ref{fig:s52513-pfref-step-saturated-summary-plot} shows the active power, reactive power and connection point voltages along with the distribution of rise and settling times (as applicable). The results show compliance to the GPS for all tests.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{\analysisdir/pscad/PFref step disturbance tracking saturated.png}
+		\caption{s5.2.5.13 PF reference step test performance summary}
+		\label{fig:s52513-pfref-step-saturated-summary-plot}
+	\end{figure}
+	
+
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 PF reference step test suite}
+		{tab:s52513-pfref-step-table}
+		{\projectassetsdir/test-suite-tables/CSR/52513-PFref-test-table.csv}
+	}
+
+	
+	Table \ref{tab:s52513-pfref-step-results-table} shows the rise and settling times for each test performed. The results below show compliance to the GPS for all tests.
+	
+	
+	{
+		\fontsize{6.5}{9}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 PF reference step test results}
+		{tab:s52513-pfref-step-results-table}
+		{report-assets/analysis/pscad/PFref step disturbance tracking saturated.csv}
+	}
+	
+	\subsection{Wide area study results}
+	
+	\subsubsection{Voltage reference step tests}
+	
+	
+	The connection point voltage reference step tests performed in the wide area PSSE network have been presented in Table \ref{tab:wan-s52513-vref-step-table}. Please note that active power settle times were not assessed for these tests as the change in active power was found to be negligible. The results show compliance to the GPS requirements for all tests.	
+	
+
+
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 Voltage reference step test suite}
+		{tab:wan-s52513-vref-step-table}
+		{\projectassetsdir/test-suite-tables/PSSE-WAN/52513-Vref-test-table.csv}
+	}
+	
+
+	
+	\subsubsection{Reactive power reference step tests}
+	
+	The connection point reactive power reference step tests performed in the wide area PSSE network have been presented in Table \ref{tab:wan-s52513-qref-step-table}. Please note that active power settle times were not assessed for these tests as the change in active power was found to be negligible.The results show compliance to the GPS requirements for all tests.
+
+
+
+
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 Reactive power reference step test suite}
+		{tab:wan-s52513-qref-step-table}
+		{\projectassetsdir/test-suite-tables/PSSE-WAN/52513-Qref-test-table.csv}
+	}
+
+
+
+	
+	\subsubsection{Power factor reference step tests}
+	
+	The connection point power factor reference step tests performed in the wide area PSSE network have been presented in Table \ref{tab:wan-s52513-pfref-step-table}. Please note that active power settle times were not assessed for these tests as the change in active power was found to be negligible. The results show compliance to the GPS requirements for all tests.
+	
+
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{s5.2.5.13 Power factor reference step test suite}
+		{tab:wan-s52513-pfref-step-table}
+		{\projectassetsdir/test-suite-tables/PSSE-WAN/52513-PFref-test-table.csv}
+	}
+	
+
+	
+	
+	\section{[S5.2.5.14] Active Power Control}
+	\subsection{Automatic Access Standard}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s52514-clause.tex}
+	\end{tcolorbox}
+	\subsection{Assessment Methodology}
+	
+	\input{\classassetsdir/methodologies/dmat-pref-step-methodology.tex}
+	
+	All assessments for this clause have been performed in PSCAD.
+	
+	\subsection{Results}
+	
+	The full suite of active power control tests are shown in Table \ref{tab:s52514-test-suite}. The results demonstrate that the generating system is capable of ramping stably without a defined ramp rate limit.The tests provided here demonstrate the ability for the generator to ramp linearly from setpoint to the next over a five minute interval.
+	
+	\begin{table}[H]
+		\centering
+		\caption{s5.2.5.14 active power control test suite}
+		\label{tab:s52514-test-suite}
+		\autoscaledtable{H}{\projectassetsdir/test-suite-tables/CSR/52514-Pref-test-table.csv}
+	\end{table}
+
+
+	\section{[S5.2.8 and S5.3.2(b)] Fault Current}
+	\subsection{Agreed Access Standard}	
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/gps-clauses/s528-clause.tex}
+	\end{tcolorbox}
+
+	\subsection{Assessment Methodology}
+	As the vector group of the main transformer for this generating system is a wye-wye configuration with grounded neutrals, the only path for zero-sequence current to flow will be provided by the grid beyond the generators point of connection. A consequence of this is that the generators fault current contribution for earth faults will be dominated by the zero-sequence impedance seen by the POC.
+	
+	In order to estimate a likely fault current contribution, the ASCC fault current simulation method was used in the PSS/E low and high load wide area network models to determine the three-phase-to-ground, single-phase-to-ground, and phase-to-phase-to-ground fault current contribution at the generating system's POC at a voltage of 1.0 pu. 
+	
+	In order to estimate an upper-bound on the generating systems fault current contribution the ASCC fault current simulation method was utilised in the SMIB model. For this assessment, the zero-sequence reactance of the grid impedance was reduced to 0.00001 pu.
+		
+	In assessing the plants withstand capability, please refer to the protection study report which includes a summary of the maximum and minimum expected fault levels as well as equipment ratings \cite{protection-design-report}.
+	
+	\subsection{Results}
+	An estimate of the likely maximum fault current contribution by fault type - based on the wide area network grid impedances seen by the generating system, have been prepared in Table \ref{tab:528-results}.
+
+	\begin{table}[H]
+	\centering
+	\caption{Approximate Fault current contribution (WAN)}
+	\label{tab:528-results}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\textbf{Case} & \textbf{3phg}  & \textbf{1phg} & \textbf{ph-phg} \\
+		\hline
+		Case 1 - Low Load & 0.450 kA   & 0.224 kA & 0.378 kA\\
+		\hline
+		Case 4 - High Load & 0.450 kA  & 0.223 kA & 0.378 kA\\
+		\hline
+	\end{tabular}			
+	\end{table}
+	
+	An estimate of the upper-bound on the maximum fault current contribution calculated for each type of fault is shown in Table \ref{tab:528-results-upperbound}.
+
+	\begin{table}[H]
+		\centering
+		\caption{Upper-bound on fault current contribution (SMIB)}
+		\label{tab:528-results-upperbound}
+		\begin{tabular}{|l|c|c|}
+			\hline
+			\textbf{Fault Type} & \textbf{1.0pu voltage}  & \textbf{1.1pu voltage} \\
+			\hline
+			Three-phase fault 				& 0.450 kA 	& 0.496 kA \\
+			\hline
+			Single phase-to-ground fault 	& 0.416 kA 	& 0.457 kA  \\
+			\hline
+			Phase-to-phase-to-ground fault 	& 0.440 kA	&  0.484 kA \\
+			\hline
+		\end{tabular}			
+	\end{table}
+
+	From the above analysis we see that the 3phg, 1Ph-g,and 1Ph-Ph-G fault current contribution exceeds that specified in the existing Generator Performance Standard. As such we would recommend that the Generator Performance Standard is revised to align with fault contributions set to at least those reflected in Table \ref{tab:528-results-upperbound}.
+	
+	\section{ESCOSA License Conditions}	
+	Assessment of compliance to the ESCOSA model license conditions \cite{escosa} has been undertaken in the sections below.
+	
+	\subsection{Disturbance Ride Through Capability}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/escosa-clauses/ride-through.tex}
+	\end{tcolorbox}
+	Compliance to this clause has been ensured as part of R1 detailed design. Please refer to the Protection Setting Report \cite{protection-design-report} which outlines protection functions for this generating system. Additionally, SMA has confirmed that the SCS3600 UP inverters do not trip on asymmetrical phase currents, voltage or angles - there is no such relay to facilitate this. As such the inverters are able to ride-through significant vector jumps. Please also refer to the SMA NER Compliance Report \cite{SMA-NER-compliance-report}.
+	\subsection{System Strength}
+	\begin{tcolorbox}[lightgreenbox]
+		\input{\projectassetsdir/escosa-clauses/system-strength.tex}
+	\end{tcolorbox}
+	Please refer to the provided SMA technical note on Sunny Central (Storage) UP Operation at low SCR \cite{low-scr}. This note confirms the ability of the inverters to maintain stable operation at SCRs as low as 1.0. SMA has separately confirmed that "there are no further limitations from an X/R perspective".
+
+
+	
+	
+	\input{\projectassetsdir/acronyms.tex}
+	\input{report-assets/bibliography.tex}
+	
+	\chapter{Appendices}
+	\renewcommand{\thesection}{%
+		\AlphAlph{\value{section}}%
+	}
+
+	\section{Grid Frequency Disturbance Withstand Tests [S5.2.5.3]}
+	\label{Grid Frequency Disturbance Withstand Tests [S5.2.5.3]}
+	
+	\section{Grid Voltage Disturbance Withstand Tests [S5.2.5.4]}
+	\label{Grid Voltage Disturbance Withstand Tests [S5.2.5.4]}
+	
+	\section{Continuous Uninterrupted Operation [S5.2.5.4]}
+	\label{Continuous Uninterrupted Operation [S5.2.5.4]}
+	
+	\section{Balanced Faults [S5.2.5.5]}
+	\label{Balanced Faults [S5.2.5.5]}
+	
+	\section{Unbalanced Faults [S5.2.5.5]}
+	\label{Unbalanced Faults [S5.2.5.5]}
+	
+	\section{Temporary Over-Voltage Tests [S5.2.5.5]}
+	\label{Temporary Over-Voltage Tests [S5.2.5.5]}
+	
+	\section{WAN Case 1 - Wide Area Network Contingency 
+		\\
+		Results [S5.2.5.5]}
+	\label{WAN Case 1 - Wide Area Network Contingency Results [S5.2.5.5]}
+	
+	\section{WAN Case 2 - Wide Area Network Contingency 
+		\\
+		Results [S5.2.5.5]}
+	\label{WAN Case 2 - Wide Area Network Contingency Results [S5.2.5.5]}
+	
+	\section{WAN Case 3 - Wide Area Network Contingency 
+		\\
+		Results [S5.2.5.5]}
+	\label{WAN Case 3 - Wide Area Network Contingency Results [S5.2.5.5]}
+	
+	\section{WAN Case 4 - Wide Area Network Contingency 
+		\\
+		Results [S5.2.5.5]}
+	\label{WAN Case 4 - Wide Area Network Contingency Results [S5.2.5.5]}
+	
+	\section{Partial Load Rejection Tests [S5.2.5.7]}
+	\label{Partial Load Rejection Tests [S5.2.5.7]}
+	
+	\section{Frequency Protection Tests [S5.2.5.8]}
+	\label{Frequency Protection Tests [S5.2.5.8]}	
+	
+	\section{Voltage Protection Tests [S5.2.5.8]}
+	\label{Voltage Protection Tests [S5.2.5.8]}	
+
+	\section{1 Grid Frequency Disturbance Step Tests [S5.2.5.11] 
+		\\
+		(PSCAD)}
+	\label{Grid Frequency Disturbance Step Tests [S5.2.5.11] (PSCAD)}
+	
+	\section{2 Grid Frequency Disturbance Step Tests [S5.2.5.11] 
+		\\
+		(PSSE)}
+	\label{Grid Frequency Disturbance Step Tests [S5.2.5.11] (PSSE)}
+	
+	\section{WAN Case 1 - Wide Area Network Contingency 
+		\\
+		Overlays [S5.2.5.12]}
+	\label{WAN Case 1 - Wide Area Network Contingency Overlays [S5.2.5.12]}
+	
+	\section{WAN Case 2 - Wide Area Network Contingency 
+		\\
+		Overlays [S5.2.5.12]}
+	\label{WAN Case 2 - Wide Area Network Contingency Overlays [S5.2.5.12]}
+	
+	\section{WAN Case 3 - Wide Area Network Contingency 
+		\\
+		Overlays [S5.2.5.12]}
+	\label{WAN Case 3 - Wide Area Network Contingency Overlays [S5.2.5.12]}
+	
+	\section{WAN Case 4 - Wide Area Network Contingency 
+		\\
+		Overlays [S5.2.5.12]}
+	\label{WAN Case 4 - Wide Area Network Contingency Overlays [S5.2.5.12]}
+	
+	\section{Grid Voltage Disturbance Step Tests [S5.2.5.13]}
+	\label{Grid Voltage Disturbance Step Tests [S5.2.5.13]}
+	
+	\section{Voltage Reference Step Tests (SMIB) [S5.2.5.13]}
+	\label{Voltage Reference Step Tests (SMIB) [S5.2.5.13]}
+	
+	\section{WAN Case 1 - Voltage Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 1 - Voltage Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 2 - Voltage Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 2 - Voltage Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 3 - Voltage Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 3 - Voltage Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 4 - Voltage Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 4 - Voltage Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{Reactive Power Reference Step Tests (SMIB) [S5.2.5.13]}
+	\label{Reactive Power Reference Step Tests (SMIB) [S5.2.5.13]}
+	
+	\section{WAN Case 1 - Reactive Power Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 1 - Reactive Power Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 2 - Reactive Power Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 2 - Reactive Power Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 3 - Reactive Power Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 3 - Reactive Power Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 4 - Reactive Power Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 4 - Reactive Power Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{Power Factor Reference Step Tests (SMIB) [S5.2.5.13]}
+	\label{Power Factor Reference Step Tests (SMIB) [S5.2.5.13]}
+	
+	\section{WAN Case 1 - Power Factor Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 1 - Power Factor Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 2 - Power Factor Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 2 - Power Factor Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 3 - Power Factor Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 3 - Power Factor Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{WAN Case 4 - Power Factor Reference Step Tests 
+		\\
+		(WAN) [S5.2.5.13]}
+	\label{WAN Case 4 - Power Factor Reference Step Tests (WAN) [S5.2.5.13]}
+	
+	\section{Active Power Control Tests [S5.2.5.14]}
+	\label{Active Power Control Tests [S5.2.5.14]}
+	
+	\section{FCAS Tests [S5.2.5.11]}
+	\label{FCAS Tests [S5.2.5.11]}
+
+	\section{Grid oscillation rejection tests [S5.2.5.13]}
+	\label{Grid oscillation rejection tests [S5.2.5.13]}
+	
+	
+\end{document}

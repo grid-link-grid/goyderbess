@@ -1,0 +1,5 @@
+Parameters,Unit,Value
+HVRT Entry Thresold,p.u.,1.19
+HVRT Exit Threshold,p.u.,1.16
+LVRT Entry Thresold,p.u.,0.83
+LVRT Exit Threshold,p.u.,0.86

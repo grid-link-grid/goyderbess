@@ -1,0 +1,49 @@
+Assessment of s5.2.5.5 is performed in by applying a variety of different types of faults with different impedances to observe the generating system response and measure characteristics such as settling times and $i_{\text{q}}$ injection performance. 
+
+In PSCAD and PSSE SMIB studies, faults are applied to the connection point (as shown in Figure~\ref{fig:s5255-fault-application-methodology-diagram}) with characteristics that are representative of how real world faults would appear from the generating system's connection point, while in PSSE wide area studies, faults with credible characteristics are applied to the real network assets.
+
+\begin{figure}[H]
+	\centering
+	\input{\classassetsdir/diagrams/smib-fault-diagram.tex}
+	\caption{SMIB fault application methodology}
+	\label{fig:s5255-fault-application-methodology-diagram}
+\end{figure}
+
+In addition to faults, \ac{TOV} scenarios are studied in PSCAD SMIB by tapping a dummy transformer connected between the point of connection and the grid impedance in order to push the voltage at the point of connection up to a specific value. This allows finer control of the disturbance seen at the point of connection, as the voltage drop across the grid impedance doesn't need to be considered.
+
+In order to assess the impact of the project on the South Australian electrical network, four wide area cases were prepared based on recommendations provided by ElectraNet. Descriptions of the four cases are available in Section \ref{sec:s52512} [S5.2.5.12] Impact on Network Capability. 
+
+%For each case, the interconnector flows are characterised by the below.
+%
+%\begin{enumerate}
+%	\item SA light load - Interconnectors exporting 850 MW. Barker Inlet and Snapper Point in service.
+%	\item SA light-medium load - Interconnectors exporting 850 MW. Barker Inlet, Snapper Point, and QPS 5 in service.
+%	\item SA medium-high load - Interconnectors importing 750 MW. Barker Inlet, Snapper Point, Pelican unit \#1, and QPS 5 in service.
+%	\item SA high load - Interconnectors importing 1,300 MW. Barker Inlet, Snapper Point, Pelican units \#1 and \#2, and QPS 5 in service.
+%\end{enumerate}
+%
+%The interconnectors and corresponding limits applicable to this project have been prepared below.
+%
+%\begin{table}[H]
+%	\centering
+%	\begin{tabular}{|c|c|c|}
+%		\hline
+%		Interconnector & Flow direction & Nominal Capacity (MW) \\ \hline
+%		Heywood (VIC-SA) & Towards VIC & 550 \\ \hline
+%		Heywood (VIC-SA) & Towards SA & 600 \\ \hline
+%		PEC (SA-VIC-NSW) & Towards NSW & 800 \\ \hline
+%		PEC (SA-VIC-NSW) & Towards SA & 800 \\ \hline
+%		Murraylink (VIC-SA) & Towards Vic & 200 \\ \hline
+%		Murraylink (VIC-SA) & Towards SA & 220 \\ \hline
+%	\end{tabular}
+%	\caption{Interconnector flows applicable to this project}
+%	\label{tab:case-interconnector-flow}
+%\end{table}
+%The list of faults evaluated in WAN studies was limited to those studied as part of R0 - as directed by ElectraNet.
+%
+%Faults were carried out using AEMO's OPDMS snapshots, which incorporated nearby generation and the generator SMIB model, and evaluated performance of the generator for disturbances on the wide area network. A variety of faults were tested, including:
+%
+%\begin{itemize}
+%	\item Three-phase-to-ground faults with circuit breaker failure clearance times
+%	\item Two-phase-to-ground faults
+%\end{itemize}

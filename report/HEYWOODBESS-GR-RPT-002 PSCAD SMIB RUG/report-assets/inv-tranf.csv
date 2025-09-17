@@ -1,0 +1,19 @@
+Name,Inverter transformer
+Transformer Core Construction (Core),Three-limb
+Transformer MVA (Tmva),3.78 [MVA]
+"Primary Voltage (Line-Line, RMS) (V1)",0.63 [kV]
+"Secondary Voltage (Line-Line, RMS) (V2)",33.0 [kV]
+Winding \#1 Type (YD1),Y
+Winding \#2 Type (YD2),Delta
+Delta Lags or Leads Y (Lead),Lags
+Base Operation Frequency (f),Fsys
+Leakage Reactance (Xl),0.0683 [pu]
+No Load Losses (NLL),0.001 [pu]
+Copper Losses (CuL),0.009761905 [pu]
+Model Saturation (Sat),No
+Tap Changer Winding (Tap),None
+Graphics Display (View),Single line (circles)
+Display Details (Dtls),No
+Magnetizing current at Rated Voltage,0.245 [\%]
+Ratio Yoke/Winding-limb Length (rlyw),2
+Ratio Yoke/Winding-limb Area (rayw),1

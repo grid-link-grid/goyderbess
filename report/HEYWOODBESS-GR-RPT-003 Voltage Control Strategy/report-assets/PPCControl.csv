@@ -1,0 +1,77 @@
+Parameter,Value
+PPC model (PPC_MODE),1
+Plant installed capacity (MVA) (S_PIC),372.6
+Nomianl power value of plant in MVA (S_NOM),268
+Nominal frequency in Hz (FREQ_NOM),50
+Power priority mode (PPM),0
+Voltage threshold for HVRT in pu (OV_detection),1.2
+Voltage threshold for LVRT in pu (UV_detection),0.8
+Measurement delay in sec (T),0.05
+Cmd sent delay in sec (T_SEND),0.03
+PPC Freezing time after fault (Time_Trgh),0.4
+PPC loop execution time in HZ (DisT),20
+PPC command send time in HZ (DisT_send),10
+Positive inverter capacity. [pu] (Spos),2
+Negative inverter capacity. [pu] (Sneg),2
+Inverter signal communication delay [s] (Tcvt),0.03
+pre-FRT Sampling Time [s] (Tbef),0.2
+P control enable (P_MODE_X),1
+P control mode (P_MODE),1
+Max plant active power in pu (P_MAX),1
+Min plant active power in pu (P_MIN),-1
+P ramp control enable  (P_Ramp_Enable),1
+P ramp up rate in pu/s (P_Up_rate),1
+P ramp down rate in pu/s (P_Down_rate),1
+Proportional gain of active power PI controller (Kp_Pc),0.05
+Integral gain of active power PI controller (Ki_Pc),0.5
+Back calculate gain of active power PI controller (Kb_Pc),10
+Active power deadband (P_deadband),0.0001
+Frequency regulate method (FR_stype),0
+Over frequency control mode (OF_MODE),1
+Under frequency control mode (UF_MODE),1
+Frequency to start power increase in Hz (UF_f1),49.985
+Frequency to stop power increase in Hz (UF_f2),47
+Frequency value when switching slop for UF in Hz (UF_f3),47
+Frequency to start power reduction in Hz (OF_f1),50.015
+Frequency to stop power reduction in Hz (OF_f2),52
+Frequency value when switching slop for OF in Hz (OF_f3),52
+Droop1 of over frequency control in pu/Hz (DROOP_OF1),0.4
+Droop2 of over frequency control in pu/Hz (DROOP_OF2),0.4
+Droop1 of under frequency control in pu/Hz (DROOP_UF1),0.4
+Droop2 of under frequency control in pu/Hz (DROOP_UF2),0.4
+Plant active power upper limit for frequency control in pu (P_MAX_FC),1
+Plant active power lower limit for frequency control in pu (P_MIN_FC),-1
+Max inverter active power in p.u (PMAXCMD),2
+Min inverter active power in p.u (PMINCMD),-2
+Q control enable (Q_MODE_X),1
+Q control mode (Q_MODE),Q_Ctrl_Mode
+Max plant reactive power in pu (Q_MAX),0.395
+Max plant reactive power for charging in p.u (Q_MAX_C),0.395
+Min plant reactive power in pu (Q_MIN),-0.395
+Min plant reactive power for charging in p.u (Q_MIN_C),-0.395
+Q ramp control enable (Q_Ramp_Enable),1
+Q ramp up rate in pu/s (Q_Up_rate),10
+Q ramp down rate in pu/s (Q_Down_rate),10
+Proportional gain of reactive power PI controller (Kp_Qc),PPC_Q_Kp
+Integral gain of reactive power PI controller (Ki_Qc),PPC_Q_Ki
+Back calculate gain of reactive power PI controller (Kb_Qc),10
+Reactive power deadband in pu (Q_deadband),0
+Voltage droop control method (QU_stype),0
+Voltage droop control deadband in pu (V_DROOP_DB),0
+Voltage control droop control range in pu (V_CONTROL_DROOP),0.04
+Voltage control droop control range when switching slop in pu (V_CONTROL_DROOP_M),0
+Plant reactive power value when switching slop for voltage control droop control  in pu  (Q_M),0
+Vcon ramp control enable (Vcon_Ramp_Enable),1
+Vcon ramp up rate (Vcon_Up_rate),1
+Vcon ramp down rate (Vcon_Down_rate),1
+Proportional gain constant of voltage PI controller (Kp_VC),1
+Integral gain constant of voltage PI controller (Ki_VC),10
+Back calculate gain constant of voltage PI controller (Kb_VC),10
+Q upper limit for voltage control in pu (Q_UpLim_VC),0.395
+Q lower limit for voltage control in pu (Q_LowLim_VC),-0.395
+Power factor deadband (PF_deadband),0
+Max inverter reactive power in p.u (QMAXCMD),2
+Min inverter reactive power in p.u (QMINCMD),-2
+grid forming PPC response delay time (GFM_Tdelay),0.2
+Maximum inverter capacity (PCVTMAX),100
+Minimum inverter capacity (PCVTMIN),-100

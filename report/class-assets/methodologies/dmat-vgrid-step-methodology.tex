@@ -1,0 +1,16 @@
+Grid voltage step and ramp tests assess the ability of the generator to provide stable reactive response to a changing Connection Point voltage. In VAr and power factor control modes, this is just about  $P_{\mathrm{POC}}$ and $Q_{\mathrm{POC}}$ settling to their pre-disturbance values. However, in voltage droop control modes, a $V_{\mathrm{POC}}$ will result in a new calculated $Q_{\mathrm{ref}}$, so the generator will need to track to a new reactive power target at the same time as rejecting the disturbance.
+
+To implement these tests, the appropriate $V_{\mathrm{grid}_{\mathrm{1}}}$
+is first identified to achieve $V_{\mathrm{POC}_{\mathrm{1}}}$ given the required initial $P_{\mathrm{POC}}$, $Q_{\mathrm{POC}}$, SCR and X/R conditions. Subsequent $V_{\mathrm{grid}}$ values $V_{\mathrm{grid}_{\mathrm{2}}}, V_{\mathrm{grid}_{\mathrm{3}}}, \dots, V_{\mathrm{POC}_{\mathrm{n}}}$ can then be calculated to achieve the desired $V_{\mathrm{POC}}$ values $V_{\mathrm{POC}_{\mathrm{2}}}, V_{\mathrm{POC}_{\mathrm{3}}}, \dots, V_{\mathrm{POC}_{\mathrm{n}}}$.
+
+With all $V_{\mathrm{grid,i}}$ calculated, a simulation is performed with $V_{\mathrm{grid}}$ stepped or ramped as required to implement the desired disturbance, as shown in Figure~\ref{fig:smib-vgrid-disturbance-methodology}.
+
+It should be noted that this test could also be performed by manipulating the turns ratio of a zero impedance ('dummy') transformer at the Connection Point, however this methodology is not preferred as a ramped disturbance cannot be applied to a transformer turns ratio in PSS/E, which negatively affects the benchmarking between PSCAD and PSS/E.
+
+
+\begin{figure}[h]
+	\centering
+	\input{\classassetsdir/diagrams/smib-vgrid-disturbance-diagram.tex}
+	\caption{Grid voltage disturbance methodology}
+	\label{fig:smib-vgrid-disturbance-methodology}
+\end{figure}

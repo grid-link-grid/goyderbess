@@ -1,0 +1,41 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 155 p1,10,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 155 p2,10,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 156 p1,10,14,0,-0.05,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 156 p2,10,3,0,-0.05,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 157 p1,3,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 157 p2,3,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 158 p1,3,14,0,-0.05,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 158 p2,3,3,0,-0.05,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 159 p1,8.5,4.20848,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 160 p1,8.5,4.20848,0,-0.05,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 178 p1,10,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 178 p2,10,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 179 p1,3,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 179 p2,3,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 180,8.5,4.20848,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 181,8.5,4.20848,0,-0.5,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 182 p1,10,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 182 p2,10,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 183 p1,3,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 183 p2,3,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 184,8.5,4.20848,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 185,8.5,4.20848,0,-0.5,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 186 p1,10,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 186 p2,10,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 186 p3,10,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 186 p4,10,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 186 p5,10,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 186 p6,10,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 187 p1,3,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 187 p2,3,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 187 p3,3,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 187 p4,3,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 187 p5,3,14,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 187 p6,3,3,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 188 p1,8.5,4.20848,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 188 p2,8.5,4.20848,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 188 p3,8.5,4.20848,0,-1,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 189 p1,8.5,4.20848,0,-0.5,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 189 p2,8.5,4.20848,0,-0.5,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable
+Test 189 p3,8.5,4.20848,0,-0.5,PSCAD DMAT Appendix K Grid voltage change response tests - Charging,Acceptable

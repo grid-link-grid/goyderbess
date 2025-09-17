@@ -1,0 +1,13 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Type,Duration [s],Impedance,Appendix Reference ,Results
+Test 200 p1,3,14,1.0227,0,1.0227,-1,3PHG,0.43,Zf = 4 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 200 p2,3,3,1.0227,0,1.0227,-1,3PHG,0.43,Zf = 4 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 201 p1,3,14,1.0227,0,1.0227,-0.5,3PHG,0.43,Zf = 4 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 201 p2,3,3,1.0227,0,1.0227,-0.5,3PHG,0.43,Zf = 4 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 202 p1,3,14,1.0227,0,1.0227,-0.05,3PHG,0.43,Zf = 4 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 202 p2,3,3,1.0227,0,1.0227,-0.05,3PHG,0.43,Zf = 4 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 203 p1,3,14,1.0227,0,1.0227,-1,3PHG,0.43,Zf = 0 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 203 p2,3,3,1.0227,0,1.0227,-1,3PHG,0.43,Zf = 0 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 204 p1,3,14,1.0227,0,1.0227,-0.5,3PHG,0.43,Zf = 0 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 204 p2,3,3,1.0227,0,1.0227,-0.5,3PHG,0.43,Zf = 0 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 205 p1,3,14,1.0227,0,1.0227,-0.05,3PHG,0.43,Zf = 0 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable
+Test 205 p2,3,3,1.0227,0,1.0227,-0.05,3PHG,0.43,Zf = 0 Zs,PSSE DMAT Appendix M FRT tests at SCR 1 - Charging,Acceptable

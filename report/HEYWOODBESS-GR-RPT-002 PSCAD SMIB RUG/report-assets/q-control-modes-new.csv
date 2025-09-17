@@ -1,0 +1,6 @@
+PwrRt.PwrRtCtrlMode,Purpose
+303,External Setpoint[(PoiVArSpt)]
+1069,Q(v) voltage droop control VtgPwrRtDroop (VolSpt)
+1074,Fixed CosPhi control (PoiPFSpt)
+1076,CosPhi(P) control
+1984,"Voltage control (direct voltage control, no droop)"

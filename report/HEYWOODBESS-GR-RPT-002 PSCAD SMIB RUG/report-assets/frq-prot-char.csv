@@ -1,0 +1,13 @@
+Time (s),Frequency (Hz) (Underfrequency),Frequency (Hz) (Overfrequency)
+0,45,55
+0.1,45,55
+0.1,46.9,53
+180,46.9,53
+180,47.9,53
+630,47.9,53
+630,49,51.5
+>630,49,51.5
+
+
+
+

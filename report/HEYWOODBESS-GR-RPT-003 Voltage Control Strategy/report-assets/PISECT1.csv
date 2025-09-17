@@ -1,0 +1,14 @@
+Parameter,Line1,Line2
+T-LINE NAME (Name),Line1,Line2
+"Enter Impedance,Admittance Data in: (PU)",3,3
+Nominal PI or Coupled PI Model: (Config),1,1
+Line Rated Frequency (F),50.0 [Hz],50.0 [Hz]
+Line Length (len),1.0 [m],1.0 [m]
+Rated Voltage L-L (VR2),33.0 [kV],33.0 [kV]
+MVA for All Phases (MVA2),100.0 [MVA],100.0 [MVA]
+Positive Sequence Resistance (RPUP2),0.000110 [pu/m],0.000095 [pu/m]
+Positive Sequence Inductive Reactance (XLPUP2),0.00356 [pu/m],0.00356 [pu/m]
+Positive Sequence Capacitive Susceptance (BPUP2),0.002446 [pu/m],0.002027 [pu/m]
+Zero Sequence Resistance (RPUZ2),0.0023 [pu/m],0.0023 [pu/m]
+Zero Sequence Inductive Reactance (XLPUZ2),0.0159 [pu/m],0.0159 [pu/m]
+Zero Sequence Capacitive Susceptance (BPUZ2),0.0018 [pu/m],0.0018 [pu/m]

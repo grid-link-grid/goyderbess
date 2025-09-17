@@ -1,0 +1,17 @@
+      SUBROUTINE CONEC
+C
+      INCLUDE 'COMON4.INS'
+C
+      CALL VWVAR4          (  18849,      0,      0,  87019)
+      CALL VWLVR4          (  18851, 117402,  25960,  87044)
+      CALL VWPWR4          (  18854, 117435,  25970,  87079)
+      CALL VWMEC4          (  18857, 117456,  25977,      0)
+      CALL VWMEA4          (  18859, 117463,  25985,  87084)
+      CALL VWVAR4          (  18861,      0,      0,  87089)
+      CALL VWLVR4          (  18863, 117467,  25993,  87114)
+      CALL VWPWR4          (  18866, 117500,  26003,  87149)
+      CALL VWMEC4          (  18869, 117521,  26010,      0)
+      CALL VWMEA4          (  18871, 117528,  26018,  87154)
+C
+      RETURN
+      END

@@ -1,0 +1,499 @@
+\documentclass{../grid-link-report}
+\usepackage{graphicx} % for \resizebox
+\usepackage{float}
+
+\SetClassAssetsDir{../class-assets}
+\newcommand{\projectassetsdir}{../project-assets}
+\newcommand{\analysisdir}{report-assets/analysis}
+
+\project{Clements Gap BESS}
+\client{Enzen}
+\title{Dynamic Model Acceptance Report (PSSE) - Discharging}
+\docnumber{CGBESS-GR-RPT-009}
+\issueddate{16 May 2025}
+\revision{1-0-0}
+\revisionhistorycsvpath{report-assets/revisionhistory.csv}
+\clientlogopath{\projectassetsdir/client-logo.png}
+
+\colorlet{Line}{red}
+\colorlet{Intermediate}{yellow}
+\colorlet{Low}{green}
+
+
+\begin{document}
+	% Draft commands
+
+	\frontmatter
+	\maketitle
+	
+	\makedisclaimer
+	\clearpage
+	\tableofcontents
+	\makerevisionhistorypage
+	%\makeaboutgridlink
+	
+	\mainmatter
+	
+	
+	\chapter{Purpose}
+	This report has been prepared to assess the accuracy, consistency and robustness of the \ac{RMS} model prepared in PSSE to represent \ac{CGBESS} between upper and lower boundaries of system strength. The results obtained as part of this assessment also provide a basis for comparison between the proposed PSSE (being an \ac{RMS} platform) and PSCAD (being and \ac{EMT} platform) models. This assessment was conducted in accordance with the requirements of the \ac{DMAT} Guidelines published by the Australian Energy Market Operator (AEMO) in June 2024 \cite{dmat-spec}.
+	
+	The results of this assessment provide confidence that the PSSE model prepared to represent \ac{CGBESS} is usable and numerically robust under all operating conditions that can be reasonably expected.
+	
+	
+	\chapter{Project Overview}
+	\input{\projectassetsdir/project-description.tex}
+	
+	\chapter{Results}
+	
+	All simulations have been performed on version v1-0-0 of the \ac{CGBESS} PSSE model.
+	
+	The following site-specific values have been used in performing the \ac{DMAT} tests:
+	
+	\begin{itemize}
+		\item Maximum fault level and associated \ac{SCR}: 1068 MVA and 17.8.
+		\item Minimum fault level and associated \ac{SCR}: 510 MVA and 8.5.
+	\end{itemize}
+	
+	Figure \ref{fig:PSSEmodelSLD}. shows the PSS/E model single line diagram including layout of the generating system and the infinite bus grid model.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{\projectassetsdir/PSSEsld.png}
+		\caption{PSSE model single line diagram}
+		\label{fig:PSSEmodelSLD}
+	\end{figure}
+	
+	Further detail regarding the detailed parameters of plant equipment has been outlined in the Clements Gap BESS Releasable User Guide (RUG).
+	
+	\subsection{Note On PLL Instability}
+	\label{foreword on instability}
+	
+	For a select number of TOV and grid voltage disturbance tests the response seen in PSS/E is understood to be a result of potential PLL instability seen on fault clearance. Furthermore, we believe the reason this appears in PSS/E is related to differences in RMS and EMT modelling platforms - as Spike Mitigation algorithms implemented in PSS/E meant to filter out discontinuities appear to influence this response. Please refer to the supporting technical note "Clements Gap BESS - Spike mitigation and PLL issue at low SCR" \cite{tech-note}.
+
+	
+	\section{Balanced faults - DMAT 3.2.4}
+	\label{sec:balanced-faults}
+	\input{\classassetsdir/methodologies/dmat-balanced-fault-methodology.tex}
+	
+	The full list of balanced faults assessed can be found in Table \ref{tab:balanced-faults-test-suite}.
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{Balanced faults test suite}
+		{tab:balanced-faults-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/324-325-Faults-balanced-test-table.csv}
+	}
+	
+	Results for DMAT 3.2.4 can be found in \nameref{Appendix A: Balanced faults}.
+	
+	All tests conducted produced results that were acceptable.
+	
+
+	\section{Multiple fault ride-through (PSSE) - DMAT 3.2.7}
+	
+	\input{\classassetsdir/methodologies/dmat-mfrt-methodology.tex}
+	
+	The full list of multiple fault ride through PSSE tests assessed can be found in Table \ref{tab:mfrt-psse-test-suite}.
+	
+	{
+		\renewcommand{\arraystretch}{1.2}
+		\setlength{\tabcolsep}{5pt}
+		
+		\begin{longtable}{|C{1cm}|C{4cm}|C{4cm}|C{4cm}|C{4cm}|}
+			\caption{MFRT test suite} \label{tab:mfrt-psse-test-suite} \\
+			\hline
+			\textbf{Test} & \textbf{Fault Types} & \textbf{Fault Durations} & \textbf{Time Between Faults} & \textbf{Fault Impedance $Z_f/Z_s$}\\
+			\hline
+			S1 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.43, 0.12, 0.12, 0.12, 0.12, 0.22, 0.12, 0.22, 0.12, 0.22, 0.22, 0.22, 0.22, 0.12, 0.12 & 5, 0.5, 0.01, 1.5, 0.2, 7, 1, 0.2, 0.75, 2, 0.5, 0.01, 10, 2 & 2, 1, 2, 0, 3.5, 1, 3.5, 0.2, 1, 1, 0.2, 2, 0, 0.2, 1  \\
+			\hline
+			S2 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.22, 0.22, 0.12, 0.12, 0.22, 0.12, 0.43, 0.22, 0.12, 0.22, 0.12, 0.22, 0.12, 0.12, 0.12 & 0.2, 10, 2, 0.2, 0.75, 0.5, 1, 0.5, 2, 0.01, 7, 5, 1.5, 3 & 1, 2, 2, 0.2, 1, 1, 2, 0, 0.2, 1, 1, 0.2, 3.5, 0, 3.5  \\
+			
+			\hline
+			S3 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.12, 0.22, 0.22, 0.12, 0.43, 0.22, 0.12, 0.22, 0.12, 0.12, 0.12, 0.12, 0.12, 0.22, 0.22 & 0.2, 5, 1.5, 2, 3, 1, 0.5, 0.5, 0.75, 10, 7, 0.2, 0.01, 0.01 & 1, 0.2, 2, 0, 3.5, 1, 0, 1, 1, 0.2, 0.2, 3.5, 1, 2, 2  \\
+			
+			\hline
+			S4 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.12, 0.22, 0.12, 0.22, 0.12, 0.43, 0.12, 0.12, 0.22, 0.22, 0.22, 0.12, 0.12, 0.22, 0.12 & 3, 5, 0.2, 2, 10, 1.5, 0.75, 0.01, 0.5, 0.01, 1, 2, 0.2, 0.5 & 1, 2, 0.2, 2, 2, 1, 1, 3.5, 1, 0.2, 1, 3.5, 0, 0, 0.2  \\
+			
+			\hline
+			S5 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.12, 0.12, 0.43, 0.22, 0.22, 0.12, 0.12, 0.12, 0.22, 0.12, 0.22, 0.12, 0.22, 0.22, 0.12 & 0.2, 7, 1, 0.5, 3, 0.5, 2, 0.75, 0.01, 1.5, 0.01, 5, 0.2, 2 & 1, 0, 3.5, 0.2, 2, 0.2, 1, 3.5, 1, 2, 2, 1, 0, 0.2, 1 \\
+			
+			\hline
+	\end{longtable}}
+	
+	Results for DMAT 3.2.6 can be found in \nameref{Appendix B: Multiple fault ride-through tests}.
+	
+	It was observed for test for MFRT test S5 that the generating system trips as a result of frequency protection. This was found to be a numerical issue with PSS/E whereby an extreme frequency disturbance is observed on fault inception (at approximately t=35s) for an extended period of time and the inverter protection then responds as expected. All other tests conducted produced acceptable results.
+	
+
+	
+	\section{Temporary over-voltage - DMAT 3.2.9}
+	
+	%<<<<<<< HEAD
+	
+	%=======
+	\input{\classassetsdir/methodologies/dmat-tov-methodology.tex}
+	
+	The full list of \ac{TOV} tests assessed can be found in Table \ref{tab:tov-test-suite}.
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{TOV test suite}
+		{tab:tov-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/329-TOV-test-table.csv}
+	}
+	
+	Results for DMAT 3.2.9 can be found in \nameref{Appendix C: Temporary over-voltage tests}.
+	
+	When reviewing the plots, it should be noted that the size of the initial voltage step, as well as the size of the settled voltage disturbance, are influenced by the reactive current absorbed by the generating system in response to the disturbance, so these values will not always match the exactly intended over-voltage. The results provide an indication of generating system behaviour for a variety of different disturbances.
+	
+	Please refer to section \ref{foreword on instability} for discussion on the response of tests 135, 140, 141, 143, 144-148.
+	
+	All other tests conducted produced results that were acceptable. 
+
+
+	
+	\section{Voltage reference step changes - DMAT 3.2.10}	
+	\label{sec:vref-step-changes}
+	
+	\input{\classassetsdir/methodologies/dmat-vgrid-step-methodology.tex}
+	\input{\classassetsdir/methodologies/dmat-vref-step-methodology.tex}
+	
+	Direct reactive power control tests and power factor control tests are performed in the same manner as voltage reference step tests, using the appropriate reference required to meet the target change in reactive output at the connection point specified by the \ac{DMAT}.
+	
+	The full list of tests assessed for this section can be found in Tables \ref{tab:3210-vref-test-suite} to \ref{tab:3210-pfref-test-suite}. As both DMAT sections 3.2.10 (Voltage reference step changes) and 3.2.14 (Grid voltage change), both sections will be discussed here.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Voltage reference step test suite}
+		{tab:3210-vref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3210-Vref-test-table.csv}
+	}
+	
+	All voltage reference tests conducted produced results that were acceptable.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Connection point voltage step test suite (includes 3.2.14 tests)}
+		{tab:3210-vgrid-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3210-3214-Vgrid-test-table.csv}
+	}
+	Tests 183p1, 183p2, 184, 185 and 187p5 were found to exhibit the behaviour discussed in section \ref{foreword on instability}.
+	
+	For a single test 187p6 the generating system is observed to trip off on frequency protection. This was found to be to be a numerical issue with PSS/E whereby an extreme frequency disturbance (greater than 80 Hz) is observed on at approximately. As a result the inverters frequency protection operates accordingly.
+	
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Reactive power reference step test suite}
+		{tab:3210-qref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3210-Qref-test-table.csv}
+	}
+	All reactive power reference tests conducted produced results that were acceptable.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Power factor reference step test suite}
+		{tab:3210-pfref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3210-Pfref-test-table.csv}
+	}
+	All power factor reference tests conducted produced results that were acceptable.
+	
+	Results for DMAT 3.2.10 can be found in \nameref{Appendix D: Voltage reference step change tests}, \nameref{Appendix I: Grid voltage change response tests}, \nameref{Appendix F: Power factor reference step change tests}, and \nameref{Appendix E: Reactive power reference step change tests}. It should be noted that, for power factor reference step tests, the equivalent reactive power reference to the power factor reference applied to the \ac{PPM} is shown in plots to clearly show the tracking behaviour. This does not mean that the controller was in VAr control mode for these tests.
+	
+	
+	
+	\section{Active power reference changes - DMAT 3.2.11}	
+	\label{sec:pref-step-tests}
+	
+	
+	
+	\input{\classassetsdir/methodologies/dmat-pref-step-methodology.tex}
+	
+	The full list of tests assessed for this section can be found in Table \ref{tab:3211-pref-test-suite}.
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{Active power reference step test suite}
+		{tab:3211-pref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3211-Pref-test-table.csv}
+	}
+	
+	Results for DMAT 3.2.11 can be found in \nameref{Appendix G: Active power reference change tests}.
+	
+	All tests conducted produced results that were acceptable.
+	
+	
+	\section{Grid frequency controller test - DMAT 3.2.12}		
+	
+	
+	\input{\classassetsdir/methodologies/dmat-fgrid-ramp-methodology.tex}
+	
+	The full list of tests assessed for this section can be found in Table \ref{tab:3212-fgrid-test-suite}.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Grid frequency controller test suite}
+		{tab:3212-fgrid-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3212-Fgrid-test-table.csv}
+	}
+	
+	Results for DMAT 3.2.12 can be found in \nameref{Appendix H: Grid frequency controller tests}.	
+	
+	All tests conducted produced results that were acceptable.
+	
+	
+	\section{Grid voltage change response tests - DMAT 3.2.14}		
+	
+	
+	This test suite is addressed in Section \ref{sec:vref-step-changes} (Voltage reference step tests - DMAT 3.2.10) which also contains tests where the connection point voltage is manipulated.
+	
+	\section{Grid voltage angle change response tests - DMAT 3.2.16}		
+	
+	\input{\classassetsdir/methodologies/dmat-angle-step-methodology.tex}
+	
+	The full list of tests assessed for this section can be found in Table \ref{tab:3216-phase-steps-test-suite}.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Phase angle change test suite}
+		{tab:3216-phase-steps-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3216-PhaseSteps-test-table.csv}
+	}
+	
+	Results for DMAT 3.2.16 can be found in \nameref{Appendix J: Grid voltage angle change response tests}.
+	
+	All tests conducted produced results that were acceptable.
+	
+	
+	\section{Active power reference change tests (POC SCR=1) - DMAT 3.2.17}		
+	
+	SCR=1 active power reference step tests are performed using the same methodology as described in Section \ref{sec:pref-step-tests}, except with a \ac{SCR} of 1.0. For this reason, simulation results for these tests are presented for information only and are not expected to initialise correctly or remain stable. 
+	
+	The full list of tests assessed for this section can be found in Table \ref{tab:3217-pref-scr1-test-suite}.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{Active power reference step test (with SCR of 1.0) suite}
+		{tab:3217-pref-scr1-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3217-Pref-POC-SCR1-test-table.csv}
+	}
+	As a result of the low SCR conditions for these tests, the model was not able to be initialised to the operating conditions defined in Table \ref{tab:3217-pref-scr1-test-suite}. For this reason appendices have been excluded for this section.
+
+	
+	\section{FRT tests at SCR=1 - DMAT 3.2.18}		
+	
+	SCR=1 faults are studied using the same methodology as described in Sections \ref{sec:balanced-faults}, except that the SCR is changed mid-disturbance from the maximum fault level expected for the project (and associated X/R) to a SCR of 1.0 (and a specified X/R ratio). For this reason, simulation results for these tests are presented for information only and are not expected to initialise correctly or remain stable.
+	
+	The full list of tests assessed for this section can be found in Table \ref{tab:3218-scr1-fault-test-suite}.
+	
+	{
+		\fontsize{5}{7}\selectfont
+		\autoscaledlongtable
+		{SCR=1 fault suite}
+		{tab:3218-scr1-fault-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/3218-SCR-Change-Faults-SCR1-test-table.csv}
+	}
+	
+	
+	
+	For all tests conducted at an SCR of 1 the model was found to be unstable as expected. These results have been included for convenience. Results for DMAT 3.2.18 can be found in \nameref{Appendix M: FRT tests at SCR=1}.
+		
+	
+	\section{FRT tests at site specific SCR - DMAT 3.2.19}		
+	
+	
+	Site-specific SCR faults are studied using the same methodology as described in Sections \ref{sec:balanced-faults}, except that the minimum SCR (and associated X/R) is used for all faults.
+	
+	The full list of tests assessed for this section can be found in Table \ref{tab:3219-site-specific-scr-faults-test-suite}.
+	
+	{
+		\fontsize{4}{6}\selectfont
+		\autoscaledlongtable
+		{Site-specific SCR fault tests suite}
+		{tab:3219-site-specific-scr-faults-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SCR-Change-Faults-POC-test-table.csv}
+	}
+	
+	Results for DMAT 3.2.19 can be found in \nameref{Appendix L: FRT tests at site-specific SCR}.
+	
+	\section{Additional tests for South Australian Connections}
+	
+	Given that \ac{CGBESS} is in South Australia, an additional suite of tests are conducted. These tests are studied using the same methodologies included in the above sections of this report. These tests are the same as those outlined above, except for the \ac{SCR} and X/R values which are set to 1.5 and 2 respectively at the equipment terminal. This corresponds to SCR = 1.88 and X/R = 1.6 at the POC. 
+	
+	
+	The full list of tests assessed for this section can be found in the below tables. 
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{SA Balanced faults test suite}
+		{tab:sa-balanced-faults-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-324-325-Faults-balanced-test-table.csv}
+	}
+	Balanced faults p11,p23, and p35 were found to exhibit the behaviour discussed in section \ref{foreword on instability}.
+	{
+		\renewcommand{\arraystretch}{1.2}
+		\setlength{\tabcolsep}{5pt}
+		
+		\begin{longtable}{|C{1cm}|C{4cm}|C{4cm}|C{4cm}|C{4cm}|}
+			\caption{SA MFRT test suite} \label{tab:sa-mfrt-psse-test-suitee} \\
+			\hline
+			\textbf{Test} & \textbf{Fault Types} & \textbf{Fault Durations} & \textbf{Time Between Faults} & \textbf{Fault Impedance $Z_f/Z_s$}\\
+			\hline
+			S1 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.43, 0.12, 0.12, 0.12, 0.12, 0.22, 0.12, 0.22, 0.12, 0.22, 0.22, 0.22, 0.22, 0.12, 0.12 & 5, 0.5, 0.01, 1.5, 0.2, 7, 1, 0.2, 0.75, 2, 0.5, 0.01, 10, 2 & 2, 1, 2, 0, 3.5, 1, 3.5, 0.2, 1, 1, 0.2, 2, 0, 0.2, 1  \\
+			\hline
+			S2 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.22, 0.22, 0.12, 0.12, 0.22, 0.12, 0.43, 0.22, 0.12, 0.22, 0.12, 0.22, 0.12, 0.12, 0.12 & 0.2, 10, 2, 0.2, 0.75, 0.5, 1, 0.5, 2, 0.01, 7, 5, 1.5, 3 & 1, 2, 2, 0.2, 1, 1, 2, 0, 0.2, 1, 1, 0.2, 3.5, 0, 3.5  \\
+			
+			\hline
+			S3 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.12, 0.22, 0.22, 0.12, 0.43, 0.22, 0.12, 0.22, 0.12, 0.12, 0.12, 0.12, 0.12, 0.22, 0.22 & 0.2, 5, 1.5, 2, 3, 1, 0.5, 0.5, 0.75, 10, 7, 0.2, 0.01, 0.01 & 1, 0.2, 2, 0, 3.5, 1, 0, 1, 1, 0.2, 0.2, 3.5, 1, 2, 2  \\
+			
+			\hline
+			S4 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.12, 0.22, 0.12, 0.22, 0.12, 0.43, 0.12, 0.12, 0.22, 0.22, 0.22, 0.12, 0.12, 0.22, 0.12 & 3, 5, 0.2, 2, 10, 1.5, 0.75, 0.01, 0.5, 0.01, 1, 2, 0.2, 0.5 & 1, 2, 0.2, 2, 2, 1, 1, 3.5, 1, 0.2, 1, 3.5, 0, 0, 0.2  \\
+			
+			\hline
+			S5 & 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG, 3PHG & 0.12, 0.12, 0.43, 0.22, 0.22, 0.12, 0.12, 0.12, 0.22, 0.12, 0.22, 0.12, 0.22, 0.22, 0.12 & 0.2, 7, 1, 0.5, 3, 0.5, 2, 0.75, 0.01, 1.5, 0.01, 5, 0.2, 2 & 1, 0, 3.5, 0.2, 2, 0.2, 1, 3.5, 1, 2, 2, 1, 0, 0.2, 1 \\
+			
+			\hline
+	\end{longtable}}
+
+		It was observed for test for MFRT test S5 that the generating system trips as a result of frequency protection. This was found to be a numerical issue with PSS/E whereby an extreme frequency disturbance is observed on fault inception (at approximately t=35s) for an extended period of time and the inverter protection then responds as expected. All other tests conducted produced acceptable results.
+	
+	{
+		\fontsize{6}{8}\selectfont
+		\autoscaledlongtable
+		{SA TOV test suite}
+		{tab:sa-tov-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-329-TOV-test-table.csv}
+	}
+		All TOV tests were found to exhibit oscillations in active and reactive power at a low system SCR. This is expected as the generating system has not been tuned to operate at this low of an SCR. Appendices have been included for completeness.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Voltage reference step test suite}
+		{tab:sa-3210-vref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3210-Vref-test-table.csv}
+	}
+		All voltage reference step tests were found to produce acceptable results.
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Connection point voltage step test suite (includes 3.2.14 tests)}
+		{tab:sa-3210-vgrid-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3210-3214-Vgrid-test-table.csv}
+	}
+	Tests 183p1, 183p2, 187p1-187p6 were found to exhibit oscillations in active and reactive power at a low system SCR. This is expected as the generating system has not been tuned to operate at this low of an SCR. Appendices have been included for completeness.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Reactive power reference step test suite}
+		{tab:sa-3210-qref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3210-Qref-test-table.csv}
+	}
+	All reactive power reference step tests were found to produce acceptable results.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Power factor reference step test suite}
+		{tab:3210-pfref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3210-Pfref-test-table.csv}
+	}
+	All power factor reference step tests were found to produce acceptable results.
+
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Active power reference step test (with SCR of 1.0) suite}
+		{tab:sa-3217-pref-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3211-Pref-test-table.csv}
+	}
+	All active power reference step tests were found to produce acceptable results.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Grid frequency controller test suite}
+		{tab:sa-3212-fgrid-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3212-Fgrid-test-table.csv}
+	}
+	
+	All grid frequency disturbance step tests were found to produce acceptable results.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Phase angle change test suite}
+		{tab:sa-3216-phase-steps-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3216-PhaseSteps-test-table.csv}
+	}
+	
+	All phase step disturbance tests were found to produce acceptable results.
+	
+	{
+		\fontsize{7}{9}\selectfont
+		\autoscaledlongtable
+		{SA Active power reference step test (with SCR of 1.0) suite}
+		{tab:sa-3217-pref-scr1-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3217-Pref-POC-SCR1-test-table.csv}
+	}
+	Please note that although the DMAT test suite requires a POC SCR of 1 is used for these tests, the N POC SCR is 8.5 for this project. All active power reference steps were found to produce acceptable results.
+	
+	{
+		\fontsize{5}{7}\selectfont
+		\autoscaledlongtable
+		{SA Site-specific SCR fault tests suite}
+		{tab:sa-3219-site-specific-scr-faults-test-suite}
+		{\projectassetsdir/test-suite-tables/PSSE-DMAT/SA-3219-POC-SCR-Faults-test-table.csv}
+	}
+	All tests were found to produce acceptable results.
+	
+	\input{\projectassetsdir/acronyms.tex}
+	\input{report-assets/bibliography.tex}
+	
+	
+	\chapter{Appendices}
+	\section{Appendix A: Balanced faults}
+	\label{Appendix A: Balanced faults}
+	\section{Appendix B: Multiple fault ride-through tests}
+	\label{Appendix B: Multiple fault ride-through tests}
+	\section{Appendix C: Temporary over-voltage tests}
+	\label{Appendix C: Temporary over-voltage tests}
+	\section{Appendix D: Voltage reference step change tests}
+	\label{Appendix D: Voltage reference step change tests}
+	\section{Appendix E: Reactive power reference step change tests}
+	\label{Appendix E: Reactive power reference step change tests}
+	\section{Appendix F: Power factor reference step change tests}
+	\label{Appendix F: Power factor reference step change tests}	
+	\section{Appendix G: Active power reference change tests}
+	\label{Appendix G: Active power reference change tests}
+	\section{Appendix H: Grid frequency controller tests}
+	\label{Appendix H: Grid frequency controller tests}
+	\section{Appendix I: Grid voltage change response tests}
+	\label{Appendix I: Grid voltage change response tests}
+	\section{Appendix J: Grid voltage angle change response tests}
+	\label{Appendix J: Grid voltage angle change response tests}
+	\section{Appendix K: Active power reference change tests (POC SCR=1)}
+	\label{Appendix K: Active power reference change tests (POC SCR=1)}
+	\section{Appendix L: FRT tests at site-specific SCR}
+	\label{Appendix L: FRT tests at site-specific SCR}
+	\section{Appendix M: FRT tests at SCR=1}
+	\label{Appendix M: FRT tests at SCR=1}
+
+	
+	
+	
+	
+\end{document}

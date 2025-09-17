@@ -1,0 +1,644 @@
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.8.3)  14 FEB 2025 15:05
+ restricted system commands enabled.
+**s5255-clause.tex
+(./s5255-clause.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-07-20>
+Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/texlive/2024/texmf-var/luatex-ca
+che/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "c:/texlive/2024/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-
+28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/texlive/2024/texmf-var/luatex-ca
+che/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \textbf{‘Maximum continuous current’}
+                                            is defined by the maximum appare...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+luaotfload | db : Font names database loaded from C:/texlive/2024/texmf-var/luat
+ex-cache/generic/names/luaotfload-names.luc.gz
+Overfull \hbox (49.6pt too wide) in paragraph at lines 1--2
+[]\TU/lmr/bx/n/10 ‘Max-
+ []
+
+
+Overfull \hbox (7.02pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 i-
+ []
+
+
+Overfull \hbox (25.23pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 mum
+ []
+
+
+Overfull \hbox (21.08pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 con-
+ []
+
+
+Overfull \hbox (17.88pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 tin-
+ []
+
+
+Overfull \hbox (10.22pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 u-
+ []
+
+
+Overfull \hbox (16.68pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 ous
+ []
+
+
+Overfull \hbox (20.07pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 cur-
+ []
+
+
+Overfull \hbox (23.74pt too wide) in paragraph at lines 1--2
+\TU/lmr/bx/n/10 rent’
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 F
+   or the purposes of this performance standard, a \textbf{fault} includes a...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--5
+[]For
+ []
+
+
+Overfull \hbox (23.15pt too wide) in paragraph at lines 3--5
+\TU/lmr/bx/n/10 fault
+ []
+
+
+! LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 	\begin{table}
+                [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 	\begin{table}[
+                 H]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 	\caption
+            *{Table 2.6: Protection clearance times in transmission and dist...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 	\end{table}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--18
+[][H]
+ []
+
+
+Overfull \hbox (263.94206pt too wide) in paragraph at lines 6--18
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...e (reflects clause S5.2.5.5(c) of the NER):}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (39.8pt too wide) in paragraph at lines 19--21
+[]\TU/lmr/bx/n/10 Sin-
+ []
+
+
+Overfull \hbox (14.21pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 gle
+ []
+
+
+Overfull \hbox (17.95pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 dis-
+ []
+
+
+Overfull \hbox (19.43001pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 tur-
+ []
+
+
+Overfull \hbox (28.75pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 bance
+ []
+
+
+Overfull \hbox (18.31001pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 (re-
+ []
+
+
+Overfull \hbox (25.78pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 flects
+ []
+
+
+Overfull \hbox (30.09pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 clause
+ []
+
+
+Overfull \hbox (53.01001pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 S5.2.5.5(c)
+ []
+
+
+Overfull \hbox (9.26pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 of
+ []
+
+
+Overfull \hbox (16.13pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 the
+ []
+
+
+Overfull \hbox (32.85pt too wide) in paragraph at lines 19--21
+\TU/lmr/bx/n/10 NER):
+ []
+
+
+! LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 		\begin{table}
+                  [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 		\caption
+             *{Table 2.7: Fault Clearance Times}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 		\end{table}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--42
+[][H]
+ []
+
+
+Overfull \hbox (420.94208pt too wide) in paragraph at lines 30--42
+[]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--44
+[]and
+ []
+
+
+Overfull \hbox (44.33pt too wide) in paragraph at lines 52--55
+[]\TU/lmr/bx/n/10 Mul-
+ []
+
+
+Overfull \hbox (11.49pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 ti-
+ []
+
+
+Overfull \hbox (14.85pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 ple
+ []
+
+
+Overfull \hbox (17.95pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 dis-
+ []
+
+
+Overfull \hbox (19.43001pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 tur-
+ []
+
+
+Overfull \hbox (33.29pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 bances
+ []
+
+
+Overfull \hbox (18.31001pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 (re-
+ []
+
+
+Overfull \hbox (25.78pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 flects
+ []
+
+
+Overfull \hbox (30.09pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 clause
+ []
+
+
+Overfull \hbox (57.48001pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 S5.2.5.5(d),
+ []
+
+
+Overfull \hbox (16.67pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 (s),
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 (t)
+ []
+
+
+Overfull \hbox (9.26pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 of
+ []
+
+
+Overfull \hbox (16.13pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 the
+ []
+
+
+Overfull \hbox (32.85pt too wide) in paragraph at lines 52--55
+\TU/lmr/bx/n/10 NER):
+ []
+
+
+Overfull \hbox (36.77pt too wide) in paragraph at lines 69--71
+[]\TU/lmr/bx/n/10 For
+ []
+
+
+Overfull \hbox (26.42pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 asyn-
+ []
+
+
+Overfull \hbox (44.73999pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 chronous
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 in-
+ []
+
+
+Overfull \hbox (13.57pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 te-
+ []
+
+
+Overfull \hbox (32.21pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 grated
+ []
+
+
+Overfull \hbox (13.84001pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 re-
+ []
+
+
+Overfull \hbox (31.8pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 source
+ []
+
+
+Overfull \hbox (18.98pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 sys-
+ []
+
+
+Overfull \hbox (23.86pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 tems
+ []
+
+
+Overfull \hbox (18.31001pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 (re-
+ []
+
+
+Overfull \hbox (25.78pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 flects
+ []
+
+
+Overfull \hbox (30.09pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 clause
+ []
+
+
+Overfull \hbox (55.56001pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 S5.2.5.5(f)-
+ []
+
+
+Overfull \hbox (12.13pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 (i)
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (15.33pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 (u)
+ []
+
+
+Overfull \hbox (9.26pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 of
+ []
+
+
+Overfull \hbox (16.13pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 the
+ []
+
+
+Overfull \hbox (32.85pt too wide) in paragraph at lines 69--71
+\TU/lmr/bx/n/10 NER):
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 72--72
+[] 
+ []
+
+! Missing number, treated as zero.
+<to be read again> 
+\c@* 
+l.77 		\begin{enumerate}[label=\roman*
+                                    ]
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 			\item T
+             he reactive current response will have a rise time of no greate...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 			\item T
+             he reactive current response will have a rise time of no greate...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 			\item T
+             he reactive current response will have a rise time of no greate...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 			\item V
+             oltage deviations are measured at the terminals of each generat...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 			\item V
+             oltage deviations are measured at the terminals of each generat...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 			\item V
+             oltage deviations are measured at the terminals of each generat...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 			\item I
+             s calculated using sequence components of voltages.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 			\item I
+             s calculated using sequence components of voltages.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 			\item I
+             s calculated using sequence components of voltages.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 		\end{enumerate}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> s5255-clause.tex
+                 
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 35 strings out of 475910
+ 100000,1977958 words of node,token memory allocated 50616 words of node memory still in use:
+   221 hlist, 11 vlist, 56 rule, 58 disc, 39 local_par, 1 dir, 4 math, 1462 glue
+, 22 kern, 131 penalty, 4999 glyph, 282 attribute, 39 glue_spec, 282 attribute_l
+ist nodes
+   avail lists: 2:5,4:73,5:29,7:40,8:1,10:72
+ 22786 multiletter control sequences out of 65536+600000
+ 25 fonts using 1345055 bytes
+ 19i,9n,22p,511b,215s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

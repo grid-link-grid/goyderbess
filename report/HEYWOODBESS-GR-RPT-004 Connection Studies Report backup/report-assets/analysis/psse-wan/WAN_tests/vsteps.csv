@@ -1,0 +1,37 @@
+﻿Asset,Voltage (kV),Maximum Step Change,Scenario,Contingency
+3HORSHM_220A,220,0.13,Autumn Low Export,Learmonth - Ballarat
+WBTS/COL    ,220,0.12,Autumn Low Import,Learmonth - Ararat
+3WAUBRA_220A,220,0.12,Autumn Low Import,Learmonth - Ararat
+3HORSHM_220A,220,0.12,Autumn High,Learmonth - Ballarat
+3ARAR_T_220B,220,0.1,Autumn Low Import,Learmonth - Ararat
+3ARAR_T_220F,220,0.1,Autumn Low Import,Learmonth - Ararat
+3ARAR_T_220A,220,0.1,Autumn Low Import,Learmonth - Ararat
+ARTS POC    ,220,0.1,Autumn Low Import,Learmonth - Ararat
+CROW_PCC    ,220,0.1,Autumn Low Import,Learmonth - Ararat
+3CROWLA_220A,220,0.1,Autumn Low Import,Learmonth - Ararat
+WBTS/COL    ,220,0.1,Autumn Low Export,Learmonth - Ararat
+3WAUBRA_220A,220,0.1,Autumn Low Export,Learmonth - Ararat
+3BULGTS_220A,220,0.09,Autumn Low Import,Learmonth - Ararat
+BGPH POC    ,220,0.09,Autumn Low Import,Learmonth - Ararat
+ARTS POC    ,220,0.08,Autumn Low Export,Learmonth - Ararat
+3ARAR_T_220B,220,0.08,Autumn Low Export,Learmonth - Ararat
+3ARAR_T_220A,220,0.08,Autumn Low Export,Learmonth - Ararat
+3ARAR_T_220F,220,0.08,Autumn Low Export,Learmonth - Ararat
+3HORSHM_220A,220,0.08,Autumn Low Import,Learmonth - Ararat
+3HORSHM__66A,66,0.07,Autumn Low Export,Crowlands - Horsham
+3HORSHM_220B,220,0.07,Autumn Low Import,Learmonth - Ararat
+3CROWLA_220A,220,0.07,Autumn Low Export,Learmonth - Ararat
+CROW_PCC    ,220,0.07,Autumn Low Export,Learmonth - Ararat
+3HORSHM_220C,220,0.07,Autumn Low Import,Learmonth - Ararat
+3HORSHM__66A,66,0.06,Autumn Low Import,Learmonth - Ararat
+3BULGTS_220A,220,0.06,Autumn Low Export,Learmonth - Ararat
+BGPH POC    ,220,0.06,Autumn Low Export,Learmonth - Ararat
+MRTS        ,220,0.06,Autumn Low Import,Learmonth - Ararat
+2203,220,0.06,Autumn Low Import,Learmonth - Ararat
+3MURRAW_220F,220,0.06,Autumn Low Import,Learmonth - Ararat
+3KERANG___S1,220,0.06,Autumn High,Learmonth - Ballarat
+3KERANG___S1,220,0.05,Autumn Low Import,Kiamal - Horsham
+3HORSHM_220C,220,-0.05,Autumn Low Export,Learmonth - Ballarat
+3MURRAW_220F,220,-0.06,Autumn Low Export,Learmonth - Ballarat
+2203,220,-0.06,Autumn Low Export,Learmonth - Ballarat
+MRTS        ,220,-0.06,Autumn Low Export,Learmonth - Ballarat

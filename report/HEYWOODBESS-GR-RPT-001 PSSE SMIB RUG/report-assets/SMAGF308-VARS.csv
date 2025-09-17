@@ -1,0 +1,327 @@
+﻿VAR,Parameter
+VAR(L+0) ,WSpt – Use this VAR to set active power setpoint when ICON(M) is set to 0
+VAR(L+1) ,VarSpt – Use this VAR to set reactive power setpoint when ICON(M) is set to 0
+VAR(L+2) ,FrqSpt - Use this VAR to set frequency setpoint
+VAR(L+3) ,VolSpt - Use this VAR to set voltage setpoint
+VAR(L+4) ,TmpStk – Use this VAR to set the temperature of stack – Default is 119 degrees
+VAR(L+5) ,Xpu – X part of impedance for current injection – should be equal to X for gen. in LF 
+VAR(L+6) ,Rpu - R part of impedance for current injection – should be equal to R for gen. in LF
+VAR(L+7) ,Unused
+VAR(L+8) ,Unused
+VAR(L+9) ,SetpointChangeFlag – Flag to detect setpoint change when ICON(M) is set to 0
+VAR(L+10) ,Meas1.Vinv_d – d-axis inverter terminal voltage
+VAR(L+11) ,Meas1.Vinv_q – q-axis inverter terminal voltage
+VAR(L+12) ,Meas1.Iinv_d – d-axis inverter current
+VAR(L+13) ,Meas1.Iinv_q – q – axis inverter current
+VAR(L+14) ,Vth_r – real part of thevenin voltage applied in the current injection routine
+VAR(L+15) ,Vth_i – imaginary part of thevenin voltage applied in the current injection routine
+VAR(L+16) ,FRTDetect – Flag to Check whether FRT is enabled or not
+VAR(L+17) ,VI_X – reactive part of Virtual impedance when in FRT
+VAR(L+18) ,VI_R – real part of Virtual impedance when in FRT
+VAR(L+19) ,Unused
+VAR(L+20) ,AmpDQRtg
+VAR(L+21) ,StkAmpLimOn
+VAR(L+22) ,PreFaultCurrD
+VAR(L+23) ,PreFaultCurrQ
+VAR(L+24) ,SpikeFlagOn
+VAR(L+25) ,SpikeFlagOff
+VAR(L+26) ,SpikeTimer
+VAR(L+27) ,Meas1.Pinv_hold
+VAR(L+28) ,Meas1.Qinv_hold
+VAR(L+29) ,Unused
+VAR(L+30) ,VCtlHi1Lim_Out – Flag to check whether High Voltage Protection 1 is activated
+VAR(L+31) ,VCtlHi1Lim_timer
+VAR(L+32) ,VCtlHi2Lim_Out - Flag to check whether High Voltage Protection 2 is activated
+VAR(L+33) ,VCtlHi2Lim_timer
+VAR(L+34) ,VCtlHi3Lim_Out - Flag to check whether High Voltage Protection 3 is activated
+VAR(L+35) ,VCtlHi3Lim_timer
+VAR(L+36) ,VCtlHi4Lim_Out - Flag to check whether High Voltage Protection 4 is activated
+VAR(L+37) ,VCtlHi4Lim_timer
+VAR(L+38) ,VCtlHi5Lim_Out - Flag to check whether High Voltage Protection 5 is activated
+VAR(L+39) ,VCtlHi5Lim_timer
+VAR(L+40) ,VCtlHi6Lim_Out - Flag to check whether High Voltage Protection 6 is activated
+VAR(L+41) ,VCtlHi6Lim_timer
+VAR(L+42) ,VCtlLo1Lim_Out - Flag to check whether Low Voltage Protection 1 is activated
+VAR(L+43) ,VCtlLo1Lim_timer
+VAR(L+44) ,VCtlLo2Lim_Out - Flag to check whether Low Voltage Protection 2 is activated
+VAR(L+45) ,VCtlLo2Lim_timer
+VAR(L+46) ,VCtlLo3Lim_Out - Flag to check whether Low Voltage Protection 3 is activated
+VAR(L+47) ,VCtlLo3Lim_timer
+VAR(L+48) ,VCtlLo4Lim_Out - Flag to check whether Low Voltage Protection 4 is activated
+VAR(L+49) ,VCtlLo4Lim_timer
+VAR(L+50) ,VCtlLo5Lim_Out - Flag to check whether Low Voltage Protection 5 is activated
+VAR(L+51) ,VCtlLo5Lim_timer
+VAR(L+52) ,VCtlLo6Lim_Out - Flag to check whether Low Voltage Protection 6 is activated
+VAR(L+53) ,VCtlLo6Lim_timer
+VAR(L+54) ,HzCtlHi1Lim_Out - Flag to check whether High Frequency Protection 1 is activated
+VAR(L+55) ,HzCtlHi1Lim_timer
+VAR(L+56) ,HzCtlHi2Lim_Out - Flag to check whether High Frequency Protection 2 is activated
+VAR(L+57) ,HzCtlHi2Lim_timer
+VAR(L+58) ,HzCtlHi3Lim_Out - Flag to check whether High Frequency Protection 3 is activated
+VAR(L+59) ,HzCtlHi3Lim_timer
+VAR(L+60) ,HzCtlHi4Lim_Out - Flag to check whether High Frequency Protection 4 is activated
+VAR(L+61) ,HzCtlHi4Lim_timer
+VAR(L+62) ,HzCtlHi5Lim_Out - Flag to check whether High Frequency Protection 5 is activated
+VAR(L+63) ,HzCtlHi5Lim_timer
+VAR(L+64) ,HzCtlHi6Lim_Out - Flag to check whether High Frequency Protection 6 is activated
+VAR(L+65) ,HzCtlHi6Lim_timer
+VAR(L+66) ,HzCtlLo1Lim_Out - Flag to check whether Low Frequency Protection 1 is activated
+VAR(L+67) ,HzCtlLo1Lim_timer
+VAR(L+68) ,HzCtlLo2Lim_Out - Flag to check whether Low Frequency Protection 2 is activated
+VAR(L+69) ,HzCtlLo2Lim_timer
+VAR(L+70) ,HzCtlLo3Lim_Out - Flag to check whether Low Frequency Protection 3 is activated
+VAR(L+71) ,HzCtlLo3Lim_time
+VAR(L+72) ,HzCtlLo4Lim_Out - Flag to check whether Low Frequency Protection 4 is activated
+VAR(L+73) ,HzCtlLo4Lim_timer
+VAR(L+74) ,HzCtlLo5Lim_Out - Flag to check whether Low Frequency Protection 5 is activated
+VAR(L+75) ,HzCtlLo5Lim_timer
+VAR(L+76) ,HzCtlLo6Lim_Out - Flag to check whether Low Frequency Protection 6 is activated
+VAR(L+77) ,HzCtlLo6Lim_timer
+VAR(L+78) ,Control_Angle
+VAR(L+79) ,Inverter_Voltage_Angle
+VAR(L+80) ,CosPhi
+VAR(L+81) ,SinPhi
+VAR(L+82) ,Meas1.Vinv_d
+VAR(L+83) ,Meas1.Vinv_q
+VAR(L+84) ,Meas1.Vth_d
+VAR(L+85) ,Meas1.Vth_q
+VAR(L+86) ,Meas1.Iinv_d
+VAR(L+87) ,Meas1.Iinv_q
+VAR(L+88) ,AmaxSpt
+VAR(L+89) ,Vmag_Filt
+VAR(L+90) ,Vmag.Filt
+VAR(L+91) ,Result_enaGoToSec2
+VAR(L+92) ,ErrorCounter1
+VAR(L+93) ,Result_enaGoToSec3
+VAR(L+94) ,ErrorCounter2
+VAR(L+95) ,Result_enaGoToSec4
+VAR(L+96) ,ErrorCounter3
+VAR(L+97) ,Result_enaGoToSec3FromSec0
+VAR(L+98) ,ErrorCounter4
+VAR(L+99) ,TempStk_Filt
+VAR(L+100) ,CounterSec0
+VAR(L+101) ,OvAmpStt
+VAR(L+102) ,SubStt
+VAR(L+103) ,noOvercurrentStt
+VAR(L+104) ,HWTresholdHi
+VAR(L+105) ,EnaThmDerating
+VAR(L+106) ,AmaxNom
+VAR(L+107) ,AmaxNomD
+VAR(L+108) ,AmaxNomQ
+VAR(L+109) ,AmaxNomInit
+VAR(L+110) ,HysMode
+VAR(L+111) ,HysMode_timer
+VAR(L+112) ,TmpAcCtlOvAmpActive
+VAR(L+113) ,Unused
+VAR(L+114) ,disaOverCurrent_delay
+VAR(L+115) ,AmaxNom_filt
+VAR(L+116) ,AmaxNomD_filt
+VAR(L+117) ,AmaxNomQ_filt
+VAR(L+118) ,AMaxSpt
+VAR(L+119) ,StkAmpLimOn
+VAR(L+120) ,Vinv_d_filt
+VAR(L+121) ,Vinv_q_filt
+VAR(L+122) ,SW_FRT
+VAR(L+123) ,SW_FRT_timer
+VAR(L+124) ,VirtImpEna
+VAR(L+125) ,FRT_States_timer
+VAR(L+126) ,VirtImpEna_delay
+VAR(L+127) ,Local_ResetTm_timer
+VAR(L+128) ,AmaxSpt_Filt
+VAR(L+129) ,AmpMax_Filt
+VAR(L+130) ,Meas.Iinv_q_Filt
+VAR(L+131) ,VI_X_PiCtrlWithLimit_Out
+VAR(L+132) ,VI_X_PiCtrl_Integrator
+VAR(L+133) ,VI_R_Filt
+VAR(L+134) ,VI_R_PiCtrlWithLimit_Out
+VAR(L+135) ,VI_R_PiCtrl_Integrator
+VAR(L+136) ,VI_X
+VAR(L+137) ,VI_R
+VAR(L+138) ,AmaxSpt_Filt2
+VAR(L+139) ,AmaxSpt_timer
+VAR(L+140) ,FFW_VolDiff_Filt
+VAR(L+141) ,FFW_VI_X1_delay
+VAR(L+142) ,VolPsDSpt_Ofs
+VAR(L+143) ,VI_AmpPsDSpt
+VAR(L+144) ,AWFFWAmpPsD
+VAR(L+145) ,VolPsQSpt_Ofs
+VAR(L+146) ,Soc_sat
+VAR(L+147) ,DcVol
+VAR(L+148) ,CtlOut_P_Dc
+VAR(L+149) ,CtlOut_I_Dc
+VAR(L+150) ,Ki_max_hold
+VAR(L+151) ,Ki_min_hold
+VAR(L+152) ,PiCtrlWithLimit_Output
+VAR(L+153) ,PiCtrl_Integrator
+VAR(L+154) ,PiCtrl_Integrator2
+VAR(L+155) ,PiCtrl_Integrator3
+VAR(L+156) ,PiCtrlWithLimit_Output
+VAR(L+157) ,PiCtrl_Integrator
+VAR(L+158) ,PiCtrl_Integrator2
+VAR(L+159) ,PiCtrl_Integrator3
+VAR(L+160) ,CtlOut_Dc
+VAR(L+161) ,AmpDOfs_DcLim_Stt
+VAR(L+162) ,Iinv_d_fil
+VAR(L+163) ,Iinv_q_fil
+VAR(L+164) ,Vmag_fil1
+VAR(L+165) ,Vmag_fil2
+VAR(L+166) ,CtlOut_P_D
+VAR(L+167) ,CtlOut_I_D
+VAR(L+168) ,Ki_max_hold
+VAR(L+169) ,Ki_min_hold
+VAR(L+170) ,PiCtrlWithLimit_Output
+VAR(L+171) ,PiCtrl_Integrator
+VAR(L+172) ,PiCtrl_Integrator2
+VAR(L+173) ,PiCtrl_Integrator3
+VAR(L+174) ,PiCtrlWithLimit_Output
+VAR(L+175) ,PiCtrl_Integrator
+VAR(L+176) ,PiCtrl_Integrator2
+VAR(L+177) ,PiCtrl_Integrator3
+VAR(L+178) ,CtlOut_D
+VAR(L+179) ,CtlOut_P_Q
+VAR(L+180) ,CtlOut_I_Q
+VAR(L+181) ,Ki_max_hold
+VAR(L+182) ,Ki_min_hold
+VAR(L+183) ,PiCtrlWithLimit_Output
+VAR(L+184) ,PiCtrl_Integrator
+VAR(L+185) ,PiCtrl_Integrator2
+VAR(L+186) ,PiCtrl_Integrator3
+VAR(L+187) ,PiCtrlWithLimit_Output
+VAR(L+188) ,PiCtrl_Integrator
+VAR(L+189) ,PiCtrl_Integrator2
+VAR(L+190) ,PiCtrl_Integrator3
+VAR(L+191) ,CtlOut_Q
+VAR(L+192) ,VirtImpEna_delay
+VAR(L+193) ,WAval
+VAR(L+194) ,VarAval
+VAR(L+195) ,IC1_Delay
+VAR(L+196) ,IC2_Delay
+VAR(L+197) ,IC1_Delay
+VAR(L+198) ,IC2_Delay
+VAR(L+199) ,AmpDOfs_DrtStt
+VAR(L+200) ,AmpQOfs_DrtStt
+VAR(L+201) ,WSptOut
+VAR(L+202) ,VarSptOut
+VAR(L+203) ,WSptFilt
+VAR(L+204) ,VarSptFilt
+VAR(L+205) ,WSptOut
+VAR(L+206) ,Hz_Filt
+VAR(L+207) ,Ud_filt
+VAR(L+208) ,Uq_filt
+VAR(L+209) ,AmpPsDSpt
+VAR(L+210) ,AmpPsQSpt
+VAR(L+211) ,dHz
+VAR(L+212) ,dTheta
+VAR(L+213) ,dVol
+VAR(L+214) ,Iinv_d_filt
+VAR(L+215) ,Iinv_q_filt
+VAR(L+216) ,Vmag.filt
+VAR(L+217) ,DrpAmpDFilTm_filt
+VAR(L+218) ,HPF_Filt_out_dHz
+VAR(L+219) ,dHz_HPF_delay
+VAR(L+220) ,DrpAmpDFilTm2_filt
+VAR(L+221) ,HPF_Filt_out_dHz2
+VAR(L+222) ,dHz2_HPF_delay
+VAR(L+223) ,DrpAmpD_filt
+VAR(L+224) ,InteriaPhsCtl_Kp_filt
+VAR(L+225) ,InteriaPhsCtl_Ki_filt
+VAR(L+226) ,AmpPsD_int
+VAR(L+227) ,DrpAmpQFilTm_filt
+VAR(L+228) ,HPF_Filt_out_dVol
+VAR(L+229) ,dVol_HPF_delay
+VAR(L+230) ,DrpAmpQFilTm2_filt
+VAR(L+231) ,HPF_Filt_out_dVol2
+VAR(L+232) ,dVol2_HPF_delay
+VAR(L+233) ,DrpAmpQ_filt
+VAR(L+234) ,InteriaVolCtl_Kp_filt
+VAR(L+235) ,InteriaVolCtl_Ki_filt
+VAR(L+236) ,AmpPsQ_int
+VAR(L+237) ,dAmpD_filt
+VAR(L+238) ,DrpHz_Filt
+VAR(L+239) ,DrpTheta_Filt
+VAR(L+240) ,DrpVol_Filt
+VAR(L+241) ,Vinv_q_filt
+VAR(L+242) ,VirtImpEna_delay
+VAR(L+243) ,dHz_out
+VAR(L+244) ,dHz_filt
+VAR(L+245) ,dHz_Filt_delay1
+VAR(L+246) ,dHz_Filt_delay2
+VAR(L+247) ,dHz_Filt_delay3
+VAR(L+248) ,dHz_Filt_delay4
+VAR(L+249) ,dHz_Filt_delay5
+VAR(L+250) ,dHz_Filt_delay6
+VAR(L+251) ,dHz_Filt_delay7
+VAR(L+252) ,dHz_Filt_delay8 
+VAR(L+253) ,dHz_Filt_delay9
+VAR(L+254) ,dHz_Filt_delay10
+VAR(L+255) ,dHz_Filt_delay11
+VAR(L+256) ,dHz_Filt_delay12
+VAR(L+257) ,dHz_Filt_delay13
+VAR(L+258) ,dHz_Filt_delay14
+VAR(L+259) ,dHz_Filt_delay15
+VAR(L+260) ,dHz_Filt_delay16
+VAR(L+261) ,dHz_Filt_delay17
+VAR(L+262) ,dHz_Filt_delay18 
+VAR(L+263) ,dHz_Filt_delay19
+VAR(L+264) ,dHz_Filt_delay20
+VAR(L+265) ,dHz_Filt_delay21
+VAR(L+266) ,dTheta_out
+VAR(L+267) ,dTheta_filt
+VAR(L+268) ,dTheta_Filt_delay1
+VAR(L+269) ,dTheta_Filt_delay2
+VAR(L+270) ,dTheta_Filt_delay3
+VAR(L+271) ,dTheta_Filt_delay4
+VAR(L+272) ,dTheta_Filt_delay5 
+VAR(L+273) ,dTheta_Filt_delay6
+VAR(L+274) ,dTheta_Filt_delay7
+VAR(L+275) ,dTheta_Filt_delay8
+VAR(L+276) ,dTheta_Filt_delay9
+VAR(L+277) ,dTheta_Filt_delay10
+VAR(L+278) ,dTheta_Filt_delay11
+VAR(L+279) ,dTheta_Filt_delay12
+VAR(L+280) ,dTheta_Filt_delay13
+VAR(L+281) ,dTheta_Filt_delay14
+VAR(L+282) ,dTheta_Filt_delay15
+VAR(L+283) ,dTheta_Filt_delay16
+VAR(L+284) ,dTheta_Filt_delay17
+VAR(L+285) ,dTheta_Filt_delay18
+VAR(L+286) ,dTheta_Filt_delay19
+VAR(L+287) ,dTheta_Filt_delay20
+VAR(L+288) ,dTheta_Filt_delay21
+VAR(L+289) ,dVol
+VAR(L+290) ,dVol_filt
+VAR(L+291) ,dVol_Filt_delay1
+VAR(L+292) ,dVol_Filt_delay2 
+VAR(L+293) ,dVol_Filt_delay3
+VAR(L+294) ,dVol_Filt_delay4
+VAR(L+295) ,dVol_Filt_delay5
+VAR(L+296) ,dVol_Filt_delay6
+VAR(L+297) ,dVol_Filt_delay7
+VAR(L+298) ,dVol_Filt_delay8
+VAR(L+299) ,dVol_Filt_delay9
+VAR(L+300) ,dVol_Filt_delay10
+VAR(L+301) ,dVol_Filt_delay11
+VAR(L+302) ,dVol_Filt_delay12 
+VAR(L+303) ,dVol_Filt_delay13
+VAR(L+304) ,dVol_Filt_delay14
+VAR(L+305) ,dVol_Filt_delay15
+VAR(L+306) ,dVol_Filt_delay16
+VAR(L+307) ,dVol_Filt_delay17
+VAR(L+308) ,dVol_Filt_delay18
+VAR(L+309) ,dVol_Filt_delay19
+VAR(L+310) ,dVol_Filt_delay20
+VAR(L+311) ,dVol_Filt_delay21
+VAR(L+312) ,VolPsDSpt
+VAR(L+313) ,VolPsDSpt_rate
+VAR(L+314) ,Vinv_d
+VAR(L+315) ,Vinv_q
+VAR(L+316) ,Vinv_d_FRT
+VAR(L+317) ,Vinv_q_FRT
+VAR(L+318) ,Vinv_d_filt
+VAR(L+319) ,Vinv_q_filt
+VAR(L+320) ,Vinv_d_int
+VAR(L+321) ,Vinv_q_int
+VAR(L+322) ,Iinv_d_filt
+VAR(L+323) ,Iinv_q_filt
+VAR(L+324) ,ur
+VAR(L+325) ,ui

@@ -1,0 +1,21 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Type,Duration [s],Impedance,Appendix Reference ,Results
+Test 206 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,0.03 pu,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 207 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 0.11 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 208 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 0.25 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 209 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 0.42 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 210 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 0.66 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 211 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 1.0 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 212 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 1.5 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 213 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 2.3 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 214 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 4.0 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 215 p2,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 9.0 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 216 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,0.03 pu,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 217 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 0.11 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 218 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 0.25 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 219 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 0.42 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 220 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 0.66 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 221 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 1.0 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 222 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 1.5 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 223 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 2.3 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 224 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 4.0 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable
+Test 225 p2,1.88,1.6,1.0227,0,1.0227,0.5,3PHG,0.43,Zf = 9.0 Zs,SA PSCAD DMAT Appendix Q FRT Tests At Site-Specific SCR,Acceptable

@@ -1,0 +1,13 @@
+Test Num,Test Type,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Appendix Reference
+1,OVRT Envelope from Vpoc = 1.0,1,1,1.04,1,Appendix B CSR V Withstand
+2,OVRT Envelope from Vpoc = 1.0,1,-1,0.96,1,Appendix B CSR V Withstand
+3,OVRT Envelope from Vpoc = 1.0,1,0,1,1,Appendix B CSR V Withstand
+4,UVRT Envelope from Vpoc = 1.0,1,1,1.04,1,Appendix B CSR V Withstand
+5,UVRT Envelope from Vpoc = 1.0,1,-1,0.96,1,Appendix B CSR V Withstand
+6,UVRT Envelope from Vpoc = 1.0,1,0,1,1,Appendix B CSR V Withstand
+7,OVRT Envelope from Vpoc = 1.0,1,1,1.04,-1,Appendix B CSR V Withstand
+8,OVRT Envelope from Vpoc = 1.0,1,-1,0.96,-1,Appendix B CSR V Withstand
+9,OVRT Envelope from Vpoc = 1.0,1,0,1,-1,Appendix B CSR V Withstand
+10,UVRT Envelope from Vpoc = 1.0,1,1,1.04,-1,Appendix B CSR V Withstand
+11,UVRT Envelope from Vpoc = 1.0,1,-1,0.96,-1,Appendix B CSR V Withstand
+12,UVRT Envelope from Vpoc = 1.0,1,0,1,-1,Appendix B CSR V Withstand

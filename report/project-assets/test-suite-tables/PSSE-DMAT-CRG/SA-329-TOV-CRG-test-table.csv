@@ -1,0 +1,7 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Duration [s],Uov [pu],Appendix Reference ,Results
+Test 134,1.88,1.6,1.0227,0,1.0227,-0.66,0.9,1.15,SA PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 135,1.88,1.6,1.0227,-0.3,1.0167,-0.66,0.9,1.15,SA PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 136,1.88,1.6,1.0227,0.3,1.0287,-0.66,0.9,1.15,SA PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 143,1.88,1.6,1.0227,0,1.0227,-0.66,0.1,1.2,SA PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 144,1.88,1.6,1.0227,-0.3,1.0167,-0.66,0.1,1.2,SA PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 145,1.88,1.6,1.0227,0.3,1.0287,-0.66,0.1,1.2,SA PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion

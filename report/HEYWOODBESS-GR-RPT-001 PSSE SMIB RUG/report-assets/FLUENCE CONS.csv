@@ -1,0 +1,125 @@
+﻿CONs,Value,Description
+J,0.7,KVP - Voltage controller proportional gain
+J+1,1,KVI - Voltage controller integral gain
+J+2,0.02,TVM - Voltage measurement delay
+J+3,0.02,TPM - Active power measurement delay
+J+4,0.02,TQM - Reactive power measurement delay
+J+5,1.2,KPFFF - Power Factor controller feed forward gain
+J+6,0.3,TPFI - Power Factor controller integral time constant
+J+7,1.2,KQFF - Remote Q feed forward gain
+J+8,0.2,TQI - Remote Q integral time constant
+J+9,0.7,KPFF - Remote P feed forward constant
+J+10,1,TPI - Remote P integral time constant
+J+11,0.02,TDF - Frequency measurement delay
+J+12,10,PRamp_UP - Active power ramp up rate. pu/s
+J+13,10,PRamp_DN - Active power ramp down rate. pu/s
+J+14,0.08,KVFFSP - V-Stack remote Q feed forward gain
+J+15,0.4,TVISP - V-Stack Q integral time constant
+J+16,1800,TSOC - Integral time constant for charging/discharging
+J+17,1.06,OVDB - Over voltage deadband for stackable voltage logic
+J+18,1.1,OVV1 - Stackable voltage logic first high voltage V point
+J+19,1.1,OVV2 - Stackable voltage logic second high voltage V point
+J+20,1.1,OVV3 - Stackable voltage logic third high voltage V point
+J+21,-0.266,OVQ1 - Stackable voltage logic first high voltage Q point
+J+22,-0.266,OVQ2 - Stackable voltage logic second high voltage Q point
+J+23,-0.266,OVQ3 - Stackable voltage logic third high voltage Q point
+J+24,1.06,UVDB - Under voltage deadband for stackable voltage logic
+J+25,1.02,UVV1 - Stackable voltage logic first low voltage V point
+J+26,1.02,UVV2 - Stackable voltage logic second low voltage V point
+J+27,1.02,UVV3 - Stackable voltage logic third low voltage V point
+J+28,0.266,UVQ1 - Stackable voltage logic first low voltage Q point
+J+29,0.266,UVQ2 - Stackable voltage logic second low voltage Q point
+J+30,0.266,UVQ3 - Stackable voltage logic third low voltage Q point
+J+31,50.015,OFDB - Over frequency deadband for stackable frequency logic
+J+32,50.015,OFF1 - Stackable frequency logic first high frequency F point
+J+33,51.5,OFF2 - Stackable frequency logic second high frequency F point
+J+34,52.5,OFF3 - Stackable frequency logic third high frequency F point
+J+35,-0.00402,OFP1 - Stackable frequency logic first high frequency P point
+J+36,-0.402,OFP2 - Stackable frequency logic second high frequency P point
+J+37,-0.67,OFP3 - Stackable frequency logic third high frequency P point
+J+38,49.985,UFDB - Under frequency deadband for stackable frequency logic
+J+39,49.985,UFF1 - Stackable frequency logic first low frequency F point
+J+40,48.5,UFF2 - Stackable frequency logic second low frequency F point
+J+41,47.5,UFF3 - Stackable frequency logic third low frequency F point
+J+42,0.00402,UFP1 - Stackable frequency logic first low frequency P point
+J+43,0.402,UFP2 - Stackable frequency logic second low frequency P point
+J+44,0.67,UFP3 - Stackable frequency logic third low frequency P point
+J+45,1,QMAXINV - Maximum reactive power from inverter
+J+46,-1,QMININV - Minimum reactive power from inverter
+J+47,0.8,PMAXINV - Maximum active power from inverter
+J+48,-0.8,PMININV - Minimum active power from inverter
+J+49,1,QMAXINT - Maximum reactive power from remote Q control integrator
+J+50,-1,QMININT - Minimum reactive power from remote Q control integrator
+J+51,0.8,PMAXINT - Maximum active power from remote P control integrator
+J+52,-0.8,PMININT - Minimum active power from remote P control integrator
+J+53,1,QMAXPI - Maximum reactive power from Power Factor Q control PI
+J+54,-1,QMINPI - Minimum reactive power from Power Factor Q control PI
+J+55,1,QMAXPIVSP - Maximum reactive power from remote V-Stack control integrator
+J+56,-1,QMINPIVSP - Minimum reactive power from remote V-Stack control integrator
+J+57,12,SOCMIN - Minimum battery charge
+J+58,98,SOCMAX - Maximum battery charge
+J+59,50,SOCINI - Initial battery charge
+J+60,0.1,TQC - Time delay for Q inverter command. sec
+J+61,0.02,TPC - Time delay for P inverter command. sec
+J+62,0.1,TPE - Time delay for P external inverter command
+J+63,0.1,TQE - Time delay for Q external inverter command
+J+64,0.85,LVRT - Low voltage threshold for PPC freeze. pu
+J+65,0.03,LVRT_HYST - Low voltage hysteresis for PPC freeze (>0). pu
+J+66,1.15,HVRT - High voltage threshold for PPC freeze. pu
+J+67,0.03,HVRT_HYST - High voltage hysteresis for PPC freeze (>0). pu
+J+68,1,EXTPRJMAXP - External project P max (p.u. on external MBASE)
+J+69,-1,EXTPRJMINP - External project P min (p.u. on external MBASE)
+J+70,1,EXTPRJMAXQ - External project Q max (p.u. on external MBASE)
+J+71,-1,EXTPRJMINQ - External project Q min (p.u. on external MBASE)
+J+72,0.8,KQF1 - Reactive power participation factor local project
+J+73,0.2,KQF2 - Reactive power participation factor remote project
+J+74,0.1,TQ1 - Time delay for Q local inverter command (joint control). sec
+J+75,0.1,TQ2 - Time delay for Q external inverter command (joint control). sec
+J+76,0.4,Tfrzppc - Extra Time delay for PPC. sec
+J+77,1.06,VCNTR - Voltage center for droop curve. pu
+J+78,0.68,PMAXPOC - Maximum active power at POC. pu
+J+79,-0.68,PMINPOC - Minimum active power at POC. pu
+J+80,0.266009,QMAXPOC - Maximum reactive power at POC. pu
+J+81,-0.266009,QMINPOC - Minimum reactive power at POC. pu
+J+82,0.2,PDFDTF1 - 1st Positive dfDT. Hz/s
+J+83,0.5,PDFDTF2 - 2nd Positive dfDT. Hz/s
+J+84,1,PDFDTF3 - 3rd Positive dfDT. Hz/s
+J+85,-0.01,PDFDTP1 - 1st Power for Positive dfDT. pu
+J+86,-0.02,PDFDTP2 - 2nd Power for Positive dfDT. pu
+J+87,-0.05,PDFDTP3 - 3rd Power for Positive dfDT. pu
+J+88,-0.2,NDFDTF1 - 1st Negative dfDT. Hz/s
+J+89,-0.5,NDFDTF2 - 2nd Negative dfDT. Hz/s
+J+90,-1,NDFDTF3 - 3rd Negative dfDT. Hz/s
+J+91,0.01,NDFDTP1 - 1st Power for Negative dfDT. pu
+J+92,0.02,NDFDTP2 - 2nd Power for Negative dfDT. pu
+J+93,0.05,NDFDTP3 - 3rd Power for Negative dfDT. pu
+J+94,0.5,T_SISL - SISL dfDT rolling time window (s)
+J+95,0.02,T_DFDT - dfDT measurement delay (s)
+J+96,0.5,TwP - P POD Washout filter time constant (s)
+J+97,-0.1,POD_MINP - P POD Min. POD contribution (pu)
+J+98,0.1,POD_MAXP - P POD Max. POD contribution (pu)
+J+99,0.245,T1P - P POD Lead Time Constant (s)
+J+100,0.411,T2P - P POD Lag Time Constant (s)
+J+101,1,K_PODP - Q POD Gain
+J+102,1,exp_PPOD - P POD Gain exponent ()
+J+103,0.5,TwQ - Q POD Washout filter time constant (s)
+J+104,-0.1,POD_MINQ - Q POD Max. POD contribution (pu)
+J+105,0.1,POD_MAXQ - Q POD Min. POD contribution (pu)
+J+106,0.2,T1Q - Q POD Lead Time Constant (s)
+J+107,0.4,T2Q - Q POD Lag Time Constant (s)
+J+108,1,K_PODQ - Q POD Gain
+J+109,1,exp_QPODQ - Q POD Gain exponent ()
+J+110,0.3,INT_CON - Internal CON
+J+111,49.5,LFDDDB - Start frequency for the LFDD function (Hz)
+J+112,49.1,LFDDMIN - Minimum frequency defining the LFDD function (Hz)
+J+113,1.1,VCMD_MAX - Maximum limit for the Vcmd (pu)
+J+114,0.95,VCMD_MIN - Minimum limit for the Vcmd (pu)
+J+115,0.3,KVCMD - Feed forward gain of the Vcmd
+J+116,1.05,FCMD_MAX - Maximum limit for the Fcmd (pu)
+J+117,0.95,FCMD_MIN - Minimum limit for the Fcmd (pu)
+J+118,0.3,KFCMD - Feed forward gain of the Fcmd
+J+119,0.02,TVC - Time delay for V inverter command. sec
+J+120,0.02,TFC - Time delay for F inverter command. sec
+J+121,0.08,Internal Use
+J+122,423.2,Plant MVA Base
+J+123,0.03,Internal Use

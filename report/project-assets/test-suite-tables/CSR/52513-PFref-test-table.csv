@@ -1,0 +1,25 @@
+Test Num,Test Type,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Appendix Reference 
+Test 1 p1,PFref 0.5pu at 5s,19.61754386,12.04,1.06,1,1.1,1,Appendix L CSR PFref Steps
+Test 2 p1,PFref -0.5pu at 5s,19.61754386,12.04,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 3 p1,PFref -0.5pu at 5s,19.61754386,12.04,1.06,-1,1.02,1,Appendix L CSR PFref Steps
+Test 4 p1,PFref 0.5pu at 5s,19.61754386,12.04,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 5 p1,Pfref - 0.5pu into upper limiter,19.61754386,12.04,1.06,0.75,1.09,1,Appendix L CSR PFref Steps
+Test 6 p1,PFref 0.5pu into lower limtier,19.61754386,12.04,1.06,-0.75,1.03,1,Appendix L CSR PFref Steps
+Test 7 p1,PFref 0.5pu at 5s,11.1754386,11.24,1.06,1,1.1,1,Appendix L CSR PFref Steps
+Test 8 p1,PFref -0.5pu at 5s,11.1754386,11.24,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 9 p1,PFref -0.5pu at 5s,11.1754386,11.24,1.06,-1,1.02,1,Appendix L CSR PFref Steps
+Test 10 p1,PFref 0.5pu at 5s,11.1754386,11.24,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 11 p1,Pfref - 0.5pu into upper limiter,11.1754386,11.24,1.06,0.75,1.09,1,Appendix L CSR PFref Steps
+Test 12 p1,PFref 0.5pu into lower limtier,11.1754386,11.24,1.06,-0.75,1.03,1,Appendix L CSR PFref Steps
+Test 1 p2,PFref 0.5pu at 5s,19.61754386,12.04,1.06,1,1.1,1,Appendix L CSR PFref Steps
+Test 2 p2,PFref -0.5pu at 5s,19.61754386,12.04,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 3 p2,PFref -0.5pu at 5s,19.61754386,12.04,1.06,-1,1.02,1,Appendix L CSR PFref Steps
+Test 4 p2,PFref 0.5pu at 5s,19.61754386,12.04,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 5 p2,Pfref - 0.5pu into upper limiter,19.61754386,12.04,1.06,0.75,1.09,1,Appendix L CSR PFref Steps
+Test 6 p2,PFref 0.5pu into lower limtier,19.61754386,12.04,1.06,-0.75,1.03,1,Appendix L CSR PFref Steps
+Test 7 p2,PFref 0.5pu at 5s,11.1754386,11.24,1.06,1,1.1,1,Appendix L CSR PFref Steps
+Test 8 p2,PFref -0.5pu at 5s,11.1754386,11.24,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 9 p2,PFref -0.5pu at 5s,11.1754386,11.24,1.06,-1,1.02,1,Appendix L CSR PFref Steps
+Test 10 p2,PFref 0.5pu at 5s,11.1754386,11.24,1.06,0,1.06,1,Appendix L CSR PFref Steps
+Test 11 p2,Pfref - 0.5pu into upper limiter,11.1754386,11.24,1.06,0.75,1.09,1,Appendix L CSR PFref Steps
+Test 12 p2,PFref 0.5pu into lower limtier,11.1754386,11.24,1.06,-0.75,1.03,1,Appendix L CSR PFref Steps

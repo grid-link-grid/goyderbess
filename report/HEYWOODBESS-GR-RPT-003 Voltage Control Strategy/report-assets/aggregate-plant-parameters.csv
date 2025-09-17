@@ -1,0 +1,8 @@
+﻿Parameters,Description,Units,SG_CVT,SG_CVT2
+$M_{base}$,Rated generator MVA,MVA,186.3,186.3
+$P_{Max}$,Maximum active power at inverter terminals,MW,186.3,186.3
+$P_{Min}$,Minimum active power at inverter terminals,MW,-186.3,-186.3
+$Q_{Max}$,Maximum reactive power at inverter terminals,MVAr,186.3,186.3
+$Q_{Min}$,Minimum reactive power at inverter terminals,MVAr,-186.3,-186.3
+$V_{CP}$,CP voltage,kV,220,220
+$V_{Term}$,Inverter terminal voltage (AC),kV,0.69,0.69

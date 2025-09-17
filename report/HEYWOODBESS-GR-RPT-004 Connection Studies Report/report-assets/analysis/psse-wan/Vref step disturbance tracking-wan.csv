@@ -1,0 +1,3 @@
+Scenario,Test Number,Ppoc Settling Time (sec),Qpoc Settling Time (sec),Vpoc Settling TIme (sec),Qpoc Rise Time (sec)
+AutumnHigh,1,0,1.54,4.44,1.41
+AutumnHigh,2,0,1.54,0.73,1.41

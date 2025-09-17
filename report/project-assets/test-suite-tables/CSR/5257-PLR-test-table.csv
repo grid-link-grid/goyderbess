@@ -1,0 +1,5 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Load Rejection [MW],Appendix Reference
+Test 1 p1,19.61754386,12.04,1.06,0.3,1.072,1,-85.5,Appendix G PLR
+Test 1 p2,11.1754386,11.24,1.06,0.3,1.072,1,-85.5,Appendix G PLR
+Test 2 p1,19.61754386,12.04,1.06,-0.3,1.048,1,-85.5,Appendix G PLR
+Test 2 p2,11.1754386,11.24,1.06,-0.3,1.048,1,-85.5,Appendix G PLR

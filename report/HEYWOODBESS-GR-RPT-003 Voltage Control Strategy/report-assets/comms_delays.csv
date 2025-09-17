@@ -1,0 +1,8 @@
+Delay Variable;Value
+TVM - voltage measurement delay; 0.02
+TPM - Active power measurement delay; 0.02
+TQM - Reactive power measurement delay; 0.02
+TDF - frequency measurement delay;0.02
+TPC - Time delay for P inverter command; 0.02
+TQC - Time delay for Q inverter command; 0.1
+Tfrzppc - Additional time delay for PPC freeze); 0.4

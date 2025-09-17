@@ -1,0 +1,17 @@
+Test Num,Ppoc Settling Time (sec),Qpoc Settling Time (sec),Vpoc Settling TIme (sec),Qpoc Rise Time (sec)
+Test 1 p1,NA,1.268,1.277,1.159
+Test 1 p2,NA,1.29,1.287,1.187
+Test 2 p1,NA,1.207,1.204,1.104
+Test 2 p2,NA,1.217,1.209,1.116
+Test 3 p1,NA,1.212,1.186,1.113
+Test 3 p2,NA,1.186,1.17,1.086
+Test 4 p1,NA,1.211,1.207,1.106
+Test 4 p2,NA,1.252,1.226,1.149
+Test 7 p1,NA,1.335,1.336,1.229
+Test 7 p2,NA,2.846,2.933,1.213
+Test 8 p1,NA,3.284,3.242,1.182
+Test 8 p2,NA,3.266,3.298,1.153
+Test 9 p1,NA,3.168,3.054,1.075
+Test 9 p2,NA,3.289,3.283,1.142
+Test 10 p1,NA,1.251,1.237,1.133
+Test 10 p2,NA,1.279,2.847,1.175

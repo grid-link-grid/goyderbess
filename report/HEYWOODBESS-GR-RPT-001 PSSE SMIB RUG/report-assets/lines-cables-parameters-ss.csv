@@ -1,0 +1,7 @@
+Parameter, Description, Units,CGBESS
+R1,Sequence Resistance,pu,0.000686
+X1,Positive Sequence Reactance,pu,0.000256
+B1,Positive Charging Susceptance,pu,0.000015
+R0,Zero Sequence Resistance,pu,0
+X0,Zero Sequence Reactance,pu,0
+B0,Zero Sequence Susceptance,pu,0

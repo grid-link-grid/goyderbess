@@ -1,0 +1,11 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 193 p1,10,14,0,-1,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 193 p2,10,3,0,-1,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 194 p1,10,14,0,-0.05,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 194 p2,10,3,0,-0.05,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 195 p1,3,14,0,-1,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 195 p2,3,3,0,-1,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 196 p1,3,4.20848,0,-0.05,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 196 p2,3,4.20848,0,-0.05,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 197,8.5,4.20848,0,-1,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable
+Test 198,8.5,4.20848,0,-0.05,PSCAD DMAT Appendix M Grid voltage angle change response tests - Charging,Acceptable

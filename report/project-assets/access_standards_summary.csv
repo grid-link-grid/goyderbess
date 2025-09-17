@@ -1,0 +1,21 @@
+Clause,Description,NER Version,Standard,In Scope
+S5.2.5.1,Reactive power capability,233,AAS,Yes
+S5.2.5.2,Quality of electricity generated,233,NAS,Yes
+S5.2.5.3,Generating system response to frequency disturbances,233,AAS,Yes
+S5.2.5.4,Generating system response to voltage disturbances,233,AAS,Yes
+S5.2.5.5,Generating system response to disturbances following contingency events,233,NAS,Yes
+S5.2.5.6,Quality of electricity generated and continuous uninterrupted operation,233,NAS,Yes
+S5.2.5.7,Partial load rejection,233,AAS,Yes
+S5.2.5.8,Protection of generating systems from power system disturbances,233,MAS,Yes
+S5.2.5.9,Protection systems that impact on power system security,233,AAS,No
+S5.2.5.10,Protection to trip plant for unstable operation,233,AAS,No
+S5.2.5.11,Frequency control,233,AAS,Yes
+S5.2.5.12,Impact on network capability,233,AAS,Yes
+S5.2.5.13,Voltage and reactive power control,233,AAS,Yes
+S5.2.5.14,Active power control,233,AAS,Yes
+S5.2.5.15,Short circuit ratio,233,NAS,Yes
+S5.2.5.16,Voltage phase angle shift,233,NAS,No
+S5.2.6 and 4.11.1,Remote monitoring,233,AAS,No
+S5.2.6.2 and 4.11.3,Communications equipment,233,AAS,No
+S5.2.7,Power station auxiliary supplies,233,Not Applicable,No
+S5.2.8,Fault current,233,AAS,Yes

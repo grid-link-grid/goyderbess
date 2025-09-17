@@ -1,0 +1,24 @@
+﻿STATE ,Description 
+K,Project or remote voltage measurement
+K+1,Voltage controller PI state
+K+2,Project or POI delayed active power measurement
+K+3,Project or POI delayed reactive power measurement
+K+4,Power factor controller integrator state
+K+5,Remote reactive power command logic integrator state
+K+6,Remote active power command logic integrator state
+K+7,Project or remote frequency measurement
+K+8,Charging integrator state
+K+9,Delayed active power command - battery
+K+10,Delayed reactive power command - battery
+K+11,Delayed active power command – external project
+K+12,Delayed reactive power command – external project
+K+13,Delayed reactive power command – battery; Join logic
+K+14,Delayed reactive power command – external project; Join logic
+K+15,RPCM = 5 Integrator state
+K+16,Delayed frequency measurement for DFDT calculation
+K+17,P POD washout filter state
+K+18,P POD lead-lag filter state
+K+19,Q POD washout filter state
+K+20,Q POD lead-lag filter state
+K+21,DFDT delayed value
+K+22,FRT Bus Voltage measurement

@@ -1,0 +1,7 @@
+Parameter, Description, Units,SG_CVT,SG_CVT2
+R1,Sequence Resistance,p.u. on 100MVA base,0.000095,0.00011
+X1,Positive Sequence Reactance,,0.00356,0.003875
+B1,Positive Charging Susceptance,,0.002027,0.002446
+R0,Zero Sequence Resistance,,0.0023,0.0023
+X0,Zero Sequence Reactance,,0.0159,0.0159
+B0,Zero Sequence Susceptance,,0.0018,0.0018

@@ -1,0 +1,7 @@
+Test, Normal voltage, Voltage at POC (pu),Reactive Power (MVAr)
+First Over Voltage, 1.06, 1.1,-112.575
+Second Over Voltage, 1.06, 1.1,-112.575
+Third Over Voltage, 1.06, 1.1,-112.575
+First Under Voltage, 1.06, 1.02, 112.575
+Second Under Voltage, 1.06, 1.02, 112.575
+Third Under Voltage, 1.06, 1.02, 112.575

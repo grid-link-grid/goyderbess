@@ -1,0 +1,44 @@
+Name,Parameter
+3 Phase Transformer MVA (Tmva),360 [MVA]
+Base Operation Frequency (f),50.0 [Hz]
+Winding \#1 Type (YD1),0
+Winding \#2 Type (YD2),1
+Winding \#3 Type (YD3),1
+Delta Lags or Leads Y (Lead),1
+Positive Sequence Leakage Reactance (\#1-\#2) (Xl12),0.12 [pu]
+Positive Sequence Leakage Reactance (\#1-\#3) (Xl13),0.12 [pu]
+Positive Sequence Leakage Reactance (\#2-\#3) (Xl23),0.24 [pu]
+Ideal Transformer Model (Ideal),1
+Eddy Current Losses (NLL),0.0 [pu]
+Copper Losses (\#1-\#2) (CuL12),0.00175
+Copper Losses (\#1-\#3) (CuL13),0.00175
+Copper Losses (\#2-\#3) (CuL23),0.00175
+Tap Changer on Winding (Tap),1
+Graphics Display (View),1
+Display Details? (Dtls),0
+Winding 1 Line to Line Voltage (RMS) (V1),220.0 [kV]
+Winding 2 Line to Line Voltage (RMS) (V2),33.0 [kV]
+Winding 3 Line to Line Voltage (RMS) (V3),33.0 [kV]
+Saturation Enabled  (Enab),0
+Place Saturation on Winding (Sat),0
+Hysteresis (Hys),0
+Inrush Decay Time Constant (Tdc),0.0 [s]
+Time to Release Flux Clipping (Txk),0.0 [s]
+Air Core Reactance (Xair),0.2 [pu]
+Magnetizing Current (Im1),2.0 [%]
+Knee Voltage (Xknee),1.17 [pu]
+Remanent Flux Core 1  (Fremn1),0
+Remanent Flux Core 2 (Fremn2),0
+Remanent Flux Core 3  (Fremn3),0
+Loop Width (LW2),10
+Nominal Flux Density [T] (Bnom),1.7
+Magnetic Material (material),1
+Domain Flexing Parameter (C),0.1
+Domain Pinning Parameter (K),5.00E-05
+Parameter to Adjust K with M (BETA),0.96
+Interdomain Coupling (alpha),1.33E-05
+Saturated Anhysteretic Magnetization (Msat),1.72E+06
+Coefficient 1 of Anhysteretic Curve (F1),2730
+Coefficient 2 of Anhysteretic Curve (F2),3209
+Coefficient 3 of Anhysteretic Curve (F3),20294
+Coefficient 4 of Anhysteretic Curve (Fb),2

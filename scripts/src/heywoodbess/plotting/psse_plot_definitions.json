@@ -1,0 +1,211 @@
+[
+    {
+        "title": "FRT Flags",
+        "columns": [{
+                "channel":"PPC_FRT_ACTIVE",
+                "alias": "PPC"
+            },
+            {   "channel":"INV1_FRT_STATE",
+                "alias": "INV1"
+            },
+            {   "channel":"INV2_FRT_STATE",
+                "alias": "INV2"
+            }
+        ],
+        "scaling": [1.0,1.0,1.0],
+        "y_axis_min_range": 2
+    },
+    {
+        "title": "Frequency (Hz)",
+        "columns": [{
+                "channel":"POC_F_PU",
+                "alias": "POC"
+            }],
+        "scaling": [50.0],
+        "y_offsets": [50.0],
+        "y_axis_min_range": 2
+    },
+    {
+        "title": "RMS Current (pu)",
+        "columns": [{
+                "channel":"Irms_HV_pu",
+                "alias": "POC"
+            },{
+                "channel":"INV1_Irms_LV_pu",
+                "alias": "INV1 Irms pu"
+            },{
+                "channel":"INV2_Irms_LV_pu",
+                "alias": "INV2 Irms pu"
+            }
+        ],
+        "scaling": [1.0, 1.0,1.0],
+        "y_axis_min_range": 0.1
+    },
+    {
+        "title": "Main TX OLTC",
+        "columns": [{
+                "channel":"Irms_HV_pu",
+                "alias": "TAP NUMBER"
+            }],
+        "scaling": [1.0],
+        "y_axis_min_range": 2,
+        "shade_vertical":{"enable": true,
+                 "signal": "Irms_HV_pu",
+                 "alias": "OLTC OPERATING",
+                 "lowerbound": 0.0,
+                 "upperbound": null
+                 }
+    },     
+   {
+        "title": "Active Power (MW)",
+        "columns": [
+            {
+                "channel":"PREF_KW",
+                "alias": "REF"
+            },
+            {   "channel":"PPOC_MW",
+                "alias": "MEAS"
+            }],
+        "scaling": [0.001, 1.0],
+        "y_axis_min_range": 2
+
+    },
+    {
+        "title": "Reactive Power (MVAr)",
+        "columns": [
+
+            {
+                "channel":"PWRRTSPNTTOT",
+                "alias": "REF"
+            },
+            {   "channel":"QPOC_MVAR",
+                "alias": "MEAS"
+            }],
+        "scaling": [0.001,1.0],
+        "y_axis_min_range": 2
+    },
+    {
+        "title": "Voltage (pu)",
+        "columns": [{
+                "channel":"VREF_PU",
+                "alias": "REF"
+            },
+            {   "channel":"VRMS_POC_PU",
+                "alias": "MEAS"
+            }],
+        "scaling": [1.0, 1.0],
+        "y_axis_min_range": 0.012
+
+    },
+    {
+        "title": "Active Current (pu)",
+        "columns": [{
+                "channel":"POC_Id_PU",
+                "alias": "Id"
+            }],
+        "scaling": [1.0],
+        "y_axis_min_range": 0.1
+    },
+    {
+        "title": "Reactive Current (pu)",
+        "columns": [{
+                "channel":"POC_Iq_PU",
+                "alias": "Iq"
+            }],
+        "scaling": [1.0],
+        "y_axis_min_range": 0.1
+    },
+    {
+        "title": "Active Power (MW)",
+        "columns": [
+            {
+                "channel":"INV1_P_CV_PU",
+                "alias": "REF INV1"
+            },
+            {
+                "channel":"INV2_P_CV_PU",
+                "alias": "REF INV2"
+            },
+            {   "channel":"INV1_PMEAS_PU",
+                "alias": "MEAS INV1"
+            },
+            {   "channel":"INV2_PMEAS_PU",
+                "alias": "MEAS INV2"
+            }],
+        "scaling": [176.40,172.20, 100.0, 100.0],
+        "y_axis_min_range": 2
+    },
+    {
+        "title": "Reactive Power (MVAr)",
+        "columns": [
+            {
+                "channel":"INV1_Q_CV_PU",
+                "alias": "REF INV1"
+            },
+            {
+                "channel":"INV2_Q_CV_PU",
+                "alias": "REF INV2"
+            },
+            {   "channel":"INV1_QMEAS_PU",
+                "alias": "MEAS INV1"
+            },
+            {   "channel":"INV2_QMEAS_PU",
+                "alias": "MEAS INV2"
+            }],
+        "scaling": [105.84, 103.32, 100.0, 100.0],
+        "y_axis_min_range": 2
+    },
+    {
+        "title": "Voltage (pu)",
+        "columns": [{
+                "channel":"INV1_MEAS_VOLT_PU",
+                "alias": "INV1 Vrms"
+            },
+            {
+                "channel":"INV2_MEAS_VOLT_PU",
+                "alias": "INV2 Vrms"
+            }],
+        "scaling": [1.0, 1.0],
+        "y_axis_min_range": 0.05
+    },
+    {
+        "title": "Active Current (pu)",
+        "columns": [{
+                "channel":"INV1_ID_COMMAND_PU",
+                "alias": "REF INV1"
+            },
+            {
+                "channel":"INV2_ID_COMMAND_PU",
+                "alias": "REF INV2"
+            },
+            {
+                "channel":"INV1_Id_PU",
+                "alias": "MEAS INV1"
+            },
+            {   "channel":"INV2_Id_PU",
+                "alias": "MEAS INV2"
+            }],
+        "scaling": [1.0,1.0,1.0,1.0],
+        "y_axis_min_range": 0.1
+    },
+    {
+        "title": "Reactive Current (pu)",
+        "columns": [{
+                "channel":"INV1_VUEL_PU",
+                "alias": "REF INV1"
+            },
+            {
+                "channel":"INV2_VUEL_PU",
+                "alias": "REF INV2"
+            },
+            {
+                "channel":"INV1_Iq_PU",
+                "alias": "MEAS INV1"
+            },
+            {   "channel":"INV2_Iq_PU",
+                "alias": "MEAS INV2"
+            }],
+        "scaling": [1.0,1.0,1.0,1.0],
+        "y_axis_min_range": 0.1
+    }
+]   

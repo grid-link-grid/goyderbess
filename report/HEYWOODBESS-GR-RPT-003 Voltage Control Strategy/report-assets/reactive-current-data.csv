@@ -1,0 +1,6 @@
+﻿Item;Data
+LVRT threshold;0.82 p.u.
+HVRT threshold;1.18 p.u.
+LVRT gain;8
+HVRT gain;6
+Hysteresis;3\%

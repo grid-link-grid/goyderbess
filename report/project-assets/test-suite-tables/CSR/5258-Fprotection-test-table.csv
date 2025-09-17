@@ -1,0 +1,9 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Frequency target [Hz],Appendix Reference 
+Test 1,ZERO_IMP,-1,1.0227,0,1.0227,1,55.1,Appendix L CSR Frequency Protection
+Test 2,ZERO_IMP,-1,1.0227,0,1.0227,1,53.1,Appendix L CSR Frequency Protection
+Test 3,ZERO_IMP,-1,1.0227,0,1.0227,1,44.9,Appendix L CSR Frequency Protection
+Test 4,ZERO_IMP,-1,1.0227,0,1.0227,1,46.9,Appendix L CSR Frequency Protection
+Test 5,ZERO_IMP,-1,1.0227,0,1.0227,-1,55.1,Appendix L CSR Frequency Protection
+Test 6,ZERO_IMP,-1,1.0227,0,1.0227,-1,53.1,Appendix L CSR Frequency Protection
+Test 7,ZERO_IMP,-1,1.0227,0,1.0227,-1,44.9,Appendix L CSR Frequency Protection
+Test 8,ZERO_IMP,-1,1.0227,0,1.0227,-1,46.9,Appendix L CSR Frequency Protection

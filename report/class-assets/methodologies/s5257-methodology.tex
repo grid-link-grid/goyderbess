@@ -1,0 +1,13 @@
+\ac{PLR} tests assess the ability of the generator to ride through the angle change associated with a loss of a significant percentage of the load they are supplying into. While more relevant for traditional synchronous machines supplying the majority of the load to large load centres or industrial customers, an analogous \ac{PLR} test can also be performed in SMIB.
+
+To perform this test, a load equivalent to 30\% of the maximum capacity of the generating system is attached at the connection point and the appropriate $V_{\mathrm{grid}_{\mathrm{initial}}}$ is  identified to achieve $V_{\mathrm{POC}_{\mathrm{initial}}}$ given the required initial $P_{\mathrm{POC}}$, $Q_{\mathrm{POC}}$, SCR and X/R conditions, noting that 30\% of the power flow is no longer being transferred to the slack bus. 
+
+The test is then performed by initialising the system with the load in service, then switching it out of service at the intended disturbance time for the remainder of the simulation, as shown in Figure~\ref{fig:smib-plr-diagram}.
+
+
+\begin{figure}[h]
+	\centering
+	\input{\classassetsdir/diagrams/smib-plr-diagram.tex}
+	\caption{PLR test application methodology}
+	\label{fig:smib-plr-diagram}
+\end{figure}

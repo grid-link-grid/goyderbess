@@ -1,0 +1,12 @@
+Name,Parameter
+3 Phase Transformer MVA,160/80/80 [MVA]
+Vector Group,YNd11d11
+Positive Sequence Leakage Reactance (\#1-\#2),0.25 [pu]
+Positive Sequence Leakage Reactance (\#1-\#3),0.25 [pu] 
+Positive Sequence Leakage Reactance (\#2-\#3),0.5 [pu] 
+Copper Losses (\#1-\#2),0.005544 [pu]
+Copper Losses (\#1-\#3),0.005544 [pu]
+Copper Losses (\#2-\#3),0.011088 [pu]
+Winding 1 Line to Line Voltage (RMS) (V1),275.0 [kV]
+Winding 2 Line to Line Voltage (RMS) (V2),33.0 [kV]
+Winding 3 Line to Line Voltage (RMS) (V3),33.0 [kV]

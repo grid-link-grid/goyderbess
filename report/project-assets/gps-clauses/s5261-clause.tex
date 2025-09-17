@@ -1,0 +1,42 @@
+\begin{table}[h!]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Type of Plant} & \textbf{Remote Monitoring Quantities} & \textbf{Remote Control Quantities} \\
+			\hline
+			Semi-scheduled generating system & 
+			\begin{tabular}[c]{@{}l@{}}(1) The status of all circuit breakers and isolators that will carry current from the generation.\\
+				(2) Tap-changing transformer tap position(s) and voltages. \\
+				(3) Active power and reactive power aggregated for groups of identical generating units. \\
+				(4) The number of identical generating units available to operate. \\
+				(5) Active power and reactive power for the generating system. \\
+				(6) Active power, reactive power, and voltage of each of the 33 kV feeders to the grid-connected transformer. \\
+				(7) Active power, reactive power, and voltage of each of the 33 kV windings of the grid-connected transformer. \\
+				(8) Voltage control system setpoint, power factor setpoint, reactive power reference setpoint, and mode (as applicable). \\
+				(9) Active power setpoint as being applied at the connection point. \\
+				(10) Control status remote or local. \\
+				(11) Voltage control droop value. \\
+				(12) All data specified as mandatory in the ASEFS energy conversion model, especially the standing and metered data requirements. \\
+				(13) Maximum active power limit. \\
+				(14) Minimum active power limit. \\
+				(15) Maximum active power raise ramp rate. \\
+				(16) Maximum active power lower ramp rate. \\
+				(17) AGC enabled/disabled indication. \\
+				(18) Var Dispatch Schedule (VDS) system signals. \\
+				(19) The mode of operation of each generating unit, or other information required to reasonably predict the active power response of the generating system to a change in power system frequency at the connection point. \\
+				(20) Any quantities reasonably required by AEMO to discharge its market and power system security functions as set out in Chapters 3 and 4 of the NER.
+			\end{tabular} &
+			\begin{tabular}[c]{@{}l@{}}(1) Voltage control setpoint. \\
+				(2) Power factor setpoint. \\
+				(3) Reactive power reference. \\
+				(4) Control to change between voltage control, reactive power control, and power factor control mode. \\
+				(5) Automatic generation control system signals. (to be agreed with AEMO IT Grid Modelling team in the SCADA list).
+			\end{tabular} \\
+			\hline
+			Capacitor banks & (1) Reactive power output and capacitor bank status & - \\
+			\hline
+		\end{tabular}
+	}
+	\caption{Remote Monitoring Equipment and Remote Control Equipment Quantities required by AEMO}
+\end{table}

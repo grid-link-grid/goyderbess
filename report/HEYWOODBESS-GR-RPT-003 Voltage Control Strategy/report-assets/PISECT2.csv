@@ -1,0 +1,45 @@
+Parameter,Value
+T-LINE NAME (Name),Line2
+"Enter Impedance,Admittance Data in: (PU)",3
+Nominal PI or Coupled PI Model: (Config),1
+Line Rated Frequency (F),50.0 [Hz]
+Line Length (len),1.0 [m]
+"Enter 0 Sequence Data, or Estimate: (Estim)",0
+Graphics Display (View),2
+0 Sequence R / +ve Sequence R (REst),1.5
+0 Sequence Z / +ve Sequence Z (ZEst),1.5
+0 Seq. Travel Time / +ve Seq. Travel Time (TEst),1.5
+Rated Voltage L-L (VR),230.0 [kV]
+MVA for All Phases (MVA),100.0 [MVA]
+Positive Sequence Resistance (RPUP),.336786E-7 [pu/m]
+Positive Sequence Inductive Reactance (XLPUP),.593346E-6 [pu/m]
+Positive Sequence Capacitive Reactance (XCPUP),.517098E6 [pu*m]
+Zero Sequence Resistance (RPUZ),.558072E-6 [pu/m]
+Zero Sequence Inductive Reactance (XLPUZ),.196578E-5 [pu/m]
+Zero Sequence Capacitive Reactance (XCPUZ),.782919E6 [pu*m]
+Positive Sequence Resistance (Rp),.1781598E-4 [ohm/m]
+Positive Sequence Inductive Reactance (Xp),.31388E-3 [ohm/m]
+Positive Sequence Capacitive Reactance (Bp),273.5448 [Mohm*m]
+Zero Sequence Resistance (Rz),.2952201E-3 [ohm/m]
+Zero Sequence Inductive Reactance (Xz),.1039898E-2 [ohm/m]
+Zero Sequence Capacitive Reactance (Bz),414.1642 [Mohm*m]
+Positive Sequence Resistance (RTP),.1781598E-4 [ohm/m]
+Positive Sequence Travel Time (TTP),.2841427 [ms]
+Positive Sequence Surge Impedance (ZTP),293.0192 [ohm]
+Zero Sequence Resistance (RTZ),.2952201E-3 [ohm/m]
+Zero Sequence Travel Time (TTZ),.4203179 [ms]
+Zero Sequence Surge Impedance (ZTZ),656.2685 [ohm]
+Rated Voltage L-L (VR2),33.0 [kV]
+MVA for All Phases (MVA2),100.0 [MVA]
+Positive Sequence Resistance (RPUP2),0.000095 [pu/m]
+Positive Sequence Inductive Reactance (XLPUP2),0.00356 [pu/m]
+Positive Sequence Capacitive Susceptance (BPUP2),0.002027 [pu/m]
+Zero Sequence Resistance (RPUZ2),0.0023 [pu/m]
+Zero Sequence Inductive Reactance (XLPUZ2),0.0159 [pu/m]
+Zero Sequence Capacitive Susceptance (BPUZ2),0.0018 [pu/m]
+Positive Sequence Resistance (Rp2),1.78E-05
+Positive Sequence Inductance (Lp),8.33E-07
+Positive Sequence Capacitance (Cp),9.70E-06
+Zero Sequence Resistance (Rz2),2.95E-04
+Zero Sequence Inductance (Lz),2.76E-06
+Zero Sequence Capacitance (Cz),6.40E-06

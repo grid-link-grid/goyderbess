@@ -1,0 +1,7 @@
+﻿Parameters,Description,Units,CGBESS
+$M_{base}$,Rated generator MVA,MVA,285
+$P_{Max}$,Maximum active power at inverter terminals,MW,285
+$P_{Min}$,Minimum active power at inverter terminals,MW,-285
+$Q_{Max}$,Maximum reactive power at inverter terminals,MVAr,112.575
+$Q_{Min}$,Minimum reactive power at inverter terminals,MVAr,-112.575
+$V_{POC}$,Point of Connection voltage,kV,275

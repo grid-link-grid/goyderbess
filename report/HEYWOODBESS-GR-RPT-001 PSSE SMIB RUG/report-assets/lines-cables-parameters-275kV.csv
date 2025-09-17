@@ -1,0 +1,7 @@
+CableGroup,Parameter, Description, Units,HEYWOODBESS,
+1,R1,Positive Sequence Resistance,pu,0.0000496,
+1,X1,Positive Sequence Reactance,pu,0.0002404,
+1,B1,Positive Sequence Susceptance,pu,0.0527,
+1,R0,Zero Sequence Resistance,pu,0.0001383,
+1,X0,Zero Sequence Reactance,pu,0.0007648,
+1,B0,Zero Sequence Susceptance,pu,0.0527,

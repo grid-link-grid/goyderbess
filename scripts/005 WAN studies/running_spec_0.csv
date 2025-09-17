@@ -1,0 +1,7 @@
+,Deliverable,Category,Test No,Subtest No,File_Name,PSSE,PSCAD,CB FAIL SCENARIO,FROM,TO,BRANCH,FAULT_AT,CB_FAIL,FAULT_TYPE,Fault_Type_sig,FROM_LOCAL_CLEARANCE,TO_LOCAL_CLEARANCE,FROM_REMOTE_CLEARANCE,TO_REMOTE_CLEARANCE,FROM_CB_FAIL,TO_CB_FAIL,FROM_END_CLEARANCE_WOUT_CB_FAIL,FROM_END_CLEARANCE_WITH_CB_FAIL,FROM_END_CLEARANCE,TO_END_CLEARANCE_WOUT_CB_FAIl,TO_END_CLEARANCE_WITH_CB_FAIl,TO_END_CLEARANCE,Fault_Time_sig,Fault_Duration_sig,Reclose_Time,Rf_Offset_sig,Xf_Offset_sig,Fault_X2R_sig,Fault_Timing_Signal_sig,Distance,PSSE Commands,Post_Init_Duration_s,Model_Relpath,Test Details,Plotter Table,Appendix_Name_PSCAD,Appendix_Name_PSSE,Appendix Letter PSCAD,Appendix Letter PSSE,Sheet_Name
+0,CSR_SpringLo,Balanced Faults,1,,CSR_SpringLo_001,True,False,True,HEYWOOD275,SOUTHEAST275,HEYWOOD275_SOUTHEAST275,HEYWOOD275,N,3PHG,7,0.1,0.12,0.12,0.1,0.25,0.25,0.1,0.1,0.1,0.1,0.1,0.1,5,0.1,3,0,0,10,"0, AT 5s ↑ 1, at 5.1s ↓ 0",0.01,,1,,Jindera to Walla Walla (330KV),"[
+['Deliverable','CSR_SpringLo'],
+['Test Type','Balanced Faults'],
+['Test no.','1'],
+['Subtest no.','']
+]",,Appendix D CSR_SpringLo Balanced Faults,,D,Line Contingencies

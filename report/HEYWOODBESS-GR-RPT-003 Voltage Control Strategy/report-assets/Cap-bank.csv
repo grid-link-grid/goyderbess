@@ -1,0 +1,10 @@
+Parameter,HF1,HF2,HF3,HF4
+Common Capacitance (C1),1.31,1.31,1.31,1.31
+Series Capacitance (C),10.48,10.48,10.48,10.48
+Inductance (L),0.671,0.671,0.671,0.671
+Resistance (R),1349,1349,1349,1349
+Fundamental Frequency (f0),50,50,50,50
+Tuned Harmonic (h),3.8,20.8,3.8,20.8
+Rated Voltage (V),33000,33000,33000,33000
+Reactive Power at Fundamental Frequency (Q),15,15,15,15
+Quality Factor (QF),100,100,100,100

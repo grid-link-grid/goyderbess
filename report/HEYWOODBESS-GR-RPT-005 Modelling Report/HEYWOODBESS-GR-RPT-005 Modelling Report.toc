@@ -1,0 +1,23 @@
+\contentsline {chapter}{Disclaimer}{i}{chapter*.1}%
+\contentsline {chapter}{Revision History}{iii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Project overview}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Input data}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Grid transformers}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Medium voltage transformers}{3}{section.3.2}%
+\contentsline {section}{\numberline {3.3}MV reticulation}{4}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Aggregation methodology}{6}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Aggregation of each feeder}{6}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Aggregation up to the 33kV bus}{6}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Aggregation up to each main transformer}{7}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Model benchmarking}{8}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Powerfactory model}{8}{section.5.1}%
+\contentsline {section}{\numberline {5.2}PSCAD model}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}PSSE model}{10}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Analysis and results}{11}{section.5.4}%
+\contentsline {subsubsection}{Reticulation Losses}{12}{section*.14}%
+\contentsline {subsubsection}{Transformer mismatch}{13}{section*.18}%
+\contentsline {subsubsection}{HV cable mismatch}{15}{section*.19}%
+\contentsline {section}{\numberline {5.5}Discussion}{15}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Appendix A - PowerFactory vs PSCAD model benchmark results}{18}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Appendix B - PowerFactory vs PSSE Model Benchmark Results}{21}{chapter.7}%

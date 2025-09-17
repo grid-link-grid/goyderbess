@@ -1,0 +1,11 @@
+﻿Asset,Voltage (kV),Maximum Load,Scenario,Contingency
+3BALRAT_220A-LMTH_POC,220,102.76,Autumn High,Redcliffs - Kiamal
+3REDCLF_220A-CSF_POC     ,220,122.35,Autumn High,Learmonth - Ballarat
+3BALRAT_220A-3BENDIG_220A,220,98.22,Autumn Low Import,Multiple
+3MURRAY_132B-3MURRAY_330A,330 to 132,103.25,Autumn Low Export,APD Potline
+3MURRAY_132B-3MURRAY_330A,330 to 132,103.25,Autumn Low Export,APD Potline
+2UPTUMT_330A-3MURRAY_330A,330,113.37,Autumn Low Export,APD Potline
+3REDCLF_220A-CSF_POC     ,220,137.33,Autumn Low Export,Learmonth - Ballarat
+3BALRAT_220A-LMTH_POC    ,220,137.52,Autumn Low Export,Redcliffs - Kiamal
+3KIAMAL_220J-CSF_POC     ,220,107.46,Autumn Low Export,Learmonth - Ballarat
+3KIAMAL_220A-3KIAMAL_220J,220,107.02,Autumn Low Export,Learmonth - Ballarat

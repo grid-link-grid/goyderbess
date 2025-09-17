@@ -1,0 +1,22 @@
+      SUBROUTINE CONET
+C
+      INCLUDE 'COMON4.INS'
+C
+C
+      IF (.NOT. IFLAG) GO TO 9000
+C
+C  NETWORK MONITORING MODELS
+C
+      CALL VWVPR4          (  18893, 117659,      0,  87296)
+      CALL VWFPR4          (  18900, 117679,      0,  87307)
+      CALL VWVPR4          (  18903, 117683,      0,  87308)
+      CALL VWFPR4          (  18910, 117703,      0,  87319)
+      CALL VWVPR4          (  18913, 117707,      0,  87320)
+      CALL VWFPR4          (  18920, 117727,      0,  87331)
+      CALL VWVPR4          (  18923, 117731,      0,  87332)
+      CALL VWFPR4          (  18930, 117751,      0,  87343)
+C
+ 9000 CONTINUE
+C
+      RETURN
+      END

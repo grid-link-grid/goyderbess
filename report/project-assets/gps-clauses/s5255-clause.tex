@@ -1,0 +1,81 @@
+For the purposes of this performance standard, a \textbf{fault} includes a fault of the relevant type having a metallic conducting path. 
+Fault clearance times for relevant equipment are specified in Table 2.6:
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|p{8cm}|}
+		\hline
+		\textbf{System} & \textbf Transmission system fault clearance time \\ \hline
+		Primary protection system & 100 ms \\ \hline
+		Breaker fail protection system & 250 ms \\ \hline
+		Automatic reclose equipment & 
+		Three-phase auto-reclose with 3-second deadtime and 1 shot \\ \hline
+	\end{tabular}
+	\caption*{Table 2.6: Protection clearance times in transmission and distribution system}
+	\end{table}
+
+\textbf{Single disturbance (reflects clause S5.2.5.5(c) of the NER):}  
+Provided that the event is not one that would disconnect the integrated resource system from the power system by removing network elements from service, the integrated resource system and each of its production units will remain in continuous uninterrupted operation for any disturbance caused by:
+\begin{enumerate}
+	\item A credible contingency event;
+	\item A three-phase fault in a transmission system cleared by all relevant primary protection systems;
+	\item A two-phase-to-ground, phase-to-phase or phase-to-ground fault in the transmission system cleared in:
+	\begin{enumerate}
+		\item the longest time expected to be taken for a relevant breaker fail protection system to clear the fault or
+		\item if a breaker fail protection system is not installed, the greater of the time specified in Table 2.7;
+	\end{enumerate}
+\end{enumerate}
+		
+		\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|p{8cm}|}
+			\hline
+			\textbf{Nominal voltage at fault location (kV)} & \textbf{Time (ms)} \\ \hline
+			>400 kV & 175 ms \\ \hline
+			>250 kV and <400 kV & 250 ms \\ \hline
+			>100 kV and <250 kV & 430 ms \\ \hline
+			<100 kV & 430 ms \\ \hline
+		\end{tabular}
+		\caption*{Table 2.7: Fault Clearance Times}
+		\end{table}
+
+		and the longest time expected to be taken for all relevant primary protection systems to clear the fault.
+\begin{enumerate}
+	\setcounter{enumi}{3}
+	\item A three-phase, two-phase-to-ground, phase-to-phase or phase-to-ground fault in a distribution network cleared in:
+	\begin{enumerate}[label=\roman*]
+		\item the longest time expected to be taken for a relevant breaker fail protection system to clear the fault; or
+		\item if a breaker fail protection system is not installed, the greater of 430 ms and the longest time expected to be taken for all relevant primary protection systems to clear the fault.
+	\end{enumerate}
+\end{enumerate}
+
+\textbf{Multiple disturbances (reflects clause S5.2.5.5(d), (s), and (t) of the NER):}  
+When assessing multiple disturbances, a fault that is re-established following operation of automatic reclose equipment is counted as a separate disturbance.  
+The integrated resource system and each of its production units will remain in continuous uninterrupted operation for a series of up to 15 disturbances within any 5-min period caused by any combination of the events described above where:
+\begin{enumerate}
+	\item Up to 6 disturbances cause the Connection Point voltage to drop below 50\% of Normal Voltage; 
+	\item In parts of the network where three-phase automatic reclosure is permitted, up to two disturbances are three-phase faults, and otherwise up to one three-phase fault where the Connection Point voltage drops below 50\% of Normal Voltage; 
+	\item Up to one disturbance is cleared by a breaker fail protection system or similar backup protection system; 
+	\item Up to one disturbance causes the Connection Point voltage to vary within the ranges under clause S5.2.5.4(a)(7) and (8) of the NER; 
+	\item The minimum clearance from the end of one disturbance and commencement of the next disturbance may be zero milliseconds; and 
+	\item All remaining disturbances are caused by faults other than three-phase faults, provided that none of the events would result in:
+	\item The islanding of the integrated resource system or cause a material reduction in power transfer capability by removing network elements from service; 
+	\item The cumulative time that the Connection Point voltage is lower than 90\% of Normal Voltage exceeding 1,800 milliseconds within any 5-min period; or 
+	\item Within any 5-min period, the time integral of the difference between 90\% of Normal Voltage and the Connection Point voltage when the Connection Point voltage is lower than 90\% of Normal Voltage exceeding 1 pu second.
+The integrated resource system will not, as a consequence of its connection, cause other generating plant or loads to trip as a result of an event, when they would otherwise not have tripped for the same event.
+\end{enumerate}
+
+\textbf{For asynchronous integrated resource systems (reflects clause S5.2.5.5(f)-(i) and (u) of the NER):}  
+Subject to any changed power system conditions or energy source availability beyond the Integrated Resource Provider's reasonable control, the integrated resource system, including all operating asynchronous production units (in the absence of a disturbance), in respect of fault types described in clause S5.2.5.5(c)(2) to (4) of the NER, will supply to, or absorb from, the network:
+
+\begin{enumerate}
+	\item During the disturbance and maintained until the Connection Point voltage recovers to between 90\% and 110\% of Normal Voltage, to assist the maintenance of power system voltages during the fault:
+	\begin{enumerate}
+		\item Capacitive reactive current in addition to its pre-disturbance level of at least 2.94\% of the maximum continuous current for each 1\% reduction of the Connection Point voltage below the range of  85\% to 90\% of Normal Voltage up to the maximum continuous current; 
+		\item Inductive reactive current in addition to its pre-disturbance level of at least 3.1\% of its maximum continuous current for each 1\% increase of the Connection Point voltage above the range of 110\% to 115\% of Normal Voltage up to its maximum continuous current to maintain its rated apparent power; and
+
+		\item the reactive current response will have a rise time of no greater than 40 ms and a settling time of no greater than 133 ms and will be adequately damped; and
+		\item the reactive current contribution is calculated using sequence components
+	\end{enumerate}
+	\item from 230 ms after clearance of the fault, active power of at least 95\% of the level existing just prior to the fault. 
+\end{enumerate}

@@ -1,0 +1,41 @@
+Name,Inverter transformer
+Transformer Core Construction (Core),Three-limb
+Transformer MVA (Tmva),0.315 [MVA]
+"Primary Voltage (Line-Line, RMS) (V1)",0.4 [kV]
+"Secondary Voltage (Line-Line, RMS) (V2)",33.0 [kV]
+Winding \#1 Type (YD1),Y
+Winding \#2 Type (YD2),Delta
+Delta Lags or Leads Y (Lead),Lags
+Base Operation Frequency (f),Fsys
+Leakage Reactance (Xl),0.05 [pu]
+No Load Losses (NLL),0.0007 [pu]
+Copper Losses (CuL),0.008 [pu]
+Model Saturation (Sat),Yes
+Tap Changer Winding (Tap),None
+Graphics Display (View),Single line (circles)
+Display Details (Dtls),No
+Enable Saturation,1
+Point  1 - Current as a Percentage (X1E),0.01978022 [\%]
+Point  1 - Voltage in pu (Y1E),0.111627907 [pu]
+Point  2 - Current as a Percentage (X2E),0.044322344 [\%]
+Point  2 - Voltage in pu (Y2E),0.427906977 [pu]
+Point  3 - Current as a Percentage (X3E),0.063736264 [\%]
+Point  3 - Voltage in pu (Y3E),0.666046512 [pu]
+Point  4 - Current as a Percentage (X4E),0.083150183 [\%]
+Point  4 - Voltage in pu (Y4E),0.805581395 [pu]
+Point  5 - Current as a Percentage (X5E),0.110989011 [\%]
+Point  5 - Voltage in pu (Y5E),0.904186047 [pu]
+Point  6 - Current as a Percentage (X6E),0.12967033 [\%]
+Point  6 - Voltage in pu (Y6E),0.969302326 [pu]
+Point  7 - Current as a Percentage (X7E),0.171794872 [\%]
+Point  7 - Voltage in pu (Y7E),1.04372093 [pu]
+Point  8 - Current as a Percentage (X8E),0.220879121 [\%]
+Point  8 - Voltage in pu (Y8E),1.097674419 [pu]
+Point  9 - Current as a Percentage (X9E),0.301465201 [\%]
+Point  9 - Voltage in pu (Y9E),1.151627907 [pu]
+Point 10 - Current as a Percentage (X10E),0.386813187 [\%]
+Point 10 - Voltage in pu (Y10E),1.188837209 [pu]
+Ratio Yoke/Winding-limb Length (rlyw),2
+Ratio Yoke/Winding-limb Area (rayw),1
+Ratio Yoke/Outer-limb Length (rlyo),2
+Ratio Yoke/Outer-limb Area (rayo),1

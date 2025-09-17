@@ -1,0 +1,15 @@
+Temporary Over-Voltage tests assess the ability of the generator to ride through high voltage disturbances and supply the correct amount of inductive reactive current. To perform these tests, the appropriate $V_{\mathrm{grid}_{\mathrm{initial}}}$
+is first identified to achieve $V_{\mathrm{POC}_{\mathrm{initial}}}$ given the required initial $P_{\mathrm{POC}}$, $Q_{\mathrm{POC}}$, SCR and X/R conditions. 
+
+A shunt capacitor is then inserted at the Connection Point, sized such that $V_{\mathrm{POC}_{\mathrm{TOV}}} = k_{\mathrm{OV}} * V_{\mathrm{POC}_{\mathrm{initial}}}$, where $k_{\mathrm{OV}}$ is the desired percentage increase in $V_{\mathrm{POC}}$.
+
+The test is then performed by initialising the system with the shunt capacitor out of service, then switching it in for the intended disturbance duration, as shown in Figure~\ref{fig:smib-tov-diagram}.
+
+It should be noted that due to the dynamics of capacitor switching, the initial instantaneous voltage spike may appear filtered and not reach $k_{\mathrm{OV}} * V_{\mathrm{POC}_{\mathrm{initial}}}$. The settled $P_{\mathrm{POC}}$ will typically also be lower than this value due to the inductive reactive current support of the generator.
+
+\begin{figure}[h]
+	\centering
+	\input{\classassetsdir/diagrams/smib-tov-diagram.tex}
+	\caption{TOV test application methodology}
+	\label{fig:smib-tov-diagram}
+\end{figure}

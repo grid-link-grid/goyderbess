@@ -1,0 +1,33 @@
+﻿VAR ,Description 
+L,PRMTCMD – Remote active power command (MW)
+L+1,QRMTCMD – Remote reactive power command (MVAR)
+L+2,PLCLCMD – Local active power command (MW)
+L+3,QLCLCMD – Local reactive power command (MVAR)
+L+4,PRMTMEAS – Active power measurement at POI
+L+5,QRMTMEAS – Reactive power measurement at POI
+L+6,VCMD – Voltage command
+L+7,PFCMD – Power factor command
+L+8,PREFINT – Output active power reference to battery PSSE WPCMD array
+L+9,QREFINT – Output reactive power reference to battery PSSE WQCMND array
+L+10,SOC – State of charge for the battery
+L+11,PRMTFRMCMD – Remote branch for joint firming (MW)
+L+12,PLCLCMDEXT – Local active power command for external project (MW)
+L+13,QLCLCMDEXT – Local reactive power command for external project (MVAR)
+L+14,PREFEXT – Output active power reference to external project PSSE WPCMD array
+L+15,QREFEXT – Output reactive power reference to external project PSSE WQCMND array
+L+16,Internal variable
+L+17,Internal variable
+L+18,VSET – Voltage set point for RPCM = 5
+L+19,VCNTR – Voltage droop center for RPCM = 5
+L+20,Internal variable
+L+21,HVRT_FLAG – Status of HVRT mode
+L+22 to L+43,Internal variable. except for VAR(L+33)
+L+33,LVRT_FLAG – Status of LVRT mode
+L+44,FRZ_FLAG – PPC freeze flag with ‘Tfrzppc’ delay
+L+45 to L+51,Internal variables
+L+52,VCMD_EXT – Voltage command PPC-PCS (pu)
+L+53,VCMD_CNST – Constant Voltage command offset (pu)
+L+54,FCMD_EXT – Frequency command PPC-PCS (Hz)
+L+55,FCMD_CNST – Constant Frequency command offset (pu)
+L+56,VMEASD_FRT – FRT Bus Voltage measurement
+L+57 to L+247,Internal variables

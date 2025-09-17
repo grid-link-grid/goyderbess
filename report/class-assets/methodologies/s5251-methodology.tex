@@ -1,0 +1,14 @@
+Reactive capability studies have been performed on a full, detailed model of the plant (including all cables, inverters and transformers), based on inverter reactive capability curves supplied by the OEM. Powerfactory is capable of interpolating between these curves, allowing for accurate reactive power output to be calculated based on the individual terminal voltages of each inverter\footnote{Note that Powerfactory is not capable of doing the same for active power, so invalid active power values are removed in post-processing.}. 
+
+For each ambient temperature and connection point voltage to be studied, the appropriate capability curve for the inverter is applied and the connection point voltage is fixed to the target level. With the transformers permitted to tap, the case is first solved with all inverters exporting as much reactive power as possible without leaving their range of terminal voltages for which they are able to individually maintain \ac{CUO}. This study is repeated with all inverters importing as much reactive power as possible while maintaining \ac{CUO}. Both processes are then repeated for all levels of inverter active power dispatch and a complete reactive capability curve is developed by recording the connection point active and reactive power outputs for all studies.
+
+To confirm \ac{CUO} is maintained at a generating system level for s5.2.5.4, the same study is repeated, but prior to recording the results, the transformer \acp{OLTC} are locked, and the connection point voltage is stepped to the extents of the \ac{CUO} voltage band or $\pm10\%$, whichever is less onerous\footnote{Per AEMO recommended rule change}. The results for these studies are recorded as alternative, more onerous "\ac{CUO} curves."
+
+The remainder of the s5.2.5.1 clause consists of restrictions around the following:
+
+\begin{enumerate}
+	\item How much active and reactive power can be imported or exported by the generating system when the inverters are connected but not generating active power, which allows for the consideration of the inverters' reactive power at night feature, but does not allow for the filters to be out of service as they are required to offset the harmonics produced by inverters in this mode. In the operations phase, this would be a time when the generator has bid out, is curtailed or has no available power (e.g. due to it being night time).
+	\item When the inverters are disconnected, which allows for the disconnection of the harmonic filter and even the 33kV circuit breaker, as this would only occur if there was a significant problem with the control system or a planned maintenance outage of the whole generating system.
+\end{enumerate} 
+
+Assessment for this clause has been performed using PowerFactory.

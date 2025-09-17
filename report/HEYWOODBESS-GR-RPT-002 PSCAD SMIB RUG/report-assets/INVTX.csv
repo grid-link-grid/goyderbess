@@ -1,0 +1,11 @@
+Parameter,Value
+Transformer Name (Name),Unit TX
+3 Phase Transformer MVA ,105.8[MVA]
+Winding \#1 Type,Wye
+Winding \#2 Type,Delta
+Delta Lags or Leads Y (Lead),Lags
+Positive sequence leakage reactance ,0.07563122[pu]
+No load losses ,0.0015543478[pu]
+Copper losses ,0.00747784[pu]
+Winding 1 Line to Line voltage (RMS) (V1),0.69[kV]
+Winding 2 Line to Line voltage (RMS) (V2),33[kV]

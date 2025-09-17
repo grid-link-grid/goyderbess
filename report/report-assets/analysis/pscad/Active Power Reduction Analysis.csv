@@ -1,0 +1,25 @@
+,Name,Upper Freq Band Time (s),P Threshold Time (s),Delta t (s),Pre-disturbance Active Power (MW),Active Power Threshold (MW),Half Active Power Pre-disturbance ,Has active power reduced more than half?,Upper Frequency (Hz)
+0,Test 1,8.04,,,60,,30,TRUE,52
+1,Test 2,8.03,7.46,-0.57,29.99,14.98,14.995,TRUE,52
+2,Test 4,8.04,5.62,-2.42,2.92,1.45,1.46,TRUE,52
+3,Test 5,,,,60,,30,TRUE,52
+4,Test 6,,,,29.99,,14.995,TRUE,52
+5,Test 8,,,,2.92,,1.46,TRUE,52
+6,Test 9,8.03,,,60,,30,TRUE,52
+7,Test 10,8.03,7.46,-0.57,30,15,15,TRUE,52
+8,Test 12,8.02,5.61,-2.41,3.04,1.52,1.52,TRUE,52
+9,Test 13,,,,60,,30,TRUE,52
+10,Test 14,,,,30,,15,TRUE,52
+11,Test 16,,,,3.04,,1.52,TRUE,52
+12,Test 17,8.03,0,-8.03,-60,-60,-30,FALSE,52
+13,Test 18,8.02,0,-8.02,-30,-30,-15,FALSE,52
+14,Test 20,8.04,0,-8.04,-3,-3,-1.5,FALSE,52
+15,Test 21,,0,,-60,-60,-30,FALSE,52
+16,Test 22,,0,,-30,-30,-15,FALSE,52
+17,Test 24,,0,,-3,-3,-1.5,FALSE,52
+18,Test 25,8.02,0,-8.02,-60,-60,-30,FALSE,52
+19,Test 26,8.04,0,-8.04,-30,-30,-15,FALSE,52
+20,Test 28,8.04,0,-8.04,-3,-3,-1.5,FALSE,52
+21,Test 29,,0,,-60,-60,-30,FALSE,52
+22,Test 30,,0,,-30,-30,-15,FALSE,52
+23,Test 32,,0,,-3,-3,-1.5,FALSE,52

@@ -1,0 +1,25 @@
+Test Num,Test Type,SCR,X/R,Vpoc [pu],Qpoc [pu],Ppoc [pu],Appendix Reference 
+Test 1 p1,CSR Vref Steps,19.61754386,12.04,1.06,1,1,Appendix J CSR Vref Steps
+Test 2 p1,CSR Vref Steps,19.61754386,12.04,1.06,0,1,Appendix J CSR Vref Steps
+Test 3 p1,CSR Vref Steps,19.61754386,12.04,1.06,-1,1,Appendix J CSR Vref Steps
+Test 4 p1,CSR Vref Steps,19.61754386,12.04,1.06,0,1,Appendix J CSR Vref Steps
+Test 5 p1,CSR Vref Steps,19.61754386,12.04,1.06,0.375,1,Appendix J CSR Vref Steps
+Test 6 p1,CSR Vref Steps,19.61754386,12.04,1.06,-0.375,1,Appendix J CSR Vref Steps
+Test 1 p2,CSR Vref Steps,11.1754386,11.24,1.06,1,1,Appendix J CSR Vref Steps
+Test 2 p2,CSR Vref Steps,11.1754386,11.24,1.06,0,1,Appendix J CSR Vref Steps
+Test 3 p2,CSR Vref Steps,11.1754386,11.24,1.06,-1,1,Appendix J CSR Vref Steps
+Test 4 p2,CSR Vref Steps,11.1754386,11.24,1.06,0,1,Appendix J CSR Vref Steps
+Test 5 p2,CSR Vref Steps,11.1754386,11.24,1.06,0.375,1,Appendix J CSR Vref Steps
+Test 6 p2,CSR Vref Steps,11.1754386,11.24,1.06,-0.375,1,Appendix J CSR Vref Steps
+Test 7 p1,CSR Vref Steps,19.61754386,12.04,1.06,1,-1,Appendix J CSR Vref Steps
+Test 8 p1,CSR Vref Steps,19.61754386,12.04,1.06,0,-1,Appendix J CSR Vref Steps
+Test 9 p1,CSR Vref Steps,19.61754386,12.04,1.06,-1,-1,Appendix J CSR Vref Steps
+Test 10 p1,CSR Vref Steps,19.61754386,12.04,1.06,0,-1,Appendix J CSR Vref Steps
+Test 11 p1,CSR Vref Steps,19.61754386,12.04,1.06,0.375,-1,Appendix J CSR Vref Steps
+Test 12 p1,CSR Vref Steps,19.61754386,12.04,1.06,-0.375,-1,Appendix J CSR Vref Steps
+Test 7 p2,CSR Vref Steps,11.1754386,11.24,1.06,1,-1,Appendix J CSR Vref Steps
+Test 8 p2,CSR Vref Steps,11.1754386,11.24,1.06,0,-1,Appendix J CSR Vref Steps
+Test 9 p2,CSR Vref Steps,11.1754386,11.24,1.06,-1,-1,Appendix J CSR Vref Steps
+Test 10 p2,CSR Vref Steps,11.1754386,11.24,1.06,0,-1,Appendix J CSR Vref Steps
+Test 11 p2,CSR Vref Steps,11.1754386,11.24,1.06,0.375,-1,Appendix J CSR Vref Steps
+Test 12 p2,CSR Vref Steps,11.1754386,11.24,1.06,-0.375,-1,Appendix J CSR Vref Steps

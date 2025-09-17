@@ -1,0 +1,11 @@
+# File:"C:\Users\LukeHyett\Grid\heywoodbess\scripts\wan_integration\Mods\snapshot+026.py", generated on MON, MAR 24 2025  13:27, PSS(R)E release 34.09.05
+psspy.machine_chng_2(959254,r"""1""",[_i,_i,_i,_i,_i,_i],[-100.0,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f])
+psspy.machine_chng_2(959254,r"""1""",[_i,_i,_i,_i,_i,_i],[_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f])
+psspy.machine_chng_2(959255,r"""2""",[_i,_i,_i,_i,_i,_i],[-100.0,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f])
+psspy.machine_chng_2(959262,r"""1""",[_i,_i,_i,_i,_i,_i],[-100.0,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f])
+psspy.machine_chng_2(959263,r"""2""",[_i,_i,_i,_i,_i,_i],[-100.0,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f])
+psspy.machine_chng_2(959270,r"""1""",[_i,_i,_i,_i,_i,_i],[-100.0,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f])
+psspy.machine_chng_2(959271,r"""2""",[_i,_i,_i,_i,_i,_i],[-100.0,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f,_f])
+psspy.fnsl([1,0,0,1,1,0,99,0])
+psspy.fnsl([1,0,0,1,1,0,99,0])
+psspy.fnsl([1,0,0,1,1,0,99,0])

@@ -1,0 +1,18 @@
+S5.2.5.4 tests assess the ability of the generator to ride-through and maintain \ac{CUO} to a changing Connection Point voltage.
+
+Three types of studies are run:
+
+\begin{enumerate}
+	\item "Envelope" tests, where the Connection Point voltage is initialised to a normal value, then stepped up to the furthest extent of the \ac{UVRT} or \ac{OVRT} ride-through bands, then gradually stepped down such that each band is sustained for the required duration. 
+	\item "Withstand" tests, where the Connection Point voltage is initialised to a normal value, then stepped to the furthest extent of one of the ride-through bands and held for the required withstand time.
+	\item \ac{CUO} studies, where the Connection Point voltage is initialised to a normal value, then stepped to 0.9pu (or 0.1pu lower than the initial voltage, whichever is higher) or to 1.1pu (or 0.1pu higher than the initial voltage, whichever is lower). These studies test the ability of the generator to maintain $P_{\mathrm{POC}_{\mathrm{pre-fault}}}$ and $Q_{\mathrm{POC}_{\mathrm{pre-fault}}}$ after the disturbance.
+\end{enumerate}
+
+To perform these tests, $V_{\mathrm{grid}_{\mathrm{1}}}$ is selected to correspond to the required $V_{\mathrm{POC}_{\mathrm{1}}}$, as these studies are performed on an infinite grid. Subsequent $V_{\mathrm{grid}}$ values $V_{\mathrm{grid}_{\mathrm{2}}}, V_{\mathrm{grid}_{\mathrm{3}}}, \dots, V_{\mathrm{grid}_{\mathrm{n}}}$ can then be chosen to match the desired $V_{\mathrm{POC}}$ values $V_{\mathrm{POC}_{\mathrm{2}}}, V_{\mathrm{POC}_{\mathrm{3}}}, \dots, V_{\mathrm{POC}_{\mathrm{n}}}$ values for the test, as shown in Figure~\ref{fig:s5254-assessment-methodology}.
+
+\begin{figure}[H]
+	\centering
+	\input{\classassetsdir/diagrams/s5254-vgrid-disturbance.tex}
+	\caption{Grid voltage disturbance methodology}
+	\label{fig:s5254-assessment-methodology}
+\end{figure}

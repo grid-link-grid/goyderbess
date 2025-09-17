@@ -1,0 +1,37 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Type,Duration [s],Impedance,Appendix Reference ,Results
+Test 1,17.8,14,1.0227,0,1.0227,-1,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 2,17.8,14,1.0227,-0.3,1.0167,-1,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 3,17.8,14,1.0227,0.3,1.0287,-1,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 4,3,14,1.0227,0,1.0227,-1,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 5,3,3,1.0227,-0.3,1.0167,-1,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 6,3,3,1.0227,0.3,1.0287,-1,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 7,17.8,14,1.0227,0,1.0227,-0.05,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 8,17.8,14,1.0227,-0.3,1.0167,-0.05,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 9,17.8,14,1.0227,0.3,1.0287,-0.05,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 10,3,14,1.0227,0,1.0227,-0.05,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 11,3,3,1.0227,-0.3,1.0167,-0.05,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 12,3,3,1.0227,0.3,1.0287,-0.05,3PHG,0.43,0.03 pu,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 13,17.8,14,1.0227,0,1.0227,-1,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 14,17.8,14,1.0227,-0.3,1.0167,-1,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 15,17.8,14,1.0227,0.3,1.0287,-1,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 16,3,14,1.0227,0,1.0227,-1,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 17,3,3,1.0227,-0.3,1.0167,-1,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 18,3,3,1.0227,0.3,1.0287,-1,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 19,17.8,14,1.0227,0,1.0227,-0.05,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 20,17.8,14,1.0227,-0.3,1.0167,-0.05,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 21,17.8,14,1.0227,0.3,1.0287,-0.05,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 22,3,14,1.0227,0,1.0227,-0.05,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 23,3,3,1.0227,-0.3,1.0167,-0.05,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 24,3,3,1.0227,0.3,1.0287,-0.05,3PHG,0.43,Zf = 1 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 25,17.8,14,1.0227,0,1.0227,-1,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 26,17.8,14,1.0227,-0.3,1.0167,-1,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 27,17.8,14,1.0227,0.3,1.0287,-1,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 28,3,14,1.0227,0,1.0227,-1,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 29,3,3,1.0227,-0.3,1.0167,-1,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 30,3,3,1.0227,0.3,1.0287,-1,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 31,17.8,14,1.0227,0,1.0227,-0.05,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 32,17.8,14,1.0227,-0.3,1.0167,-0.05,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 33,17.8,14,1.0227,0.3,1.0287,-0.05,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 34,3,14,1.0227,0,1.0227,-0.05,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 35,3,3,1.0227,-0.3,1.0167,-0.05,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable
+Test 36,3,3,1.0227,0.3,1.0287,-0.05,3PHG,0.5,Zf = 2 Zs,PSCAD DMAT Appendix B Balanced fault tests - Charging,Acceptable

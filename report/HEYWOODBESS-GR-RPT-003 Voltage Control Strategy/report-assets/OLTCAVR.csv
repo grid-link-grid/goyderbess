@@ -1,0 +1,25 @@
+Parameter,Value
+Tap size (pu) (tap_increment_pu),0.0125
+Top tap position (max_tap),21
+Nominal tap position (nominal_tap),13
+Bottom tap position (min_tap),1
+Mechanical operation time (sec) (oltc_operation_time),7
+Vref (pu) (vref_pu),1
+Measured voltage (pu) (vmeas_pu),VrmsMV
+EN (EN),1
+Permissible set point deviation (pu on Vref base) (permissible_deviation_on_vref_pu),0.01
+Program Choice (time_program),3
+CONSTANT program delay 1 (const_delay1),20
+CONSTANT program delay 2 (const_delay2),20
+Time Factor (time_factor),1
+Maximum integrator time constant (sec) (ti_max),9999
+Minimum integrator time constant (minimum_time_delay),0.001
+High-speed switching raise threshold (hs_switching_raise_threshold),-1
+High-speed switching lower threshold (hs_switching_lower_threshold),2
+Enable memory (enable_memory),1
+Force reset (force_reset),0
+Reset value (reset_value),0
+Fast Tapping Start Time (sec) (fast_tapping_start_time),1.2
+Fast Tapping End Time (sec) (fast_tapping_end_time),3
+Fast Tapping Time Constant (fast_tapping_ti),0.14
+Suppress Taps Before Time (suppress_avr_before),1.2

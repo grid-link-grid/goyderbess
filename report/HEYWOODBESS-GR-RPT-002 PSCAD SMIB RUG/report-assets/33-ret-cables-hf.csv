@@ -1,0 +1,14 @@
+Description,Value
+"Enter Impedance,Admittance Data in: (PU)",3
+Nominal PI or Coupled PI Model: (Config),1
+Line Rated Frequency (F),50.0 [Hz]
+Line Length (len),1 [m]
+Graphics Display (View),Compact single line view
+Rated Voltage L-L (VR2),33 [kV]
+MVA for All Phases (MVA2),100.0 [MVA]
+Positive Sequence Resistance (RPUP2),0.001671 [pu/m]
+Positive Sequence Inductive Reactance (XLPUP2),0.000622 [pu/m]
+Positive Sequence Capacitive Susceptance (BPUP2),0.000036 [pu/m]
+Zero Sequence Resistance (RPUZ2),0.005969 [pu/m]
+Zero Sequence Inductive Reactance (XLPUZ2),0.000429 [pu/m]
+Zero Sequence Capacitive Susceptance (BPUZ2),0.0000357 [pu/m]

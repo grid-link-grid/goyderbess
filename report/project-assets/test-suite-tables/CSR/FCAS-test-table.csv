@@ -1,0 +1,13 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Frequency target [Hz],Test Type,Appendix Reference
+Test 1,17.8,4.01518,1.0227,0,1.0227,0.195,50.5,Lower FCAS Test (Starting pos 1) Fast Ramp  ,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 2,17.8,4.01518,1.0227,0,1.0227,0,50.5,Lower FCAS Test (Starting pos 2) Fast Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 3,17.8,4.01518,1.0227,0,1.0227,0.0975,50.5,Lower FCAS Test (Starting pos 3) Fast Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 4,17.8,4.01518,1.0227,0,1.0227,0.195,50.5,Lower FCAS Test (Starting pos 1) Slow Ramp ,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 5,17.8,4.01518,1.0227,0,1.0227,0,50.5,Lower FCAS Test (Starting pos 2) Slow Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 6,17.8,4.01518,1.0227,0,1.0227,0.0975,50.5,Lower FCAS Test (Starting pos 3) Slow Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 7,17.8,4.01518,1.0227,0,1.0227,0,49.5,Raise FCAS Test (Starting pos 2) Fast Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 8,17.8,4.01518,1.0227,0,1.0227,-0.195,49.5,Raise FCAS Test (Starting pos 1) Fast Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 9,17.8,4.01518,1.0227,0,1.0227,-0.0975,49.5,Raise FCAS Test (Starting pos 3) Fast Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 10,17.8,4.01518,1.0227,0,1.0227,0,49.5,Raise FCAS Test (Starting pos 2) Slow Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 11,17.8,4.01518,1.0227,0,1.0227,-0.195,49.5,Raise FCAS Test (Starting pos 1) Slow Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11
+Test 12,17.8,4.01518,1.0227,0,1.0227,-0.0975,49.5,Raise FCAS Test (Starting pos 3) Slow Ramp,Appendix AL Grid frequency disturbance step tests S5.2.5.11

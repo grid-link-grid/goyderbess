@@ -1,0 +1,34 @@
+\contentsline {chapter}{Disclaimer}{i}{chapter*.1}%
+\contentsline {chapter}{Revision History}{iii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Project Overview}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Model Overview}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}PSSE load flow model description}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Reactive Capability}{8}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Dynamic Model}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Initialisation}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Plant control}{10}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Reactive Power Control Schemes}{11}{subsection.4.3.1}%
+\contentsline {subsubsection}{RPCM = 5 — Remote Voltage Control Mode}{11}{section*.12}%
+\contentsline {subsubsection}{Voltage Droop Characteristics}{11}{section*.14}%
+\contentsline {subsubsection}{RPCM = 2 — Power Factor Control Mode}{12}{section*.16}%
+\contentsline {subsubsection}{RPCM = 3 — Remote Reactive Power Control Mode}{13}{section*.17}%
+\contentsline {subsubsection}{OLTC control}{13}{section*.18}%
+\contentsline {subsection}{\numberline {4.3.2}Active power and frequency control}{13}{subsection.4.3.2}%
+\contentsline {subsubsection}{PRCF = 1 — Local Active power Control Mode}{14}{section*.19}%
+\contentsline {subsubsection}{PRCF = 2 — Remote Active power Control Mode}{14}{section*.20}%
+\contentsline {subsubsection}{Frequency Droop Characteristics}{14}{section*.22}%
+\contentsline {subsection}{\numberline {4.3.3}Fault ride through mode}{15}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Protection}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Simulation with a reduced number of converters}{16}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Appendix A - PPC Model ICONs}{18}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Appendix B - PPC Model CONs}{20}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Appendix C - PPC Model VARs}{23}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Appendix D - PPC Model STATEs}{24}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Appendix E - Converter Model ICONs}{25}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Appendix F - Converter Model CONs}{26}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Appendix G - Converter Model VARs}{36}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Appendix H - Extra Reactive Power Control Mode}{43}{chapter.12}%
+\contentsline {subsubsection}{RPCM = 1 — Voltage Control Mode (VCMD)}{43}{section*.26}%
+\contentsline {subsubsection}{RPCM = 4 — Local Reactive Power Control Mode}{43}{section*.27}%

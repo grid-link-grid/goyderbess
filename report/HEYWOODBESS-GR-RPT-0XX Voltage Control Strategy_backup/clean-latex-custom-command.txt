@@ -1,0 +1,1 @@
+ txs:///xelatex | txs:///xelatex | txs:///view-pdf-internal --embedded | ./clean-latex.bat

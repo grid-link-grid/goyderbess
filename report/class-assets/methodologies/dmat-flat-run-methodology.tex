@@ -1,0 +1,9 @@
+Flat run tests are a collection of tests that look to confirm that the model initialises to a predictable steady state. The following is assessed:
+\begin{enumerate}
+	\item That the model initialises to the same conditions over 3 simulations given the same inputs;
+	\item That the model behaves the same with 'store feed forward signals' enabled and disabled;
+	\item That the model initialises to a steady state at less than full active power output; and
+	\item That the snapshot behaviour works correctly
+\end{enumerate}
+
+It should be noted that tests of specific feature support, such as the snapshot feature or the 'store feed forward signals' feature are not updated on every iteration of the DMAT report, as these are not expected to behave differently when the OEM model does not change.

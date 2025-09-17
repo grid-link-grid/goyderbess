@@ -1,0 +1,3 @@
+Case,Test No,Vpoc [pu],Qpoc [pu],Ppoc [pu],Test Type,Appendix Reference
+1,1,1.06,0,1,Qref change -50% ,Appendix AA WANQref Steps
+1,2,1.06,0.75,1,Qref change 50% ,Appendix AA WANQref Steps

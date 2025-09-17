@@ -1,0 +1,5 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 151 p1,1.88,1.6,0,1,SA PSSE DMAT Appendix D Voltage reference step change tests,Acceptable
+Test 151 p2,1.88,1.6,0,1,SA PSSE DMAT Appendix D Voltage reference step change tests,Acceptable
+Test 152 p1,1.88,1.6,0,0.05,SA PSSE DMAT Appendix D Voltage reference step change tests,Acceptable
+Test 152 p2,1.88,1.6,0,0.05,SA PSSE DMAT Appendix D Voltage reference step change tests,Acceptable

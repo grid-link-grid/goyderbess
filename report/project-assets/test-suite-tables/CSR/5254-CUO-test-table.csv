@@ -1,0 +1,13 @@
+Test Num,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Voltage Step [pu],Appendix Reference
+Test 1,1,1,1.04,1,0.9,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 2,1,-1,0.96,1,0.9,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 3,1,0,1,1,0.9,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 4,1,1,1.04,1,1.1,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 5,1,-1,0.96,1,1.1,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 6,1,0,1,1,1.1,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 7,1,1,1.04,-1,0.9,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 8,1,-1,0.96,-1,0.9,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 9,1,0,1,-1,0.9,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 10,1,1,1.04,-1,1.1,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 11,1,-1,0.96,-1,1.1,Appendix C Continuous uninterrupted operation S5.2.5.4
+Test 12,1,0,1,-1,1.1,Appendix C Continuous uninterrupted operation S5.2.5.4

@@ -1,0 +1,19 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 170 p1,1.88,1.6,0,1,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 170 p2,1.88,1.6,0,1,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 170 p3,1.88,1.6,0,1,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 170 p4,1.88,1.6,0,1,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 171 p1,1.88,1.6,0,0.5,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 171 p3,1.88,1.6,0,0.5,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 171 p4,1.88,1.6,0,0.5,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 172 p2,1.88,1.6,0,0.5,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 173 p1,1.88,1.6,0,0.05,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 173 p2,1.88,1.6,0,0.05,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 173 p3,1.88,1.6,0,0.05,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 173 p4,1.88,1.6,0,0.05,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 174 p1,1.88,1.6,0,1,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 174 p2,1.88,1.6,0,1,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 175 p1,1.88,1.6,0,0.5,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 176 p2,1.88,1.6,0,0.5,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 177 p1,1.88,1.6,0,0.05,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable
+Test 177 p2,1.88,1.6,0,0.05,SA PSSE DMAT Appendix H Grid frequency controller tests,Acceptable

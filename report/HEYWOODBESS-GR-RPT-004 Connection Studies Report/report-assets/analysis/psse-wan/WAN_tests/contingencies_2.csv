@@ -1,0 +1,7 @@
+﻿Fault No.,Fault Type,Voltage kV ,Contingency
+17,Trip,500-220,Moorabool
+18,Trip,330,PEC PST
+19,Trip,-,Kiamal Syncon
+20,Trip,-,Golden Plains WF (half plant trip)
+21,Trip,-,APD Potline
+22,Trip,-,Loy Yang Unit 1

@@ -1,0 +1,9 @@
+Config_file_number,Config_file_name,Purpose
+80,HyCtl_Cfg80.txt,Configured for voltage droop control mode
+81,HyCtl_Cfg81.txt,Configured for direct Q setpoint
+82,HyCtl_Cfg82.txt,Configured for power factor control mode
+83,HyCtl_Cfg83.txt,{Identical to config 80 except active power ramp rate max  SpntRamp.PwrAtRateMax  is 999999 MW/min instead of 60000 MW/min. This is to simulate the controller's response when active power is not ramp-rate limited}
+84,HyCtl_Cfg84.txt,{Identical to config 80 except active power ramp rate max  SpntRamp.PwrAtRateMax is 12 MW/min  instead of 60000 MW/min. This is to simulate the controller's response when active power is ramp-rate limited}
+89,HyCtl_Cfg89.txt,High-gain initialization configuration for the initialization period for voltage droop control mode.
+80,CfgFile80.txt,System normal configuration file for the inverter.
+89,CfgFile89.txt,Initialisation configuration file for the inverter.

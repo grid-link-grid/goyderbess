@@ -1,0 +1,19 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Duration [s],Uov [pu],Appendix Reference ,Results
+Test 131,10,14,1.0227,0,1.0227,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 132,10,14,1.0227,-0.3,1.0167,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 133,10,14,1.0227,0.3,1.0287,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 134,3,14,1.0227,0,1.0227,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 135,3,3,1.0227,-0.3,1.0167,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 136,3,3,1.0227,0.3,1.0287,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 137,8.5,4.208,1.0227,0,1.0227,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 138,8.5,4.208,1.0227,-0.3,1.0167,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 139,8.5,4.208,1.0227,0.3,1.0287,-1,0.9,1.15,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 140,10,14,1.0227,0,1.0227,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 141,10,14,1.0227,-0.3,1.0167,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 142,10,14,1.0227,0.3,1.0287,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 143,3,14,1.0227,0,1.0227,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,Acceptable
+Test 144,3,3,1.0227,-0.3,1.0167,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 145,3,3,1.0227,0.3,1.0287,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 146,8.5,4.208,1.0227,0,1.0227,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 147,8.5,4.208,1.0227,-0.3,1.0167,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion
+Test 148,8.5,4.208,1.0227,0.3,1.0287,-1,0.1,1.2,PSSE DMAT Appendix C Temporary over-voltage tests - Charging,See Discussion

@@ -1,0 +1,61 @@
+﻿ICON,Value,Description
+M+0,111111,POI from bus number (0: Local)
+M+1,100100,POI to bus number (0: Local)
+M+2,1,POI circuit identifier (0: Local)
+M+3,0,Reference Power to be Measured at (0: From BUS of POI. 1: To BUS of POI)
+M+4,100100,Remote frequency measurement bus number (0: Local)
+M+5,100100,Remote voltage measurement bus number (0: Local)
+M+6,5,RPCM - Q Mode (1: Voltage. 2: PF. 3: Remote Q. 4: Local Q. 5: V-Stack)
+M+7,2,PRCF - P Mpde (1: Local P. 2: Remote P. 3: Power Firm. 4: Local+Joint)
+M+8,1,VSL - 1: Enable voltage reactive power stackable logic
+M+9,1,FSL - 1: Enable frequency active power stackable logic
+M+10,0,RRL - 1: Enable external reactive power controller command: 0: Disable
+M+11,0,PRJPRIOR - 0: Internal project priority: 1: External project priority
+M+12,0,EXTRNPRJBUS - External project machine bus (0: No external project)
+M+13,0,EXTRNPRJID - External project machine ID (0: No external project)
+M+14,0,EXTRNLRPJTP- External project type (0: Disabled. 1: PE. 2: SMA)
+M+15,0,SISL - 1: Enable Synthetic inertia power stackable logic
+M+16,0,DM - Discontinuous Mode for SI Enable = 1. Disable =0
+M+17,0,PPOD_ON - P POD Enable = 1. Disable =0
+M+18,0,QPOD_ON - Q POD Enable = 1. Disable =0
+M+19,0,LFDD - Low Frequency Demand Disconnection Enable = 1. Disable =0
+M+20,1,VCMD_EN - GFM control Enable=1. Disable=0
+M+21,0,FCMD_EN - Fcmd control Enable=1. Disable=0
+M+22,100111,Local Gen. 1 Bus Number
+M+23,200111,Local Gen. 2 Bus Number
+M+24,300111,Local Gen. 3 Bus Number
+M+25,400111,Local Gen. 4 Bus Number
+M+26,0,Local Gen. 5 Bus Number
+M+27,0,Local Gen. 6 Bus Number
+M+28,0,Local Gen. 7 Bus Number
+M+29,0,Local Gen. 8 Bus Number
+M+30,0,Local Gen. 9 Bus Number
+M+31,0,Local Gen. 10 Bus Number
+M+32,0,Local Gen. 11 Bus Number
+M+33,0,Local Gen. 12 Bus Number
+M+34,0,Local Gen. 13 Bus Number
+M+35,0,Local Gen. 14 Bus Number
+M+36,0,Local Gen. 15 Bus Number
+M+37,0,Local Gen. 16 Bus Number
+M+38,0,Local Gen. 17 Bus Number
+M+39,0,Local Gen. 18 Bus Number
+M+40,0,Local Gen. 19 Bus Number
+M+41,0,Local Gen. 20 Bus Number
+M+42,0,Local Gen. 21 Bus Number
+M+43,0,Local Gen. 22 Bus Number
+M+44,0,Local Gen. 23 Bus Number
+M+45,0,Local Gen. 24 Bus Number
+M+46,0,Local Gen. 25 Bus Number
+M+47,0,Local Gen. 26 Bus Number
+M+48,0,Local Gen. 27 Bus Number
+M+49,0,Local Gen. 28 Bus Number
+M+50,0,Local Gen. 29 Bus Number
+M+51,0,Local Gen. 30 Bus Number
+M+52,9999,Gen. VAR Number for the P command 9999 : Internal WPCMD / XADIFD
+M+53,9999,Gen. VAR Number for the Q command 9999 : Internal WQCMND / EFD
+M+54,3,Gen. VAR Number for the V command 9999 : Internal VREF
+M+55,2,Gen. VAR Number for the F command
+M+56,0,Remote voltage measurement bus number for FRT (0: ICON(M+4) is used)
+M+57,1,IBR_INT (Inverter Interface - Default = 1: WELEC. 2: WGEN)
+M+58,1,INV_MODEL (Machine Type 1: Conventional. 2: Wind Machine)
+M+59,1,Internal - Default = 1. Else = 0

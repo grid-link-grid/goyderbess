@@ -1,0 +1,5 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 163 p1,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix F Power factor reference step change tests - Charging,Acceptable
+Test 163 p2,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix F Power factor reference step change tests - Charging,Acceptable
+Test 164 p1,1.88,1.6,0,-0.05,SA PSSE DMAT Appendix F Power factor reference step change tests - Charging,Acceptable
+Test 164 p2,1.88,1.6,0,-0.05,SA PSSE DMAT Appendix F Power factor reference step change tests - Charging,Acceptable

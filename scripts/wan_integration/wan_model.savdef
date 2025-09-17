@@ -1,0 +1,171 @@
+{
+    "playback_machine": null,
+    "buses": [
+        {"name": "gbesf", "num": 795814}
+    ],
+    "branches": [
+        {
+            "name": "HEYWOOD275_SOUTHEAST275",
+            "from_bus": 333080,
+            "to_bus": 585582,
+            "circuit_id": "1"
+        },
+        {
+            "name": "HEYWOOD500_TARRONE500",
+            "from_bus": 333091,
+            "to_bus": 381591,
+            "circuit_id": "1"
+        },
+        {
+            "name": "APD500A_HEYWOOD500",
+            "from_bus": 301091,
+            "to_bus": 333091,
+            "circuit_id": "1"
+        },
+        {
+            "name": "HEYWOOD500_MORTLAKE500",
+            "from_bus": 333092,
+            "to_bus": 352090,
+            "circuit_id": "1"
+        },
+        {
+            "name": "APD500C_HEYWOOD500",
+            "from_bus": 301092,
+            "to_bus": 333092,
+            "circuit_id": "2"
+        },
+        {
+            "name": "BLACKR275_SOUTHEAST275",
+            "from_bus": 505780,
+            "to_bus": 585586,
+            "circuit_id": "1"
+        },
+        {
+            "name": "BLACKR275_TAILEM275",
+            "from_bus": 505784,
+            "to_bus": 586582,
+            "circuit_id": "1"
+        },
+        {
+            "name": "HAZELWOOD500_SOUTHM500",
+            "from_bus": 330090,
+            "to_bus": 373090,
+            "circuit_id": "1"
+        },
+        {
+            "name": "CRESSY500_MOORABOOL500",
+            "from_bus": 321390,
+            "to_bus": 351090,
+            "circuit_id": "1"
+        },
+        {
+        "name": "MORTLAKE500_TYRONE500",
+            "from_bus": 352090,
+            "to_bus": 381591,
+            "circuit_id": "1"
+        },
+        {
+        "name": "CRESSY500_MORTLAKE500",
+            "from_bus": 321390,
+            "to_bus": 352090,
+            "circuit_id": "1"
+        },
+        {
+        "name": "HAUNTED500_MORTLAKE500",
+            "from_bus": 329690,
+            "to_bus": 352090,
+            "circuit_id": "1"
+        },
+        {
+        "name": "CRESSY500_HAUNTED500",
+            "from_bus": 321390,
+            "to_bus": 329690,
+            "circuit_id": "1"
+        },
+        {
+        "name": "BALLARAT220_MOORABOOL220",
+            "from_bus": 309080,
+            "to_bus": 351080,
+            "circuit_id": "1"
+        },
+        {
+        "name": "MOORABOOL220_TERANG220",
+            "from_bus": 351080,
+            "to_bus": 378080,
+            "circuit_id": "1"
+        },
+        {
+        "name": "HEYWOOD275_HEYWOODTXDUMMYM3",
+            "from_bus": XXXXXX,
+            "to_bus": XXXXXX,
+            "circuit_id": "1"
+        },
+        {
+        "name": "HEYWOOD275_HEYWOODTXDUMMYM1",
+            "from_bus": XXXXXX,
+            "to_bus": XXXXXX,
+            "circuit_id": "1"
+        }
+    ],
+    "machines": [
+	{
+	    "name": "LYB1",
+	    "bus": 346001,
+	    "mach_id": "1"
+	},
+    {
+	    "name": "GPWF1",
+	    "bus": 959299,
+	    "mach_id": "1"
+	},
+    {
+	    "name": "GPWF2",
+	    "bus": 959300,
+	    "mach_id": "1"
+	},
+    {
+	    "name": "GPWF3",
+	    "bus": 959301,
+	    "mach_id": "1"
+	},
+    {
+	    "name": "GPWF4",
+	    "bus": 959302,
+	    "mach_id": "1"
+	},
+    {
+	    "name": "SESVC1",
+	    "bus": 585501,
+	    "mach_id": "1"
+	},
+    {
+	    "name": "SESVC2",
+	    "bus": 585502,
+	    "mach_id": "2"
+	}
+    ],
+    "loads": [
+        {
+            "bus": 301037,
+            "id": "3C",
+            "name": "APD"
+        }
+    ],
+    "shunts": [
+        {
+            "bus": 333080,
+            "id": "1",
+            "name": "HEYWOOODCAP"
+        }
+    ],
+    "two_windings": [
+        {
+            "name": "MOOR220_500",
+            "from_bus": 351080,
+            "to_bus": 351090,
+            "id": "2"
+        }
+    ],
+    "models": [
+    ]
+}

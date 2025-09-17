@@ -1,0 +1,16 @@
+Description,Inverter transformers,Main transformer
+Model,Two-winding with scaling factors: GESF_1-x42 GESF_2-x41,Three-winding
+Transformer Rating (and MVA Base),3.78 MVA,360 MVA (2 x 180) HV-LV HV-MV
+Voltage Ratio (kV/kV), 33 / 0.69, 220 / 33
+Phasing, Dy11, YN0D11D11
+Positive Sequence Reactance (p.u.),0.09,0.12
+Copper Losses (p.u.),0.01,0.00175
+No load losses (pu),0.001,NEED
+Tap changer type (on/off load), Off-load, On-load  
+Tapped winding, High voltage side, High voltage side 
+Tap change range,N/A, +15% to -15%  
+Nominal tap, 1.0 p.u., 1.0 p.u.
+Tap change step size,-,1.50%
+Tap step count,-,17
+Voltage setpoint,-,1  p.u. (33 kV base) 
+Voltage deadband, - ,1.01 -0.99 p.u. (220 kV base)

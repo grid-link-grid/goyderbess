@@ -1,0 +1,5 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 195 p1,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix J Grid voltage angle change response tests - Charging,Acceptable
+Test 195 p2,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix J Grid voltage angle change response tests - Charging,Acceptable
+Test 196 p1,1.88,1.6,0,-0.05,SA PSSE DMAT Appendix J Grid voltage angle change response tests - Charging,Acceptable
+Test 196 p2,1.88,1.6,0,-0.05,SA PSSE DMAT Appendix J Grid voltage angle change response tests - Charging,Acceptable

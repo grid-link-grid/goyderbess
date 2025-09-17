@@ -1,0 +1,185 @@
+﻿#Sunny Central PSCAD configuration file, Plant: DMAT
+#Version              SCxxxx R10
+
+#Nameplate
+VARtg                               4600                                    # Apparent power rating in kVA
+WRtg                                4600                                    # Active power rating in kW
+VArRtg                              3680                                    # Reactive power rating in kVAr
+HzRtg                               50.0                                    # Frequency rating (and Frequency set point HzSpt)
+
+InvCtlMod                           INVCTLMOD_BAT                           # Inverter control mode / INVCTLMOD_GRIFEED_MPP: Grid tie MPP Tracking mode / INVCTLMOD_GRIFEED_DCLVOLCNST: Grid tie constant DC Link voltag / INVCTLMOD_BAT: Battery inverter
+Bsc_InvStrMod                       1
+UseSCSOpCmd                         1                                       # Activate external commands (For Battery Inverter only)
+
+VArOpMod                            VAR_MOD_CNST                            # External reactive power setpoint handling / VAR_MOD_NONE: no external reactive power setpoint / VAR_MOD_CNST: external reactive power setpoint / VAR_MOD_PF_CNST: external powerfactor setpoint
+Aid_Mod                             SWITCH_STT_DISABLE                      # Active islanding detection / SWITCH_STT_ENABLE: on / SWITCH_STT_DISABLE: off
+Pld_Mod                             SWITCH_STT_DISABLE                      # Phase loss (YgD) detection / SWITCH_STT_ENABLE: on / SWITCH_STT_DISABLE: off
+
+WGraMod                             SWITCH_STT_ENABLE                       # Power Set Point Gradients mode / SWITCH_STT_ENABLE: on / SWITCH_STT_DISABLE: off
+VArGraMod                           SWITCH_STT_ENABLE                       # Power Set Point Gradients mode / SWITCH_STT_ENABLE: on / SWITCH_STT_DISABLE: off
+WGra                                100.0                                   # Power Set Point Gradients (Range VArGra: [0.01 ...1]; Range WGra: [0.01 ...2])
+VArGra                              100.0                                   # Power Set Point Gradients (Range VArGra: [0.01 ...1]; Range WGra: [0.01 ...2])
+
+WFilMod                             SWITCH_STT_ENABLE                       # Power Set Point Filter mode / SWITCH_STT_ENABLE: on / SWITCH_STT_DISABLE: off
+VArFilMod                           SWITCH_STT_ENABLE                       # Power Set Point Filter mode / SWITCH_STT_ENABLE: on / SWITCH_STT_DISABLE: off
+WFilTm                              0.1                                     # Power Set Point PT1 filters in sec (Range WFilTm: [0.01 ...2]; Range VArFilTm: [0.01 ...2])
+VArFilTm                            0.1                                     # Power Set Point PT1 filters in sec (Range WFilTm: [0.01 ...2]; Range VArFilTm: [0.01 ...2])
+
+VADrtPriMod                         VADRTPRIMOD_VAR                         # Power Priority (Recommendation: VADRTPRIMOD_VAR) / VADRTPRIMOD_W: active power / VADRTPRIMOD_VAR: reactive power
+GriMng_InvVArMod                    GRIMNG_INVVARMOD_OFF                    # Reactive power as a function of voltage / GRIMNG_INVVARMOD_OFF: off / GRIMNG_INVVARMOD_VARCTLVOL: Q/V function
+VArCtlVol_VArSptFilTm               0.01
+
+WCtlHzMod                           SWITCH_STT_DISABLE                      # Active Power as a function of frequency for PV: Mode over frequency / SWITCH_STT_DISABLE: off / SWITCH_STT_ENABLE: on
+WCtlHzBatMod                        SWITCH_STT_DISABLE                      # Active Power as a function of frequency for BESS: Mode over frequency / SWITCH_STT_DISABLE: off / SWITCH_STT_ENABLE: on
+WCtlHzLoHiMod                       SWITCH_STT_DISABLE
+
+GriMng_HzFilTm                      0.1                                     # Time constant frequency filter, grid managment in s
+VCtl_CorrTm                         0.0                                     # CorrTm: correction of the internal delay of the measurement algorithms - Set to 0 if you want the inverter to stay connected and trip after the time (e.g. BDEW) - set to negative values if you want the the inverter to trip before the given time (e.g. UL1741)
+HzCtl_CorrTm                        0.0                                     # CorrTm: correction of the internal delay of the measurement algorithms - Set to 0 if you want the inverter to stay conno stay connected and trip after the time (e.g. BDEW) - set to negative values if you want the the inverter to trip before the given time (e.g. UL1741)
+
+VCtl_OpMaxNom                       1.10                                    # Upper and lower voltage for connection
+VCtl_OpMinNom                       0.90                                    # Upper and lower voltage for connection
+VCtl_OpMaxNomRecon                  1.10                                    # Upper and lower voltage for connection
+VCtl_OpMinNomRecon                  0.90                                    # Upper and lower voltage for connection
+
+HzCtl_OpMaxNom                      50.5                                    # Upper and lower frequency limit for connection
+HzCtl_OpMinNom                      49.3                                    # Upper and lower frequency limit for connection
+HzCtl_OpMaxNomRecon                 50.5                                    # Upper and lower frequency limit for connection
+HzCtl_OpMinNomRecon                 49.3                                    # Upper and lower frequency limit for connection
+
+VCtl_PkLim                          1.4                                     # Instantaneous voltage protection in p.u. - in real firmware this can be set to maximum 1.5pu. 
+VCtl_PkLimTm                        102                                     # instantaneous voltage protection time in 6kHz steps: e.g. 6 = 1ms
+
+VCtl_Hi5Lim                         2.0                                     # Over voltage trip limits  VCtl_Hi[1..5]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi4Lim                         1.5                                     # Over voltage trip limits  VCtl_Hi[1..5]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi3Lim                         1.3                                     # Over voltage trip limits  VCtl_Hi[1..5]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi2Lim                         1.25                                    # Over voltage trip limits  VCtl_Hi[1..5]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi1Lim                         1.15                                     # Over voltage trip limits  VCtl_Hi[1..5]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+VCtl_Hi5LimTm                       1.66                                     # Over voltage trip limit times VCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi4LimTm                       3                                    # Over voltage trip limit times VCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi3LimTm                       20                                    # Over voltage trip limit times VCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi2LimTm                       1000                                   # Over voltage trip limit times VCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Hi1LimTm                       60000                                 # Over voltage trip limit times VCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+VCtl_Lo1Lim                         0.8                                     # Under voltage trip limits  VCtl_Lo[1..5]Lim in p.u. (Range: [0.0 ...1.0]). 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo2Lim                         0.4                                     # Under voltage trip limits  VCtl_Lo[1..5]Lim in p.u. (Range: [0.0 ...1.0]). 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo3Lim                         0.0                                     # Under voltage trip limits  VCtl_Lo[1..5]Lim in p.u. (Range: [0.0 ...1.0]). 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo4Lim                         0.0                                     # Under voltage trip limits  VCtl_Lo[1..5]Lim in p.u. (Range: [0.0 ...1.0]). 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo5Lim                         0.0                                     # Under voltage trip limits  VCtl_Lo[1..5]Lim in p.u. (Range: [0.0 ...1.0]). 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+VCtl_Lo1LimTm                       21000                                    # Under voltage trip limit times VCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo2LimTm                       21000                                    # Under voltage trip limit times VCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo3LimTm                       21000                                    # Under voltage trip limit times VCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo4LimTm                       21000                                    # Under voltage trip limit times VCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+VCtl_Lo5LimTm                       21000                                    # Under voltage trip limit times VCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]). - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+HzCtl_Hi6Lim                        55.0                                    # Over frequency trip limits  HzCtl_Hi[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi5Lim                        55.0                                    # Over frequency trip limits  HzCtl_Hi[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi4Lim                        54.0                                    # Over frequency trip limits  HzCtl_Hi[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi3Lim                        53.0                                    # Over frequency trip limits  HzCtl_Hi[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi2Lim                        53.0                                    # Over frequency trip limits  HzCtl_Hi[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi1Lim                        53.0                                    # Over frequency trip limits  HzCtl_Hi[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+HzCtl_Hi6LimTm                      100                                   # over frequency trip limit times HzCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi5LimTm                      100                                   # over frequency trip limit times HzCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi4LimTm                      60000                                   # over frequency trip limit times HzCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi3LimTm                      60000                                   # over frequency trip limit times HzCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi2LimTm                      60000                                   # over frequency trip limit times HzCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Hi1LimTm                      60000                                   # over frequency trip limit times HzCtl_Hi[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+HzCtl_Lo1Lim                        45.0                                    # Under frequency trip limits  HzCtl_Lo[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo2Lim                        46.0                                    # Under frequency trip limits  HzCtl_Lo[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo3Lim                        47.0                                    # Under frequency trip limits  HzCtl_Lo[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo4Lim                        47.0                                    # Under frequency trip limits  HzCtl_Lo[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo5Lim                        47.0                                    # Under frequency trip limits  HzCtl_Lo[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo6Lim                        47.0                                    # Under frequency trip limits  HzCtl_Lo[1..6]Lim in Hz. 2 decimal places only. - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+HzCtl_Lo1LimTm                      100                                    # Under frequency trip limit times HzCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo2LimTm                      60000                                   # Under frequency trip limit times HzCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo3LimTm                      60000                                   # Under frequency trip limit times HzCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo4LimTm                      60000                                   # Under frequency trip limit times HzCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo5LimTm                      60000                                   # Under frequency trip limit times HzCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+HzCtl_Lo6LimTm                      60000                                   # Under frequency trip limit times HzCtl_Lo[1..5]LimTm in ms (Range: [100 ...1000000]) - !!!check technical information regarding voltage limits of specific inverter models!!!
+
+Pll_Inv_HzGraLim                    300                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_GriMon_HzGraLim                 300                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_Inv_DmpRto                      2.0                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_GriMon_DmpRto                   2.0                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_Inv_SetTm                       0.045                                   # PLL parameters - DO NOT change without permission from SMA
+Pll_GriMon_SetTm                    0.045                                   # PLL parameters - DO NOT change without permission from SMA
+Pll_Inv_On2Srch_NomSum              300                                     # Pll model backwards compatibility of non SC/SCS UP inverters
+Pll_GriMon_On2Srch_NomSum           300                                     # PLL parameters - DO NOT change without permission from
+
+Pll_Inv_HzFilOff2On_Vol             0.3                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_GriMon_HzFilOff2On_Vol          0.3                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_Inv_HzFilWt2On_Vol              0.65                                    # PLL parameters - DO NOT change without permission from SMA
+Pll_GriMon_HzFilWt2On_Vol           0.6                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_Inv_HzFilOn2Wt_Vol              0.75                                    # PLL parameters - DO NOT change without permission from SMA
+Pll_GriMon_HzFilOn2Wt_Vol           0.7                                     # PLL parameters - DO NOT change without permission from SMA
+Pll_Inv_HzFilWt2Off_HysTm           50                                      # PLL parameters - DO NOT change without permission from SMA
+Pll_GriMon_HzFilWt2Off_HysTm        50                                      # PLL parameters - DO NOT change without permission from SMA
+
+
+###########################        GridForming        ######################################
+# Control Mode Setting Options:
+# ScsOpCmd=22321: GridForming Angle Inertia and Q/V Droop
+#################################################################
+
+GriForm_AcCtl_DrpVol                0.167                                    # Droop: Reactive Current – Voltage Droop positive sequence; only active for ScsOpCmd = 21521 or 22321; (accessible via Modbus interface)
+GriForm_AcCtl_DrpVolNs              0.167                                    # Droop: Negative sequence droop; active for ScsOpCmd = 21521/22321/22322/22323
+
+GriForm_AcCtl_WSptScal              1.0                                     # Droop: Active Power Scaling of plant control setpoints
+GriForm_AcCtl_VArSptScal            1.0                                     # Droop: Reactive Power Scaling of plant control setpoints
+
+GriForm_PwrCtl_VolDQLim             0.75                                    # PARAMETER NORMAL OPERATION - Current setpoint calculation: voltage filter freeze limit, Grid forming mode
+GriForm_AmpQFilTm                   0.02                                    # PARAMETER NORMAL OPERATION - Grid forming: Q current positive sequence, filter time constant
+GriForm_AmpNsDQFilTm                0.02                                    # PARAMETER NORMAL OPERATION - Grid forming: DQ current negative sequence, filter time constant
+
+License_Inertia                     SWITCH_STT_ENABLE                       # Inertia: Licence Activation / SWITCH_STT_DISABLE: Inertia off (default) / SWITCH_STT_ENABLE: Inertia on - ANGLE INERTIA CONTROL (existing license is prerequisite for activation of inertia control modes via AuxCtl.ScsOpCmd interface)
+GriForm_AcCtl_InertiaThetaH        1                                     # Inertia: Voltage angle inertia constant H_theta = 0.5*(dP/Snom)/(RoCoF/Fnom);   only active for ScsOpCmd = 22321 or 22323; attention: AmpRtg and WRtg dependence; (accessible via Modbus interface)
+GriForm_AcCtl_InertiaHzDmp        -1.8                                     # Inertia: Voltage frequency damping gain of voltage angle inertia control;       only active for ScsOpCmd = 22321 or 22323; (accessible via Modbus interface)
+
+GriForm_Frt_AMaxNomInit             1.3                                     # Grid forming FRT: Init value of maximum short circuit current in the virtual impedance; AmpRtg dependend
+GriForm_Frt_AmpPsQPrioEna           SWITCH_STT_ENABLE                       # Grid forming FRT: Virtual impedance, activation of the reactive current priority (positive sequence)
+
+GriForm_Frt_Mod                     GRIFORM_FRT_MOD_FULL_VI_K_FAC_ADVANCED  # Grid forming FRT: Mode / GRIFORM_FRT_MOD_FULL_VI_GRA_ADVANCED: k-factor compatibility with advanced parametrization
+
+GriForm_Frt_VirtImpKeSec2Lim        0.2                                     # Grid forming FRT: Virtual impedance, Limit for resonant controller gain in sector 2
+GriForm_Frt_VirtImpKeFilTm          0.006                                   # Grid forming FRT: Virtual impedance, resonant controller gain, filter time constant
+GriForm_Frt_VirtImpKeInit           900                                     # Grid forming FRT: Virtual impedance, resonant controller gain, initialization
+GriForm_Frt_FFWVolFilTm             0.001                                   # Grid forming FRT: Virtual impedance, time constant of voltage adjustment of feedforward of virtual reactance
+
+GriForm_Frt_VirtImpReact            0.167                                   # Grid forming FRT: Virtual impedance, positive sequence reactance
+GriForm_Frt_VirtImpReactMin         0.167                                   # Grid forming FRT: Virtual impedance, positive sequence minimum reactance
+GriForm_Frt_VirtImpReactFFWOfs      0.03                                    # Grid forming FRT: Virtual impedance, offset of feedforward of virtual reactance
+GriForm_Frt_VirtImpReactNs          0.167                                   # Grid forming FRT: Virtual impedance, negative sequence reactance
+GriForm_Frt_VirtImpRisInit          0.05                                   #added looking at SMA docs
+
+GriForm_Frt_AmpCtlOfsKiFac          8.0                                     #Grid forming FRT: Adaptive current control, factor of current control offset
+GriForm_Frt_AmpCtlFilTm             0.001                                   #Grid forming FRT: Adaptive current control, filter time constant
+GriForm_Frt_ArmsMsMaxLim            1.3                                     #Grid forming FRT: maximum limit for measured short circuit current in the virtual impedance
+GriForm_Frt_CtlDevLimMax            0.3                                     #Grid forming FRT: Adaptive apparent current control, maximum control deviation
+GriForm_Frt_AmpCtlKi                10                                       #Grid forming FRT: added after SMA comment
+
+GriForm_Frt_VolPsQCtlKp             -7                                   # Phase angle jump - phase following control - Grid forming FRT: VolPsQ control during virtual impedance, proportional gain
+GriForm_Frt_VolPsQCtlHzOfsMax       1                                       #Grid forming FRT: added after SMA comment
+
+GriForm_Frt_VirtImpLimTm            20000                                   # Virtual Impedance duration and locking for repetitive FRTs / Reclosure events
+GriForm_Frt_VirtImpLockTm           500                                      # Virtual Impedance duration and locking for repetitive FRTs / Reclosure events
+GriForm_Frt_VirtImpWaitTm           50                                      # Virtual Impedance duration and locking for repetitive FRTs / Reclosure events
+GriForm_Frt_VirtImpDlTm             5.0                                     # Virtual Impedance duration and locking for repetitive FRTs / Reclosure events
+
+ACtl_Hi3Lim                         2.0                                     # Over current trip limits  ACtl_Hi[1..3]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only.
+ACtl_Hi2Lim                         1.4                                     # Over current trip limits  ACtl_Hi[1..3]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only.
+ACtl_Hi1Lim                         1.25                                    # Over current trip limits  ACtl_Hi[1..3]Lim in p.u. (Range: [1.0 ...2.0]). 2 decimal places only.
+
+ACtl_Hi3LimTm                       140                                     # Over voltage trip limit times ACtl_Hi[1..3]LimTm in ms (Range: [0 ...1000000]).
+ACtl_Hi2LimTm                       1000                                    # Over voltage trip limit times ACtl_Hi[1..3]LimTm in ms (Range: [0 ...1000000]).
+ACtl_Hi1LimTm                       5000                                    # Over voltage trip limit times ACtl_Hi[1..3]LimTm in ms (Range: [0 ...1000000]).
+
+GriForm_GriOkTm                     500                                     # Transition AcRmpUp -> GriFeed.Bat.GriForm during Blackstart (ms)
+GriForm_AcCtl_HarmCtlEna            SWITCH_STT_ENABLE                       # Mitigation of decaying DC component / SWITCH_STT_DISABLE: off / SWITCH_STT_ENABLE: on
+
+
+#End of SC configuration file

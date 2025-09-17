@@ -1,0 +1,13 @@
+Test Num,Test Type,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Appendix Reference
+Test 1,OFRT Envelope,1.06,1,1.1,1,Appendix A CSR F Withstand
+Test 2,OFRT Envelope,1.06,-1,1.02,1,Appendix A CSR F Withstand
+Test 3,OFRT Envelope,1.06,0,1.06,1,Appendix A CSR F Withstand
+Test 4,UFRT Envelope,1.06,1,1.1,1,Appendix A CSR F Withstand
+Test 5,UFRT Envelope,1.06,-1,1.02,1,Appendix A CSR F Withstand
+Test 6,UFRT Envelope,1.06,0,1.06,1,Appendix A CSR F Withstand
+Test 7,OFRT Envelope,1.06,1,1.1,-1,Appendix A CSR F Withstand
+Test 8,OFRT Envelope,1.06,-1,1.02,-1,Appendix A CSR F Withstand
+Test 9,OFRT Envelope,1.06,0,1.06,-1,Appendix A CSR F Withstand
+Test 10,UFRT Envelope,1.06,1,1.1,-1,Appendix A CSR F Withstand
+Test 11,UFRT Envelope,1.06,-1,1.02,-1,Appendix A CSR F Withstand
+Test 12,UFRT Envelope,1.06,0,1.06,-1,Appendix A CSR F Withstand

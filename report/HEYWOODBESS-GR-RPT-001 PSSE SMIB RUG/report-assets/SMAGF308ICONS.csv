@@ -1,0 +1,5 @@
+﻿ICON,Value,Parameter,Description
+M,1,PlntCtlType,1 = HyCon. 0 = no plant control (PSS/E Specific)
+M+1,100100,PlntCtlBus,Number of plant controller bus (PSS/E Specific)
+M+2,4600,InvType,InvType used. Refer Table 1 – Similar to Inverter Type selection in mask of inverter model block in PSCAD
+M+3,22321,SCSOpCmd,21521: Grid Forming P/f and Q/V droop 22321: Grid Forming angle inertia and Q/V droop 22322: Grid Forming P/f droop and voltage inertia 22323: Grid Forming angle inertia and voltage inertia (PSS/E Specific)

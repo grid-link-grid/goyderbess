@@ -1,0 +1,6 @@
+Action;By;Description;Response By
+1.;NSP or AEMO; Voltage Reference Setpoint Change at 275kV POC of HEYWOODBESS; NSP or AEMO
+2.;Owner; HEYWOODBESS EMS controller receives the voltage setpoint from NSP/AEMO and issues a change in setpoint to the PPC. The PPC then determines a droop adjusted reactive power setpoint and determines an appropriate control value to be issued to all inverters.;Generating system
+3.;Owner; Completes the fast response; Inverters
+4.;Owner; Main transformer tap changer regulates the voltage at the 33kV terminals with the voltage deadband.; Main transformer OLTC
+5.;Owner; Completes the slow response;Main transformer OLTC

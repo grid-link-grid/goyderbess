@@ -1,0 +1,1 @@
+Name,Fault Times (s),Fault Duration (s),Fault Types,Minimum Time Between Faults,Number of 3 Phase Faults,Disturbances with Residual Voltage Below 90%,Disturbances with Residual Voltage Between 70-90%,Time Below Vpoc of 90%,Time Integral (pu.s),Inverter Operation States,Inverter Error Messages

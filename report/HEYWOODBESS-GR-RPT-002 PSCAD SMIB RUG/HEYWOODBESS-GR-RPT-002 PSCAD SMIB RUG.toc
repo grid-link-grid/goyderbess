@@ -1,0 +1,34 @@
+\contentsline {chapter}{Disclaimer}{i}{chapter*.1}%
+\contentsline {chapter}{Revision History}{iii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Overview of generating station }{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Reactive Capability}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Model Structure}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Layout}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Dependencies}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Parameter Configuration Files}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}SMIB representation}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Control scheme configuration}{8}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Reactive Power Control Schemes}{8}{subsection.3.5.1}%
+\contentsline {subsubsection}{Q Control Mode = Mode 5 — Remote Voltage Control Mode}{8}{section*.16}%
+\contentsline {subsubsection}{Voltage Droop Characteristics}{8}{section*.18}%
+\contentsline {subsubsection}{Q Control Mode = Mode 2 — Power Factor Control Mode}{9}{section*.20}%
+\contentsline {subsubsection}{Q Control Mode = Mode 3 — Remote Reactive Power Control Mode}{10}{section*.21}%
+\contentsline {subsubsection}{OLTC control}{10}{section*.22}%
+\contentsline {subsection}{\numberline {3.5.2}Active power and frequency control}{10}{subsection.3.5.2}%
+\contentsline {subsubsection}{P Control Mode = Mode 1 — Local Active power Control Mode}{11}{section*.23}%
+\contentsline {subsubsection}{P Control Mode = Mode 2 — Remote Active power Control Mode}{11}{section*.24}%
+\contentsline {subsubsection}{Frequency Droop Characteristics}{11}{section*.25}%
+\contentsline {subsection}{\numberline {3.5.3}Fault ride through mode}{12}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Protection}{13}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Simulation with a reduced number of converters}{13}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Initialisation-specific modifications}{14}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}HMI controls}{14}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Simulation with a reduced number of converters and MV auxiliary transformers}{17}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Use of external automation}{18}{subsection.3.7.4}%
+\contentsline {chapter}{\numberline {4}Appendix A: Model parameters}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Aggregated transformer parameters}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}275kV Underground Cable}{22}{section.4.2}%
+\contentsline {section}{\numberline {4.3}33kV reticulation}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Converters}{24}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Power Plant Control}{33}{section.4.5}%

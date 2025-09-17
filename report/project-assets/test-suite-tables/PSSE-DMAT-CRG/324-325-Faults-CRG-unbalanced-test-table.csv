@@ -1,0 +1,162 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Type,Duration [s],Impedance,Appendix Reference ,Results
+Test 37 p1,10,14,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 37 p2,8.5,4.20848,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 37 p3,17.8,4.01518,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 38,17.8,14,1.0227,-0.3,1.0167,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 39,17.8,14,1.0227,0.3,1.0287,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 40,3,14,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 41,3,3,1.0227,-0.3,1.0167,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 42,3,3,1.0227,0.3,1.0287,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 43 p1,10,14,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 43 p2,8.5,4.20848,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 43 p3,17.8,4.01518,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 44,17.8,14,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 45,17.8,14,1.0227,0.3,1.0287,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 46,3,14,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 47,3,3,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 48,3,3,1.0227,0.3,1.0287,-0.05,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 49 p1,10,14,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 49 p2,8.5,4.20848,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 49 p3,17.8,4.01518,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 50,17.8,14,1.0227,-0.3,1.0167,-1,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 51,17.8,14,1.0227,0.3,1.0287,-1,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 52,3,14,1.0227,0,1.0227,-1,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 53,3,3,1.0227,-0.3,1.0167,-1,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 54,3,3,1.0227,0.3,1.0287,-1,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 55 p1,10,14,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 55 p2,8.5,4.20848,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 55 p3,17.8,4.01518,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 56,17.8,14,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 57,17.8,14,1.0227,0.3,1.0287,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 58,3,14,1.0227,0,1.0227,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 59,3,3,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 60,3,3,1.0227,0.3,1.0287,-0.05,2PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 61 p1,10,14,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 61 p2,8.5,4.20848,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 61 p3,17.8,4.01518,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 62,17.8,14,1.0227,-0.3,1.0167,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 63,17.8,14,1.0227,0.3,1.0287,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 64,3,14,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 65,3,3,1.0227,-0.3,1.0167,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 66,3,3,1.0227,0.3,1.0287,-1,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 67 p1,10,14,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 67 p2,8.5,4.20848,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 67 p3,17.8,4.01518,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 68,17.8,14,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 69,17.8,14,1.0227,0.3,1.0287,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 70,3,14,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 71,3,3,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 72,3,3,1.0227,0.3,1.0287,-0.05,1PHG,0.43,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 73 p1,10,14,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 73 p2,8.5,4.20848,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 73 p3,17.8,4.01518,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 74,17.8,14,1.0227,-0.3,1.0167,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 75,17.8,14,1.0227,0.3,1.0287,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 76,3,14,1.0227,0,1.0227,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 77,3,3,1.0227,-0.3,1.0167,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 78,3,3,1.0227,0.3,1.0287,-1,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 79 p1,10,14,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 79 p2,8.5,4.20848,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 79 p3,17.8,4.01518,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 80,17.8,14,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 81,17.8,14,1.0227,0.3,1.0287,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 82,3,14,1.0227,0,1.0227,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 83,3,3,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 84,3,3,1.0227,0.3,1.0287,-0.05,1PHG,0.43,Zf = 1 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 85 p1,10,14,1.0227,0,1.0227,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 85 p2,8.5,4.20848,1.0227,0,1.0227,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 85 p3,17.8,4.01518,1.0227,0,1.0227,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 86,17.8,14,1.0227,-0.3,1.0167,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 87,17.8,14,1.0227,0.3,1.0287,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 88,3,14,1.0227,0,1.0227,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 89,3,3,1.0227,-0.3,1.0167,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 90,3,3,1.0227,0.3,1.0287,-1,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 91 p1,10,14,1.0227,0,1.0227,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 91 p2,8.5,4.20848,1.0227,0,1.0227,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 91 p3,17.8,4.01518,1.0227,0,1.0227,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 92,17.8,14,1.0227,-0.3,1.0167,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 93,17.8,14,1.0227,0.3,1.0287,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 94,3,14,1.0227,0,1.0227,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 95,3,3,1.0227,-0.3,1.0167,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 96,3,3,1.0227,0.3,1.0287,-0.05,1PHPH,2,Zf = 0 Zs,Appendix  Unbalanced Faults,Acceptable
+Test 97 p1,10,14,1.0227,0,1.0227,-1,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 97 p2,8.5,4.20848,1.0227,0,1.0227,-1,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 97 p3,17.8,4.01518,1.0227,0,1.0227,-1,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 98 p1,17.8,14,1.0227,-0.3,1.0167,-1,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 98 p2,17.8,14,1.0227,-0.3,1.0167,-1,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 98 p3,17.8,14,1.0227,-0.3,1.0167,-1,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 99 p1,17.8,14,1.0227,0.3,1.0287,-1,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 99 p2,17.8,14,1.0227,0.3,1.0287,-1,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 99 p3,17.8,14,1.0227,0.3,1.0287,-1,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 100 p1,3,14,1.0227,0,1.0227,-1,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 100 p2,3,14,1.0227,0,1.0227,-1,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 100 p3,3,14,1.0227,0,1.0227,-1,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 101 p1,3,3,1.0227,-0.3,1.0167,-1,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 101 p2,3,3,1.0227,-0.3,1.0167,-1,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 101 p3,3,3,1.0227,-0.3,1.0167,-1,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 102 p1,3,3,1.0227,0.3,1.0287,-1,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 102 p2,3,3,1.0227,0.3,1.0287,-1,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 102 p3,3,3,1.0227,0.3,1.0287,-1,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 103 p1,10,14,1.0227,0,1.0227,-0.05,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 103 p2,8.5,4.20848,1.0227,0,1.0227,-0.05,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 103 p3,17.8,4.01518,1.0227,0,1.0227,-0.05,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 103 p4,10,14,1.0227,0,1.0227,-0.05,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 103 p5,8.5,4.20848,1.0227,0,1.0227,-0.05,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 103 p6,17.8,4.01518,1.0227,0,1.0227,-0.05,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 104 p1,17.8,14,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 104 p2,17.8,14,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 104 p3,17.8,14,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 105 p1,17.8,14,1.0227,0.3,1.0287,-0.05,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 105 p2,17.8,14,1.0227,0.3,1.0287,-0.05,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 105 p3,17.8,14,1.0227,0.3,1.0287,-0.05,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 106 p1,3,14,1.0227,0,1.0227,-0.05,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 106 p2,3,14,1.0227,0,1.0227,-0.05,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 106 p3,3,14,1.0227,0,1.0227,-0.05,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 107 p1,3,3,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 107 p2,3,3,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 107 p3,3,3,1.0227,-0.3,1.0167,-0.05,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 108 p1,3,3,1.0227,0.3,1.0287,-0.05,2PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 108 p2,3,3,1.0227,0.3,1.0287,-0.05,2PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 108 p3,3,3,1.0227,0.3,1.0287,-0.05,2PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 109 p1,10,14,1.0227,0,1.0227,-1,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 109 p2,8.5,4.20848,1.0227,0,1.0227,-1,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 109 p3,17.8,4.01518,1.0227,0,1.0227,-1,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 109 p4,10,14,1.0227,0,1.0227,-1,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 109 p5,8.5,4.20848,1.0227,0,1.0227,-1,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 109 p6,17.8,4.01518,1.0227,0,1.0227,-1,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 110 p1,8.5,14,1.0227,-0.3,1.0167,-1,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 110 p2,8.5,14,1.0227,-0.3,1.0167,-1,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 110 p3,8.5,14,1.0227,-0.3,1.0167,-1,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 111 p1,8.5,14,1.0227,0.3,1.0287,-1,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 111 p2,8.5,14,1.0227,0.3,1.0287,-1,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 111 p3,8.5,14,1.0227,0.3,1.0287,-1,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 112 p1,3,14,1.0227,0,1.0227,-1,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 112 p2,3,14,1.0227,0,1.0227,-1,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 112 p3,3,14,1.0227,0,1.0227,-1,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 113 p1,3,3,1.0227,-0.3,1.0167,-1,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 113 p2,3,3,1.0227,-0.3,1.0167,-1,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 113 p3,3,3,1.0227,-0.3,1.0167,-1,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 114 p1,3,3,1.0227,0.3,1.0287,-1,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 114 p2,3,3,1.0227,0.3,1.0287,-1,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 114 p3,3,3,1.0227,0.3,1.0287,-1,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 115 p1,10,14,1.0227,0,1.0227,-0.05,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 115 p2,8.5,4.20848,1.0227,0,1.0227,-0.05,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 115 p3,17.8,4.01518,1.0227,0,1.0227,-0.05,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 115 p4,10,14,1.0227,0,1.0227,-0.05,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 115 p5,8.5,4.20848,1.0227,0,1.0227,-0.05,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 115 p6,17.8,4.01518,1.0227,0,1.0227,-0.05,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 116 p1,17.8,14,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 116 p2,17.8,14,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 116 p3,17.8,14,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 117 p1,17.8,14,1.0227,0.3,1.0287,-0.05,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 117 p2,17.8,14,1.0227,0.3,1.0287,-0.05,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 117 p3,17.8,14,1.0227,0.3,1.0287,-0.05,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 118 p1,3,14,1.0227,0,1.0227,-0.05,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 118 p2,3,14,1.0227,0,1.0227,-0.05,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 118 p3,3,14,1.0227,0,1.0227,-0.05,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 119 p1,3,3,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 119 p2,3,3,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 119 p3,3,3,1.0227,-0.3,1.0167,-0.05,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 120 p1,3,3,1.0227,0.3,1.0287,-0.05,1PHG,0.43,1.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 120 p2,3,3,1.0227,0.3,1.0287,-0.05,1PHG,0.43,5.0 Ω,Appendix  Unbalanced Faults,Acceptable
+Test 120 p3,3,3,1.0227,0.3,1.0287,-0.05,1PHG,0.43,10.0 Ω,Appendix  Unbalanced Faults,Acceptable

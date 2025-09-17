@@ -1,0 +1,49 @@
+{
+    "bus_voltage_channels": [
+        {
+            "bus": 369080,
+            "vol_name": "SHTS_220kV_V_PU",
+            "ang_name": "SHTS_220kV_V_ANG"
+        },
+        {
+            "bus": 329080,
+            "vol_name": "GLENROWAN_220kV_V_PU",
+            "ang_name": "GLENROWAN_220kV_V_ANG"
+        },
+        {
+            "bus": 323080,
+            "vol_name": "DEDERANG_220kV_V_PU",
+            "ang_name": "DEDERANG_220kV_V_ANG"
+        },
+        {
+            "bus": 327080,
+            "vol_name": "FOSTERS_220kV_V_PU",
+            "ang_name": "FOSTERS_220kV_V_ANG"
+        },
+        {
+            "bus": 311080,
+            "vol_name": "BENDIGO_220kV_V_PU",
+            "ang_name": "BENDIGO_220kV_V_ANG"
+        },
+        {
+            "bus": 355080,
+            "vol_name": "MTBEAUTY_220kV_V_PU",
+            "ang_name": "MTBEAUTY_220kV_V_ANG"
+        },
+        {
+            "bus": 325080,
+            "vol_name": "EILDON_220kV_V_PU",
+            "ang_name": "EILDON_220kV_V_ANG"
+        },
+        {
+            "bus": 379081,
+            "vol_name": "THOMASTOWN_220kV_V_PU",
+            "ang_name": "THOMASTOWN_220kV_V_ANG"
+        }
+    ],
+    "branch_pq_channels": [],
+    "var_channels": [],
+    "machine_channels": [],
+    "state_channels": [],
+    "freq_channels": []
+}

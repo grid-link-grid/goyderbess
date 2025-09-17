@@ -1,0 +1,20 @@
+Connection Overview;Description
+Project Name;Heywood BESS
+Technology;Battery
+Geographical location;5 km from the town of Heywood and 300 km west of Melbourne in Victoria
+Connection point;HYTS connection to existing 275 kV switchyard
+Control point;The connection point as described above
+Network Service Provider;AusNet
+Maximum capacity at the CP;$\pm$ 285 MW and $\pm$ 112.575 MVAr [$50^{\circ}$ C]
+Units;92 x SMA SCS 4600 UP-S inverters
+Rated capacity at the generating unit terminals;423.2 MVA [$35^{\circ} $C]
+Maximum operating temperature;$50^{\circ} $C
+Default Control Mode;Voltage Droop Control
+Available Modes;Voltage Droop Control, Remote/local Reactive Power Control and Power Factor Control
+Expected Target Reference;1.06 pu (275kV base)
+Expected Normal Voltage;291.5 kV
+Q Base;112.575 MVAr
+Droop \%;4.00\% on 112.575 MVAr base
+System Strength at the POC; 3185 MVA (N-1) and 5591 MVA (N)
+Owner Contact Details;TBD
+24/7 Operator Contact Details;TBD

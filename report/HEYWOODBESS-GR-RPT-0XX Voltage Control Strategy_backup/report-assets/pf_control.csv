@@ -1,0 +1,6 @@
+Action;By;Description;Response By
+1.;NSP or AEMO; Power Factor Reference Setpoint Change at 132kV POC of Clements Gap BESS; NSP or AEMO
+2.;Owner; Clements Gap BESS EMS controller receives the power factor reference setpoint from NSP/AEMO and issues a change in setpoint to the PPM. The PPM then calculates a reactive power setpoint and determines an appropriate control value to be issued to all inverters.;Generating system
+3.;Owner; Completes the fast response; Inverters
+4.;Owner; Main transformer tap changer regules the voltage at the 33kV terminals with the voltage deadband.; Main transformer OLTC
+5.;Owner; Completes the slow response;Main transformer OLTC

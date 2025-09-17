@@ -1,0 +1,11 @@
+Parameter;Value
+Tap Changer Type; On-load
+OLTC Number of Taps; 25
+OLTC Nominal Tap; 13
+OLTC Tap Size;1.25\%
+OLTC Tapping Range; $\pm$ 15\%
+OLTC Voltage Deadband (pu); 0.015
+OLTC Voltage Setpoint (pu); 1.0
+OLTC Tapped Winding; 275kV side
+OLTC Total Time Between Taps; 20s
+OLTC Mechanical Operation Time;7s

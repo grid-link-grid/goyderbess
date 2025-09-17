@@ -1,0 +1,38 @@
+\newcommand{\bushere}[3]{% length, text above, text below}
+% Optional arguments do nto work in paths
+%
+% starting point; draw an edge and then two nodes
+% save the position
+coordinate(tmp)
+% go up and do an edge down
+++(0,#1) node[anchor=base, font=\footnotesize]{#2} edge[ultra thick] ++(0, {-2*#1})
+% edges do not move the current point, go down to position the node
+++(0,{-2*#1}) node[below]{#3}
+% go back to where we started
+(tmp)
+}
+
+\ctikzset{sources/fill=gray!20, resistors/fill=gray!20}
+\resizebox{0.8\linewidth}{!}{ % Set width to \linewidth
+	\begin{tikzpicture}[semithick]% default line width
+		% Buses and branches
+		\draw (0,0)
+		node[red, left, font=\footnotesize]{Generator (should trip)} ++(1.5,0) \bushere{1.5}{Connection Point}{} coordinate(poc);
+		\draw (poc)
+		-- ++ (1,0) to[generic, l={$Z_{\text{grid}}$}, resistors/width=2] ++ (4,0)
+		-- ++ (1,0)
+		\bushere{1.5}{Infinite Bus}{} coordinate(infinite bus);
+		% One load (start from the coord load, go up)
+		\ctikzset{bipoles/border margin=0.5}% See manual section 3.1.2
+		\draw (infinite bus) -- ++(1,0) node[vsourcesinshape, rotate=90]{} ++(0.5,0) node[right]{$V_{\text{grid}}$};
+		\draw (poc) -- ++(-1,0) node[red, vsourcesinshape, rotate=90]{};
+		% Fault
+		\draw[red, font=\footnotesize] (poc) ++(0, -0.7) -- ++(0.7,0) -- ++(0,-1) node[ground]{} ++(0.6,0.2) node[]{$Z_{\text{fault}}$};
+		
+	\end{tikzpicture}
+}
+
+
+
+
+

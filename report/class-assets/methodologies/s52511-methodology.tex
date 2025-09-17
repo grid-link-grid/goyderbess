@@ -1,0 +1,9 @@
+To test the frequency droop controller, $F_{\mathrm{grid}}$ is driven with a time-series signal $F_{\mathrm{grid}_{\mathrm{1}}}, F_{\mathrm{grid}_{\mathrm{2}}}, F_{\mathrm{grid}_{\mathrm{3}}}, \dots, F_{\mathrm{grid}_{\mathrm{n}}}$, as shown in Figure~\ref{fig:s52511-methodology}. The active power through the connection point is expected to change by an amount that is proportional to the change in frequency, subject to active power limits and available input power\footnote{Note that while not addressed in this document, the \ac{DMAT} reports show the behaviour of the frequency controller when limited by available input power.}, in line with the agreed droop gain.
+
+
+\begin{figure}[H]
+	\centering
+	\input{\classassetsdir/diagrams/smib-fgrid-disturbance-diagram.tex}
+	\caption{Frequency droop controller testing methodology}
+	\label{fig:s52511-methodology}
+\end{figure}

@@ -1,0 +1,11 @@
+﻿STATE ,Description 
+K,Reserved
+K+1,Filtered remote bus frequency
+K+2,Filtered remote bus voltage
+K+3,Filtered POI active power
+K+4,Filtered POI reactive power
+K+5,Filtered PV active power
+K+6,Filtered PV reactive power
+K+7,Filtered BESS active power
+K+8,Filtered BESS reactive power
+K+9,Frt Detection Voltage Filter

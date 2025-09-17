@@ -1,0 +1,19 @@
+Parameter;Value
+Nameplate Voltage (kV); 132/33 kV
+Rated Power (ONAN/ONAF); 45/70 MVA
+Vector Group; YNyn0
+Positive Sequence Leakage Reactance (pu); 0.13
+Zero Sequence Resistance (pu); 0.0073
+Zero Sequence Reactance (pu); 0.1298
+No Load Losses ;$\leq$ 39.9 kW
+Load Losses ; $\leq$ 260 kW
+Excitation Current (%): 0.245%
+Tap Changer Type; On-load
+OLTC Number of Taps; 17
+OLTC Nominal Tap; 10
+OLTC Tap Size; 1.75%
+OLTC Tapping Range; 0.8425 to 1.1225
+OLTC Voltage Deadband (pu); 0.015
+OLTC Voltage Setpoint (pu); 1.0
+OLTC Tapped Winding; 132kV side
+OLTC Total Time Between Taps; 10s

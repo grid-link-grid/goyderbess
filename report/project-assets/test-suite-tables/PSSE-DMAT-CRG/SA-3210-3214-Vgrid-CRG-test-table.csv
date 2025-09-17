@@ -1,0 +1,15 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 157 p1,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,Acceptable
+Test 157 p2,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,Acceptable
+Test 158 p1,1.88,1.6,0,-0.05,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,Acceptable
+Test 158 p2,1.88,1.6,0,-0.05,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,Acceptable
+Test 179 p1,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,Acceptable
+Test 179 p2,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,Acceptable
+Test 183 p1,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion
+Test 183 p2,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion
+Test 187 p1,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion
+Test 187 p2,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion
+Test 187 p3,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion
+Test 187 p4,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion
+Test 187 p5,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion
+Test 187 p6,1.88,1.6,0,-0.66,SA PSSE DMAT Appendix I Grid voltage change response tests - Charging,See Discussion

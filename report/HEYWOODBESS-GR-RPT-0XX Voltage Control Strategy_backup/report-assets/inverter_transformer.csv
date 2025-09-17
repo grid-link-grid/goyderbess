@@ -1,0 +1,13 @@
+Parameter;Value
+Nameplate Voltage (kV); 33/0.63
+Rated Power (MVA); 4.2 MVA at $35^{\circ}C$, 3.78 MVA at $50^{\circ}C$
+Vector Group; Dy11
+Tap Ratio Range; 0.95 to 1.05
+Tap Changer Type; Off-load
+Number of Taps; 5
+Nominal Tap; 3 (1.0 pu)
+Tap Size; 2.5\% (at 33kV)
+Positive Sequence Leakage Reactance (%); 6.83\%
+No Load Losses (W);3780
+Load Losses (W); 36900
+Excitation Current (%): 0.245%

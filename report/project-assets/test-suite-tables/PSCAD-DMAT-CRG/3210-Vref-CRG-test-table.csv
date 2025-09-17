@@ -1,0 +1,11 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 149 p1,10,14,0,-1,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 149 p2,10,3,0,-1,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 150 p1,10,14,0,-0.05,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 150 p2,10,3,0,-0.05,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 151 p1,3,14,0,-1,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 151 p2,3,3,0,-1,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 152 p1,3,14,0,-0.05,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 152 p2,3,3,0,-0.05,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 153 p1,8.5,4.20848,0,-1,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable
+Test 154 p1,8.5,4.20848,0,-0.05,PSCAD DMAT Appendix F Voltage reference step change tests - Charging,Acceptable

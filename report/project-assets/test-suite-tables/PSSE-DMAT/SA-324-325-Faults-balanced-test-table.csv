@@ -1,0 +1,19 @@
+Test Num,SCR,X/R,Vpoc [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Type,Duration [s],Impedance,Appendix Reference ,Results
+Test 4,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,0.03 pu,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 5,1.88,1.6,1.0227,-0.3,1.0167,1,3PHG,0.43,0.03 pu,SA PSSE DMAT Appendix A Balanced fault tests,See Discussion
+Test 6,1.88,1.6,1.0227,0.3,1.0287,1,3PHG,0.43,0.03 pu,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 10,1.88,1.6,1.0227,0,1.0227,0.05,3PHG,0.43,0.03 pu,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 11,1.88,1.6,1.0227,-0.3,1.0167,0.05,3PHG,0.43,0.03 pu,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 12,1.88,1.6,1.0227,0.3,1.0287,0.05,3PHG,0.43,0.03 pu,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 16,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.43,Zf = 1 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 17,1.88,1.6,1.0227,-0.3,1.0167,1,3PHG,0.43,Zf = 1 Zs,SA PSSE DMAT Appendix A Balanced fault tests,See Discussion
+Test 18,1.88,1.6,1.0227,0.3,1.0287,1,3PHG,0.43,Zf = 1 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 22,1.88,1.6,1.0227,0,1.0227,0.05,3PHG,0.43,Zf = 1 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 23,1.88,1.6,1.0227,-0.3,1.0167,0.05,3PHG,0.43,Zf = 1 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 24,1.88,1.6,1.0227,0.3,1.0287,0.05,3PHG,0.43,Zf = 1 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 28,1.88,1.6,1.0227,0,1.0227,1,3PHG,0.5,Zf = 2 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 29,1.88,1.6,1.0227,-0.3,1.0167,1,3PHG,0.5,Zf = 2 Zs,SA PSSE DMAT Appendix A Balanced fault tests,See Discussion
+Test 30,1.88,1.6,1.0227,0.3,1.0287,1,3PHG,0.5,Zf = 2 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 34,1.88,1.6,1.0227,0,1.0227,0.05,3PHG,0.5,Zf = 2 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 35,1.88,1.6,1.0227,-0.3,1.0167,0.05,3PHG,0.5,Zf = 2 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable
+Test 36,1.88,1.6,1.0227,0.3,1.0287,0.05,3PHG,0.5,Zf = 2 Zs,SA PSSE DMAT Appendix A Balanced fault tests,Acceptable

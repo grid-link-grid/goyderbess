@@ -1,0 +1,6 @@
+Test Num,SCR,X/R,Vslack [pu],Qpoc [pu],Vref [pu],Ppoc [pu],Appendix Reference 
+Test 1,ZERO_IMP,-1,1.8,0,1,1,Appendix M CSR Voltage Protection
+Test 2,ZERO_IMP,-1,1.5,0,1,1,Appendix M CSR Voltage Protection
+Test 3,ZERO_IMP,-1,1.35,0,1,1,Appendix M CSR Voltage Protection
+Test 4,ZERO_IMP,-1,1.27,0,1,1,Appendix M CSR Voltage Protection
+Test 5,ZERO_IMP,-1,1.24,0,1,1,Appendix M CSR Voltage Protection

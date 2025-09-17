@@ -1,0 +1,11 @@
+Test Num,SCR,X/R,Qpoc [pu],Ppoc [pu],Appendix Reference ,Results
+Test 161 p1,10,14,0,1,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 161 p2,10,3,0,1,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 162 p1,10,14,0,0.05,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 162 p2,10,3,0,0.05,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 163 p1,3,14,0,1,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 163 p2,3,3,0,1,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 164 p1,3,14,0,0.05,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 164 p2,3,3,0,0.05,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 165 p1,8.5,4.20848,0,1,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable
+Test 166 p2,8.5,4.20848,0,0.05,PSCAD DMAT Appendix H Power factor reference step change tests,Acceptable

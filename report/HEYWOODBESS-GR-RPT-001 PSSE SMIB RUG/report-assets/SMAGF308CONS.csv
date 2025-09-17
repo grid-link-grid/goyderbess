@@ -1,0 +1,241 @@
+﻿CON,Value,Parameter,Description
+J+0,4600,Rtg.VARtg,Apparent power rating in kVA can be set using this parameter. If set to 0.0. then rated apparent power as per Inverter type (ICON(M+2)) will be used
+J+1,4600,Rtg.WRtg,Active power rating in kW can be set using this parameter. If set to 0.0. then rated Active power as per Inverter type (ICON(M+2)) will be used 
+J+2,0,Rtg.VarRtg,Reactive power rating in kVar can be set using this parameter. If set to 0.0. then rated reactive power as per Inverter type (ICON(M+2)) will be used 
+J+3,0,Rtg.AmpRtg,Current rating in A can be set using this parameter. If set to 0.0. then rated current rating as per Inverter type (ICON(M+2)) will be used 
+J+4,0,Rtg.VADrtPriMod,Prioritizing of control in case of derating 0: Q Priority. 1: P Priority 
+J+5,1,Rtg.DrtFac,Derating Factor to emulate the thermal derating of the device 
+J+6,1,Spt.WGraMod,Active power gradient. activation 
+J+7,1,Spt.VArGraMod,Reactive power gradient. activation 
+J+8,100,Spt.WGra,Gradient for active power p.u./s 
+J+9,100,Spt.VArGra,Gradient for reactive power p.u./s 
+J+10,1,Spt.WFilMod ,Filter for active power setpoint. activation 
+J+11,1,Spt.VArFilMod,Filter for reactive power setpoint. activation
+J+12,0.1,Spt.WFilTm,WSpt. filter time constant in s
+J+13,0.1,Spt.VArFilTm,VArSpt. filter time constant in s
+J+14,0.46,Filt.VolDQFilTm,DQ Voltage. filter time constant in s
+J+15,0.005,Filt.VolPsFilTm,Voltage filter time constant for conversion VA to Amp in s
+J+16,0.01,Filt.AmpDFilTm,D axis current. filter time constant in s
+J+17,0.02,Filt.AmpQFilTm,Q axis current. filter time constant in s
+J+18,0.01,Filt.ABControlDFilTm,Filter time constant for D-axis voltage for AB Control in s (PSS/E Specific)
+J+19,0.01,Filt.ABControlQFilTm,Filter time constant for Q-axis voltage for AB Control in s (PSS/E Specific)
+J+20,0.1,Filt.AvalPwrFilTm,Filter time constant for calculated available active and reactive power in s
+J+21,0.1,Filt.HzFilTm,Grid Management. time constant frequency filter
+J+22,5,Filt.VolSptGra,Rate limiter in p.u/s over voltage setpoint (VAR(L+3)) applied to the inverter
+J+23,1,AcCtl.WSptScal,AC current control. active power setpoint scaling factor
+J+24,1,AcCtl.VArSptScal,AC current control. reactive power setpoint scaling factor
+J+25,-2,AcCtl.DrpHz,Active power frequency droop
+J+26,0.167,AcCtl.DrpVol,Reactive power voltage droop
+J+27,-0.12,AcCtl.DrpTheta,Factor angle pre-control
+J+28,1.5,AcCtl.InertiaVolH,Inertia: Voltage magnitude inertia constant 
+J+29,1,AcCtl. InertiaThetaH,Inertia: Voltage angle inertia constant 
+J+30,0,AcCtl.DrpThetaFilTm,AC current control. Time constant of low pass filter for bandwidth limitation of phase feed forward damping 
+J+31,0,AcCtl.InertiaHzFbDmp,Inertia: Frequency feedback gain of voltage angle inertia control 
+J+32,0,AcCtl.InertiaHzFbFilTm,Inertia: Frequency feedback time constant of voltage angle inertia control
+J+33,0,AcCtl.InertiaHzFbFil2Tm,Inertia: Frequency feedback time constant of voltage angle inertia control
+J+34,0,AcCtl.InertiaHzFwdDmp,Inertia: Feed-forward damping gain of voltage angle inertia control
+J+35,0,AcCtl.InertiaVolFwdDmp,Inertia: Feed-forward damping gain of voltage magnitude inertia control
+J+36,0,AcCtl.InertiaVolFbDmp,Inertia: Voltage feedback gain of voltage magnitude inertia control
+J+37,0,AcCtl.InertiaVolFbDmp-FilTm,Inertia: Voltage feedback time constant of voltage magnitude inertia control
+J+38,0,AcCtl.InertiaVolFbDmp-Fil2Tm,Inertia: Voltage feedback time constant of voltage magnitude inertia control
+J+39,0.6,AcCtl.AmpDLimKp,AC current control. proportional amplification for active current limit
+J+40,22.5,AcCtl.AmpDLimKi,AC current control. integral amplification for active current limit
+J+41,0.6,AcCtl.InertiaAmpDLimKp,Inertia: AC current control. proportional amplification for active current limit
+J+42,22.5,AcCtl.InertiaAmpDLimKi,Inertia: AC current control. integral amplification for active current limit
+J+43,0.0003333,AcCtl.AmpPsDLim_Ki2Fac,AC current control. double integral amplification for active current limit
+J+44,6,Ac-Ctl.AmpPsDLim_I2RocofLi m,AC and DC limit control. minimum/maximum range control signal
+J+45,3,Ac-Ctl.AmpPsDLim_I2CtlDow nGain,AC current control. additional double integral amplification. if active current limit is not exceeded
+J+46,2.4,AcCtl.AmpQLimKp,AC current control. proportional amplification for reactive current limit
+J+47,90,AcCtl.AmpQLimKi,AC current control. integral amplification for reactive current limit
+J+48,2.4,AcCtl.InertiaAmpQLimKp,Inertia: AC current control. proportional amplification for reactive current limit
+J+49,90,AcCtl.InertiaAmpQLimKi,Inertia: AC current control. integral amplification for reactive current limit
+J+50,0.0003333,Ac-Ctl.AmpPsQLim_Ki2Fac,AC current control. double integral amplification for reactive current limit
+J+51,6,Ac-Ctl.AmpPsQLim_I2RocofLi m,AC current control. minimum/maximum range control signal
+J+52,3,Ac-Ctl.AmpPsQLim_I2CtlDow nGain,AC current control. additional double integral amplification. if reactive current limit is not exceeded
+J+53,0,AcCtl.InertiaThetaW-CtlEna,Inertia: Enable active power inertia control
+J+54,0.5,AcCtl.InertiaThetaWCtlVolLim,Voltage limit for power regulation in phase inertia
+J+55,0,AcCtl.InertiaVolVArCtlEna,Inertia: Enable reactive power inertia control
+J+56,0.5,AcCtl.InertiaVolVArCtlVol-Lim,Voltage limit for power regulation in the voltage inertia
+J+57,0,AcCtl.InertiaThetaFwdDmpFilTm,Inertia: Time constant for bandwidth limitation of angle feed-forward damping
+J+58,-0.12,AcCtl.InertiaThetaFwdDmp,Inertia: Voltage angle feed-forward damping gain of voltage angle inertia control
+J+59,1,AcCtl.AmpPsDFbEna,Inertia: Activation of inner active current feedback of voltage angle inertia control
+J+60,1,AcCtl.AmpPsQFbEna,Inertia: Activation of inner reactive current feedback of voltage magnitude inertia control
+J+61,1,Ac-Ctl.AmpDLim_VolPsNomLi m,AC current control. active current limiation. voltage limit for accurate active power limitation
+J+62,1,Ac-Ctl.AmpQLim_VolPsNomL im,AC current control. reactive current limiation. voltage limit for accurate reactive power limitation
+J+63,1,AcCtl.AmpDQLimEna,AC current control. limiting controller activation
+J+64,0,AcCtl.PriModPsRelEna,AC current control. Prioritization mode - positive sequence relative - for current limitation. activation
+J+65,60,AcCtl.VolABKi,AC voltage control integral gain
+J+66,0.01,AcCtl.VolABKp,AC voltage control Proportional gain (PSS/E Specific) 
+J+67,0.02,AcCtl.AmpDQFilTm,AC current control. DQ current filter time constant
+J+68,10,AcCtl.ParamFilTm,Inertia: Low pass filter time constant for smooth inertia parameter change
+J+69,20,AcCtl.PreFreezeDlTm,PreFreeze delay time [ms]
+J+70,0.02,AcCtl.PreFreezeFilTm,PreFreeze filter time constant
+J+71,-1.8,AcCtl.InertiaHzDmp,Inertia: Voltage frequency damping gain of voltage angle inertia control
+J+72,0.03,AcCtl.InertiaVolDmp,Inertia: Voltage magnitude damping gain of voltage magnitude inertia control
+J+73,0,AcCtl.PlantLevelInertia,Enable plant level inertia
+J+74,4,Frt.Frt_Mod,Grid forming FRT: Mode 
+J+75,0.8,Frt.LoVolOnLim,Grid forming FRT: Lower voltage limit for entering FRT Mode (PSS/E Specific) 
+J+76,1.1,Frt. HiVolOnLim,Grid forming FRT: Upper voltage limit for entering FRT Mode (PSS/E Specific) 
+J+77,0.9,Frt.LoVolOffLim,Grid forming FRT: Lower voltage limit for return to normal mode
+J+78,1.1,Frt.HiVolOffLim,Grid forming FRT: Upper voltage limit for return to normal mode
+J+79,0,Frt.DynVolOnLimEna,Grid forming FRT: Activation of dynamic offset voltage limits for entering FRT mode (PSS/E Specific)
+J+80,0,Frt.DynVolOffLimEna,Grid forming FRT: Activation of dynamic offset voltage limits for return to normal mode
+J+81,1.4,Frt.VirtImpSwDetLim,Grid forming FRT: Current threshold for activation of virtual impedance
+J+82,5,Frt.VirtImpDlTm,Grid forming FRT: Delay time for activation of virtual impedance
+J+83,500,Frt.VirtImpLockTm,Grid forming FRT: Minimum duration time of virtual impedance
+J+84,50,Frt.VirtImpWaitTm,Grid forming FRT: Minimum duration time for reactivation of virtual impedance
+J+85,30,Frt.ResetTm,Time to jump back to initial state in FRT-Detection-Statemachine
+J+86,1,Frt.AmpCtlEna,Grid forming FRT: Activation of adaptive current control
+J+87,1.3,Frt.AMaxNomInit ,Grid forming FRT: Init value of maximum short circuit current in the virtual impedance
+J+88,1,Frt.AMaxNom,Grid forming FRT: maximum short circuit current
+J+89,0.001,Frt.AmpCtlFilTm,Grid forming FRT: Adaptive current control. filter time constant
+J+90,0.3,Frt.CtlDevLimMax,Grid forming FRT: Adaptive apparent current control. maximum control deviation
+J+91,1,Frt.NegCtlDev_Gain,Amplification or reduction of the negative control deviation of the VI controller
+J+92,0,Frt.AmpCtlKp,Grid forming FRT: Adaptive current control. proportional gain
+J+93,10,Frt.AmpCtlKi,Grid forming FRT: Adaptive current control. integral gain
+J+94,0.167,Frt.VirtImpReact,Grid forming FRT: Virtual impedance. reactance
+J+95,0.167,Frt.VirtImpReactMin,Grid forming FRT: Virtual impedance. minimum reactance
+J+96,1,Frt.VirtImpReactFFWEna,Activation of the pre-control of the virtual reactance of the difference
+J+97,0.68,Frt.VirtImpReactFFWFac,Grid forming FRT: Virtual impedance. factor of feedforward of virtual reactance
+J+98,0,Frt.VirtImpRis,Grid forming FRT: Virtual impedance. resistance
+J+99,0.05,Frt.VirtImpRisInit,Grid forming FRT: Virtual impedance. resistance. init Value
+J+100,0.008,Frt.VirtImpRisFilTm,Grid forming FRT: Virtual impedance. time constant for decaying resistance
+J+101,0.004,Frt.VolPsQFilTm,Grid forming FRT: VolPsQ control during virtual impedance. filter time constant of VolPsQ voltage
+J+102,-7,Frt.VolPsQCtlKp,Grid forming FRT: VolPsQ control during virtual impedance. proportional gain
+J+103,0.25,Frt.VolPsQCtlDZn,Grid forming FRT: VolPsQ Control during virtual impedance. limit of proportional zone gain
+J+104,0,Frt.VolPsQCtlDZnKp ,Grid forming FRT: VolPsQ Control during virtual impedance. proportional zone gain
+J+105,1,Frt.VolPsQCtlHzOfsMax,Grid forming FRT: VolPsQ control during virtual impedance. maximum actuating variable in Hz
+J+106,1,Frt.VolPsQCtrlEna,Value of the VolPsQ P controller
+J+107,0,Frt.AMaxNomInitTm,Grid forming FRT: Initialization time of maximum short circuit current in the virtual impedance
+J+108,1.3,Frt.ArmsMsMaxLim,Grid forming FRT: maximum limit for measured short circuit current in the virtual impedance
+J+109,8,Frt.AmpCtlOfsKiFac,Grid forming FRT: Adaptive current control. factor of current control offset
+J+110,1.3,Frt.AmpCtlOfsAMaxSpt,Grid forming FRT: Adaptive current control. maximum short circuit current of current control offset
+J+111,0.03,Frt.VirtImpReactFFWOfs,Grid forming FRT: Virtual impedance. offset of feedforward of virtual reactance
+J+112,6,Frt.KFacPs,Grid forming: K-Factor positive sequence
+J+113,0.001,Frt.FFWVolFilTm,Grid forming FRT: Virtual impedance. time constant of voltage adjustment of feedforward of virtual reactance
+J+114,1,Frt.AmpPsQPrioEna,Grid forming FRT: Virtual impedance. activation of the reactive current priority
+J+115,0.25,Frt.PsDCtlRng,Grid forming FRT: Virtual impedance. amplification factor for limitation of the active current with reactive current priority
+J+116,0.18,Frt.AmpPsDFFWMin,Grid forming FRT: Virtual impedance. minimum short circuit current of feedforward of virtual reactance
+J+117,0.03,Frt.FFWAmpLimOfs,Grid forming FRT: Virtual impedance. short circuit current offset of feedforward of virtual reactance
+J+118,0,Frt.EnaAmpPsDSptMan,Enable Manual setpoint for active current component
+J+119,0,Frt.AmpPsDSptMan,Manual setpoint for active current component
+J+120,0.3,Frt.AmpPsDFilTm,Grid forming FRT: Virtual impedance. time constant of the active current adjustmen
+J+121,-1,Frt.AmpPsDMin,Grid forming FRT: Virtual impedance. current d axis positive sequence. maximum charge limit
+J+122,0.3,Frt.AmpPsQFilTm,Grid forming FRT: Virtual impedance. time constant of the reactive current adjustment
+J+123,0.02,OvAmp.AmpMaxNomSe cFilTm,Overcurrent: Filter time constant of overcurrent factors
+J+124,76000,OvAmp.AmpMaxNomSe c0Tm,Overcurrent: Duration in milliseconds for sector 0
+J+125,100,OvAmp.AmpMaxNomSe c1Tm,Overcurrent: Duration in milliseconds for sector 1
+J+126,900,OvAmp.AmpMaxNomSe c2Tm,Overcurrent: Duration in milliseconds for sector 2
+J+127,4000,OvAmp.AmpMaxNomSe c3Tm,Overcurrent: Duration in milliseconds for sector 3
+J+128,9000,OvAmp.AmpMaxNomSe c4Tm,Overcurrent: Duration in milliseconds for sector 4
+J+129,13900,OvAmp.AmpMaxNomSe c4TransTm,Overcurrent: Duration in milliseconds for sector 4 in transition mode
+J+130,2000,OvAmp.AmpMaxNomSe c4ThmDrtTm,Intermediate time within the fourth and last sector in the virtual impedance in milliseconds
+J+131,1,OvAmp.AmpMaxNomSe c0,Overcurrent: Nominal current factor for maximum apparent current in sector 0
+J+132,1.57,OvAmp.AmpMaxNomSe c1,Overcurrent: Nominal current factor for maximum apparent current in sector 1
+J+133,1.25,OvAmp.AmpMaxNomSe c2,Overcurrent: Nominal current factor for maximum apparent current in sector 2
+J+134,1.16,OvAmp.AmpMaxNomSe c3,Overcurrent: Nominal current factor for maximum apparent current in sector 3
+J+135,0.95,OvAmp.AmpMaxNomSe c4,Overcurrent: Nominal current factor for maximum apparent current in sector 4
+J+136,1,OvAmp.AmpMaxNomSe c3Obs,Overcurrent: Nominal current factor for current observation to move in sector 3
+J+137,1,OvAmp.AmpMaxNomSe c4Obs,Overcurrent: Nominal current factor for current observation to move in sector 4
+J+138,0.03,OvAmp.AmpMaxNomSe c4ObsHys,Overcurrent: Nominal current factor for current Hysteresis observation to move in sector 4
+J+139,1,OvAmp.AmpPsDMaxNo mSec0,Overcurrent: Nominal current factor for maximum active current in sector 0
+J+140,1.57,OvAmp.AmpPsDMaxNo mSec1,Overcurrent: Nominal current factor for maximum active current in sector 1
+J+141,1.25,OvAmp.AmpPsDMaxNo mSec2,Overcurrent: Nominal current factor for maximum active current in sector 2
+J+142,1.16,OvAmp.AmpPsDMaxNo mSec3,Overcurrent: Nominal current factor for maximum active current in sector 3
+J+143,1,OvAmp.AmpPsQMaxNo mSec0,Overcurrent: Nominal current factor for maximum reactive current in sector 0
+J+144,1.57,OvAmp.AmpPsQMaxNo mSec1,Overcurrent: Nominal current factor for maximum reactive current in sector 1
+J+145,1.25,OvAmp.AmpPsQMaxNo mSec2,Overcurrent: Nominal current factor for maximum reactive current in sector 2
+J+146,1.16,OvAmp.AmpPsQMaxNo mSec3,Overcurrent: Nominal current factor for maximum reactive current in sector 3
+J+147,0,OvAmp.VirtImpEna,Overcurrent: Activation of overcurrent for virtual impedance
+J+148,0,OvAmp.AcCtlEna,Overcurrent: Activation of overcurrent for grid forming
+J+149,1.57,OvAmp.AmpMaxNomInit,Overcurrent: Init value of nominal current factor for maximum apparent current in the virtual impedance
+J+150,0.5,OvAmp.TmpStkFilTm,Time constant of the low-pass filtering of the stack temperature
+J+151,142,OvAmp.TmpLimNormal,Overcurrent: Temperature limit for normal mode
+J+152,147,OvAmp.TmpLimTrans,Overcurrent: Temperature limit for transition mode
+J+153,1000,OvAmp.NormalModHysTm,Overcurrent: Duration of hysteresis to move from normal mode to emergency mode
+J+154,150,OvAmp.TransModHysTm,Time hysteresis in milliseconds for switching between emergency and transition mode
+J+155,125,OvAmp.Change-ModHysTm,Time hysteresis in milliseconds for switching between modes
+J+156,1.62,OvAmp.ArmsMsMaxLim,Overcurrent: Maximum limit for measured short circuit current in the virtual impedance
+J+157,3000,OvAmp.StkAmpLimOn,Overcurrent: Hardware current limit at which the FPGA activates the FRT
+J+158,1.62,OvAmp. AmpCtlOfsAMaxSpt,Overcurrent: Adaptive current control. maximum short circuit current of current control offset
+J+159,5,Ctl.HzOutLim,AC and DC limit control. minimum/maximum range control signal [Hz]
+J+160,0.75,Ctl.VolDQLim,Current setpoint calculation: voltage filter freeze limit. Grid forming modeGriF
+J+161,0,HW.OvAmpLimEna,Hardware current limit: Activation of overcurrent hardware current limits
+J+162,10,HW.StkAmpLimOnFac,Calibration Factor for HW_StkAmpLimOn (PSS/E Specific)
+J+163,0,InertiaWCtlHzBatMod,P(f) mode for battery inverter. at activated angular inertia
+J+164,44,WCtlHzBat.Hz1,Battery operation: Active power droop point 1 on Hz-axis
+J+165,46,WCtlHzBat.Hz2,Battery operation: Active power droop point 2 on Hz-axis
+J+166,48,WCtlHzBat.Hz3,Battery operation: Active power droop point 3 on Hz-axis
+J+167,49.5,WCtlHzBat.Hz4,Battery operation: Active power droop point 4 on Hz-axis
+J+168,50.5,WCtlHzBat.Hz5,Battery operation: Active power droop point 5 on Hz-axis
+J+169,52,WCtlHzBat.Hz6,Battery operation: Active power droop point 6 on Hz-axis
+J+170,54,WCtlHzBat.Hz7,Battery operation: Active power droop point 7 on Hz-axis
+J+171,56,WCtlHzBat.Hz8,Battery operation: Active power droop point 8 on Hz-axis
+J+172,1,WCtlHzBat.W1,Battery operation: Active power droop point 1 on W-axis
+J+173,0.7,WCtlHzBat.W2,Battery operation: Active power droop point 2 on W-axis
+J+174,0.2,WCtlHzBat.W3,Battery operation: Active power droop point 3 on W-axis
+J+175,0,WCtlHzBat.W4,Battery operation: Active power droop point 4 on W-axis
+J+176,0,WCtlHzBat.W5,Battery operation: Active power droop point 5 on W-axis
+J+177,-0.2,WCtlHzBat.W6,Battery operation: Active power droop point 6 on W-axis
+J+178,-0.7,WCtlHzBat.W7,Battery operation: Active power droop point 7 on W-axis
+J+179,-1,WCtlHzBat.W8,Battery operation: Active power droop point 8 on W-axis
+J+180,53,HzCtl.Hi1Lim,Monitoring the power frequency: upper switch-off limit 1
+J+181,60000,HzCtl.Hi1LimTm,Monitoring the power frequency: waiting time upper switch-off limit 1
+J+182,53,HzCtl.Hi2Lim,Monitoring the power frequency: upper switch-off limit 2
+J+183,60000,HzCtl.Hi2LimTm,Monitoring the power frequency: waiting time upper switch-off limit 2
+J+184,53,HzCtl.Hi3Lim,Monitoring the power frequency: upper switch-off limit 3
+J+185,60000,HzCtl.Hi3LimTm,Monitoring the power frequency: waiting time upper switch-off limit 3
+J+186,54,HzCtl.Hi4Lim,Monitoring the power frequency: upper switch-off limit 4
+J+187,60000,HzCtl.Hi4LimTm,Monitoring the power frequency: waiting time upper switch-off limit 4
+J+188,55,HzCtl.Hi5Lim,Monitoring the power frequency: upper switch-off limit 5
+J+189,100,HzCtl.Hi5LimTm,Monitoring the power frequency: waiting time upper switch-off limit 5
+J+190,55,HzCtl.Hi6Lim,Monitoring the power frequency: upper switch-off limit 6
+J+191,100,HzCtl.Hi6LimTm,Monitoring the power frequency: waiting time upper switch-off limit 6
+J+192,45,HzCtl.Lo1Lim,Monitoring the power frequency: lower switch-off limit 1
+J+193,100,HzCtl.Lo1LimTm,Monitoring the power frequency: waiting time lower switch-off limit 1
+J+194,46,HzCtl.Lo2Lim,Monitoring the power frequency: lower switch-off limit 2
+J+195,60000,HzCtl.Lo2LimTm,Monitoring the power frequency: waiting time lower switch-off limit 2
+J+196,47,HzCtl.Lo3Lim,Monitoring the power frequency: lower switch-off limit 3
+J+197,60000,HzCtl.Lo3LimTm,Monitoring the power frequency: waiting time lower switch-off limit 3
+J+198,47,HzCtl.Lo4Lim,Monitoring the power frequency: lower switch-off limit 4
+J+199,60000,HzCtl.Lo4LimTm,Monitoring the power frequency: waiting time lower switch-off limit 4
+J+200,47,HzCtl.Lo5Lim,Monitoring the power frequency: lower switch-off limit 5
+J+201,60000,HzCtl.Lo5LimTm,Monitoring the power frequency: waiting time lower switch-off limit 5
+J+202,47,HzCtl.Lo6Lim,Monitoring the power frequency: lower switch-off limit 6
+J+203,60000,HzCtl.Lo6LimTm,Monitoring the power frequency: waiting time lower switch-off limit 6
+J+204,1.15,VCtl.Hi1Lim,Monitoring the grid voltage: upper switch-off limit 1
+J+205,60000,VCtl.Hi1LimTm,Monitoring the grid voltage: waiting time upper switch-off limit 1
+J+206,1.25,VCtl.Hi2Lim,Monitoring the grid voltage: upper switch-off limit 2
+J+207,1000,VCtl.Hi2LimTm,Monitoring the grid voltage: waiting time upper switch-off limit 2
+J+208,1.3,VCtl.Hi3Lim,Monitoring the grid voltage: upper switch-off limit 3
+J+209,20,VCtl.Hi3LimTm,Monitoring the grid voltage: waiting time upper switch-off limit 3
+J+210,1.5,VCtl.Hi4Lim,Monitoring the grid voltage: upper switch-off limit 4
+J+211,3,VCtl.Hi4LimTm,Monitoring the grid voltage: waiting time upper switch-off limit 4
+J+212,2,VCtl.Hi5Lim,Monitoring the grid voltage: upper switch-off limit 5
+J+213,1.66,VCtl.Hi5LimTm,Monitoring the grid voltage: waiting time upper switch-off limit 5
+J+214,2,VCtl.Hi6Lim,Monitoring the grid voltage: upper switch-off limit 6
+J+215,10000,VCtl.Hi6LimTm,Monitoring the grid voltage: waiting time upper switch-off limit 6
+J+216,0.8,VCtl.Lo1Lim,Monitoring the grid voltage: lower switch-off limit 1
+J+217,21000,VCtl.Lo1LimTm,Monitoring the grid voltage: waiting time lower switch-off limit 1
+J+218,0.4,VCtl.Lo2Lim,Monitoring the grid voltage: lower switch-off limit 2
+J+219,21000,VCtl.Lo2LimTm,Monitoring the grid voltage: waiting time lower switch-off limit 2
+J+220,0,VCtl.Lo3Lim,Monitoring the grid voltage: lower switch-off limit 3
+J+221,21000,VCtl.Lo3LimTm,Monitoring the grid voltage: waiting time lower switch-off limit 3
+J+222,0,VCtl.Lo4Lim,Monitoring the grid voltage: lower switch-off limit 4
+J+223,21000,VCtl.Lo4LimTm,Monitoring the grid voltage: waiting time lower switch-off limit 4
+J+224,0,VCtl.Lo5Lim,Monitoring the grid voltage: lower switch-off limit 5
+J+225,21000,VCtl.Lo5LimTm,Monitoring the grid voltage: waiting time lower switch-off limit 5
+J+226,0,VCtl.Lo6Lim,Monitoring the grid voltage: lower switch-off limit 6
+J+227,1000,VCtl.Lo6LimTm,Monitoring the grid voltage: waiting time lower switch-off limit 6
+J+228,0.3,Spk.dVol,1-time step change in voltage to activation entry and exit of spike mitigation logic (PSS/E Specific)
+J+229,0.005,Spk.AmpHoldTm,Time in seconds during which the current is held to its [Pre-fault Value*Spk.AmpHoldFac(X)] (PSS/E Specific)
+J+230,0,Spk.AmpHoldFacD,Factor to scale the active part of Pre-fault value  between 0.0 and [Pre-fault value] (PSS/E Specific)
+J+231,0,Spk.AmpHoldFacQ,Factor to scale the reactive part of Prefault value  between 0.0 and [Pre-fault value] (PSS/E Specific)
+J+232,1.1,SoC. DcVolIni,SoC Model: Initial value of the DC voltage for battery in kV (PSS/E Specific)
+J+233,1.3,SoC. DcVolMax,SoC Model: Maximum value of the DC voltage for battery in kV (PSS/E Specific)
+J+234,0.8,SoC. DcVolMin,SoC Model: Minimum value of the DC voltage for battery in kV (PSS/E Specific)
+J+235,10000,SoC. DcAh,SoC Model: Capacity of the battery in Ah (PSS/E Specific)
+J+236,0,DcCtl.AmpKp,DC current control. proportional amplification. Grid forming mode
+J+237,5,DcCtl.AmpKi,DC current control. integral amplification. Grid forming mode
+J+238,0.00033,DcCtl.AmpKi2Fac,DC current control. double integral amplification for DC current limit. Grid forming mode
+J+239,3,DcCtl.AmpI2CtlDownGai n,DC current control. additional double integral amplification. if DC current limit is not exceeded. Grid forming mode

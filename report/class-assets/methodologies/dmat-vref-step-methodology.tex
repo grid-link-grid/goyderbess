@@ -1,0 +1,12 @@
+Voltage reference step tests assess the ability of the generator to provide a damped reactive response to a change in voltage reference (in voltage droop control mode).
+
+To perform this test, the generator is first initialised to the initial $V_{\mathrm{POC}}$, $P_{\mathrm{POC}}$, $Q_{\mathrm{POC}}$, SCR and X/R conditions, where $Q_{\mathrm{POC}}$ is the target reactive output of the generator for the associated $V_{\mathrm{err}} = V_{\mathrm{ref}_{\mathrm{1}}} - V_{\mathrm{POC}}$ per the droop characteristic.
+
+Once the generator has been initialised, the series of voltage references $V_{\mathrm{ref}_{\mathrm{2}}}, V_{\mathrm{ref}_{\mathrm{3}}}, \dots, V_{\mathrm{ref}_{\mathrm{n}}}$ are applied to the PPC, as shown in Figure~\ref{fig:smib-vref-change-methodology}.
+
+\begin{figure}[h]
+	\centering
+	\input{\classassetsdir/diagrams/smib-vref-change-diagram.tex}
+	\caption{Voltage reference change methodology}
+	\label{fig:smib-vref-change-methodology}
+\end{figure}

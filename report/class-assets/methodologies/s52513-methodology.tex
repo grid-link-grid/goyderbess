@@ -1,0 +1,27 @@
+Reactive controller stability tests assess the ability of the generator to provide stable reactive response to a perturbed Connection Point voltage or controller state (i.e. a reference change). In VAr and power factor control modes, this is just about  $P_{\mathrm{POC}}$ and $Q_{\mathrm{POC}}$ settling to their pre-disturbance values. However, in voltage droop control modes, a changing $V_{\mathrm{POC}}$ will result in a changing calculated $Q_{\mathrm{ref}}$, so the generator will need to track to a new reactive power target at the same time as rejecting the disturbance.
+
+To implement these tests in \ac{SMIB} modelling, the appropriate $V_{\mathrm{grid}_{\mathrm{1}}}$
+is first identified to achieve $V_{\mathrm{POC}_{\mathrm{1}}}$ given the required initial $P_{\mathrm{POC}}$, $Q_{\mathrm{POC}}$, SCR and X/R conditions. Subsequent $V_{\mathrm{grid}}$ values $V_{\mathrm{grid}_{\mathrm{2}}}, V_{\mathrm{grid}_{\mathrm{3}}}, \dots, V_{\mathrm{grid}_{\mathrm{n}}}$ can then be calculated to achieve the desired $V_{\mathrm{POC}}$ values $V_{\mathrm{POC}_{\mathrm{2}}}, V_{\mathrm{POC}_{\mathrm{3}}}, \dots, V_{\mathrm{POC}_{\mathrm{n}}}$.
+
+With all $V_{\mathrm{grid,i}}$ calculated, a simulation is performed with $V_{\mathrm{grid}}$ stepped or ramped as required to implement the desired disturbance, as shown in Figure~\ref{fig:smib-vgrid-disturbance-diagram}.
+
+\begin{figure}[H]
+	\centering
+	\input{\classassetsdir/diagrams/smib-vgrid-disturbance-diagram.tex}
+	\caption{Reactive power controller disturbance assessment methodology}
+	\label{fig:smib-vgrid-disturbance-diagram}
+\end{figure}
+
+To assess the stability of the control system response to a stepped $V_{\mathrm{ref}}$, $Q_{\mathrm{ref}}$, $PF_{\mathrm{ref}}$ signal, reference steps are applied as per Figure \ref{fig:smib-vref-change-diagram}. To perform this test, the generator is first initialised to the initial $V_{\mathrm{POC}}$, $P_{\mathrm{POC}}$, $Q_{\mathrm{POC}}$, SCR and X/R conditions, where $Q_{\mathrm{POC}}$ is the target reactive output of the generator for the associated $V_{\mathrm{err}} = V_{\mathrm{ref}_{\mathrm{1}}} - V_{\mathrm{POC}}$ per the droop characteristic.
+
+Once the generator has been initialised, the series of voltage references $V_{\mathrm{ref}_{\mathrm{2}}}, V_{\mathrm{ref}_{\mathrm{3}}}, \dots, V_{\mathrm{ref}_{\mathrm{n}}}$ are applied to the PPC, as shown in Figure~\ref{fig:smib-vref-change-diagram}. Tests where the reactive power reference is constrained by a reactive power limit, will be identified as "Saturating".
+
+\begin{figure}[H]
+	\centering
+	\input{\classassetsdir/diagrams/smib-vref-change-diagram.tex}
+	\caption{Reactive power controller disturbance assessment methodology (shown for voltage droop control)}
+	\label{fig:smib-vref-change-diagram}
+\end{figure}
+
+In wide area studies, only reference step tests are applied, since actual voltage disturbances are best assessed through the application of real faults, machine trips and \ac{TOV} shunt application, all of which is assessed under s5.2.5.5.
+
