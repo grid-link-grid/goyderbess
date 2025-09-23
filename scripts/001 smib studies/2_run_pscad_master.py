@@ -10,17 +10,17 @@ from pallet.specs import load_specs_from_multiple_xlsx
 from pallet.utils.time_utils import now_str
 from pallet import now_str
 from pallet.pandapower.initialisation import calc_tov_shunt_mvar_from_ppoc_qpoc_vpoc_vslack
-
+from pallet.config import get_config
 from pathlib import Path
 
-from heywoodbess.plotting.replotters import replot_pscad
-from heywoodbess.appendices.create_appendix import create_appendix_heywoodbess
-from heywoodbess.utils.create_report_tables_spec import create_report_table,create_report_table_CSR_DMAT
-from heywoodbess.studyrunners.pscad_study_runner import run_pscad_studies
-from heywoodbess.studyrunners.temp_pscad_study_runner import run_pscad_studies_temp
-from heywoodbess.analysis.run_analysis_pscad import run_analysis_pscad
-from heywoodbess.plotting.heywoodbessPscadPlotter import heywoodbessPscadPlotter
-from heywoodbess.plotting.heywoodbessPscadReplotter import heywoodbessPscadReplotter
+from goyderbess.plotting.replotters import replot_pscad
+from goyderbess.appendices.create_appendix import create_appendix_goyderbess
+from goyderbess.utils.create_report_tables_spec import create_report_table,create_report_table_CSR_DMAT
+from goyderbess.studyrunners.pscad_study_runner import run_pscad_studies
+from goyderbess.studyrunners.temp_pscad_study_runner import run_pscad_studies_temp
+from goyderbess.analysis.run_analysis_pscad import run_analysis_pscad
+from goyderbess.plotting.goyderbessPscadPlotter import goyderbessPscadPlotter
+from goyderbess.plotting.goyderbessPscadReplotter import goyderbessPscadReplotter
 
 
 
@@ -29,7 +29,7 @@ NOW_STR = now_str()
 
 x86 = False
 
-APPENDIX_PROJECT_NAME = "Heywood BESS"
+APPENDIX_PROJECT_NAME = "Goyder BESS"
 
 SHEETS_TO_PROCESS_CSR = [
     # "5253_F", #working
@@ -51,7 +51,7 @@ SHEETS_TO_PROCESS_CSR = [
     # "52515_SCR_Withstand_Faults",
     # "52515_Vgrid",
     # "52515_SCR_Change_NoFault",
-    "5258_ActivePowerReduction"
+    # "5258_ActivePowerReduction"
 ]
 
 
@@ -61,7 +61,7 @@ SHEETS_TO_PROCESS_DMAT = [
     # "326_MFRT",
     # "329_TOV",
     # "3210_Vref",
-    # "3210_Qref",
+    "3210_Qref",
     # "3210_PFref",
     # "3211_Pref",
     # "3217_Pref_POC_SCR1",
@@ -119,7 +119,7 @@ ANALYSIS_TO_RUN = [
     # "IQ Rise Settle & P Recovery Curve", #working
     # "Phase Health Analysis", #working
     # "ORT Analysis", #working
-    "S5258 Active Power Reduction", #working
+    # "S5258 Active Power Reduction", #working
     # "PFref step analysis", #working
     # "Qref step analysis" #working
 
@@ -134,13 +134,12 @@ ANALYSIS_TO_RUN = [
 #----------------------------------------------------------------------------- SET RUN SETTINGS + PATHS  ------------------------------------------------------------------------------
 
 
-XLSX_DIR = r"C:\Users\abai\Grid-Link\Projects - Atmos\Heywood BESS R0\02_Deliverables\PROJECT_SPEC"
-XLSX_PATH_CSR = os.path.join(XLSX_DIR,"HY_Spec_CSR_300.xlsx")
-XLSX_PATH_DMAT = os.path.join(XLSX_DIR,"HY_Spec_DMAT.xlsx")
-XLSX_PATH_DMAT_CRG = os.path.join(XLSX_DIR,"HY_Spec_DMAT_CRG.xlsx")
-XLSX_PATH_TESTING = os.path.join(XLSX_DIR,"HY_Spec_FLATTEST.xlsx")
-
-# XLSX_PATH_FLATRUN = os.path.join(r"C:\Grid\cg\psse","heywoodbess_Spec_Flatrun.xlsx")
+XLSX_DIR = get_config("goyderbess", "spec_path")
+XLSX_PATH_CSR = os.path.join(XLSX_DIR,"GO_Spec_CSR_300.xlsx")
+XLSX_PATH_DMAT = os.path.join(XLSX_DIR,"GO_Spec_DMAT.xlsx")
+XLSX_PATH_DMAT_CRG = os.path.join(XLSX_DIR,"GO_Spec_DMAT_CRG.xlsx")
+XLSX_PATH_TESTING = os.path.join(XLSX_DIR,"GO_Spec_FLATTEST.xlsx")
+PROJECT_DIR = get_config("goyderbess", "project_directory")
 
 REMOVE_INIT_TIME = True
 
@@ -151,19 +150,18 @@ if RUN_STUDIES:
     USE_VSLACK_CACHE = True
     CALC_TOV_SHUNT_VAR = True  #SET THIS TO FALSE, TOV values already calculated. 
     volley_size = 16
-    plotter = heywoodbessPscadPlotter(remove_first_seconds=REMOVE_INIT_TIME)
-    # MODEL_DIR = r"""D:\chen\cg\pscad_model\main"""
-    MODEL_DIR = r"""D:\inputs\heywood\TestModelv1.1_SW"""
-    TEMP_DIR = os.path.join(r"""D:\results\heywoodbess""", "_temp", NOW_STR)
-    STUDY_RESULTS_DIR = os.path.join(r"""D:\results\heywoodbess""", f"_pscad_results_{NOW_STR}")   
-    PROJECT_NAME = "BESS_GFM_50Hz"
+    plotter = goyderbessPscadPlotter(remove_first_seconds=REMOVE_INIT_TIME)
+    MODEL_DIR = os.path.join(PROJECT_DIR, r"""PSCAD\TeslaMP3_PSCAD_v25.20_x64""")
+    TEMP_DIR = os.path.join(r"""C:\Grid\results\Goyderbess""", "_temp", NOW_STR)
+    STUDY_RESULTS_DIR = os.path.join(r"""C:\Grid\results\Goyderbess""", f"_pscad_results_{NOW_STR}")   
+    PROJECT_NAME = "TeslaBESS_BESSonly_4hr"
     
     #Filtering spec
     #spec = load_specs_from_xlsx(XLSX_PATH, sheet_names=SHEETS_TO_PROCESS_CSR)
     spec = load_specs_from_multiple_xlsx([XLSX_PATH_CSR,XLSX_PATH_DMAT,XLSX_PATH_DMAT_CRG,XLSX_PATH_TESTING], sheet_names=[SHEETS_TO_PROCESS_CSR,SHEETS_TO_PROCESS_DMAT,SHEETS_TO_PROCESS_DMAT_CRG,SHEETS_TO_PROCESS_FLAT])
     spec = spec[spec["PSCAD"] == True]
     # spec = spec[spec["Test No"] > 55]
-    # spec = spec[spec["Test No"] == 1]
+    spec = spec[spec["Test No"] == 161]
     # spec = spec[spec["Test No"].isin({99, 97, 108, 144, 72, 12, 6, 42})]
     # spec = spec[spec["Subtest No"] == 2]
     # spec =spec.head(1)
@@ -172,7 +170,7 @@ if RUN_STUDIES:
     # sys.exit()
 
 #Run Analysis on selected sheets
-CREATE_ANALYSIS = True
+CREATE_ANALYSIS = False
 if CREATE_ANALYSIS:
     analysis_extension = ".psout" #Options are .psout or .out
 
@@ -217,8 +215,7 @@ if CREATE_ANALYSIS:
 REPLOT_PSCAD = False
 if REPLOT_PSCAD:
     extension_replot = ".psout"  #Options are .psout or .pkl
-    #replotter = heywoodbessPscadPlotter(remove_first_seconds=REMOVE_INIT_TIME) 
-    replotter = heywoodbessPscadReplotter(remove_first_seconds=REMOVE_INIT_TIME) 
+    replotter = goyderbessPscadReplotter(remove_first_seconds=REMOVE_INIT_TIME) 
     PLOT_INPUTS_DIR = r"""D:\results\heywoodbess\_pscad_results_20250523_0924_34238135"""
     REPLOT_OUT_DIR = os.path.join(r"D:\results\heywoodbess\replots",f"replots_init_{NOW_STR}") #DIR where you want png and pdf outputs of replots to be located
 
@@ -299,7 +296,7 @@ if __name__ == "__main__":
 
 
     if CREATE_APPENDIX:
-        create_appendix_heywoodbess(
+        create_appendix_goyderbess(
                 PLOT_RESULTS_DIRS=PLOT_RESULTS_DIRS,
                 OUTPUT_DIR_DMAT=OUTPUT_DIR_DMAT,
                 OUTPUT_DIR_CSR=OUTPUT_DIR_CSR,

@@ -13,11 +13,11 @@ else:
     requirements = requirements_64bit + common_requirements
 
 setup(
-        name='heywoodbess',
+        name='goyderbess',
         version='0.0.1',
         author='Ben Kearney',
-        description='heywood library',
-        packages=['heywoodbess'],
+        description='goyder library',
+        packages=['goyderbess'],
         package_dir={'': 'src'},
         install_requires=requirements,
         )

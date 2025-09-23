@@ -11,20 +11,21 @@ import os, glob
 import pandas as pd
 
 from pallet.specs import load_specs_from_csv, load_specs_from_xlsx
+from pallet.config import get_config
 
 from gridlink.utils.wan.wan_utils import find_files
 
-from heywoodbess.plotting.heywoodbessPSSEPlotter import heywoodbessPssePlotter
-from heywoodbess.plotting.process_and_calc_psse import pre_process_dataframe
-from heywoodbess.studyrunners.psse_study_runner import run_psse_studies
-from heywoodbess.analysis.run_analysis_psse import run_analysis_psse
-from heywoodbess.appendices import create_appendix
+from goyderbess.plotting.goyderbessPSSEPlotter import goyderbessPssePlotter
+from goyderbess.plotting.process_and_calc_psse import pre_process_dataframe
+from goyderbess.studyrunners.psse_study_runner import run_psse_studies
+from goyderbess.analysis.run_analysis_psse import run_analysis_psse
+from goyderbess.appendices import create_appendix
 
-from heywoodbess.plotting.replotters import replot_psse
-from heywoodbess.appendices.create_appendix import create_appendix_heywoodbess
-from heywoodbess.utils.create_report_tables_spec import create_report_table_CSR_DMAT
+from goyderbess.plotting.replotters import replot_psse
+from goyderbess.appendices.create_appendix import create_appendix_goyderbess
+from goyderbess.utils.create_report_tables_spec import create_report_table_CSR_DMAT
 
-from heywoodbess.studyrunners.psse_study_runner import get_vslacks
+from goyderbess.studyrunners.psse_study_runner import get_vslacks
 
 from pallet.specs import load_specs_from_multiple_xlsx
 #------------------------------------------------------------------ CLAUSES --------------------------------------------------------------------------------------
@@ -39,10 +40,10 @@ SHEETS_TO_PROCESS_CSR = [
     # "5255_BalFaults",
     # "5255_UnbalFaults",
     # "52511_Fgrid",
-    "52513_Vref",
-    "52513_Qref",
-    "52513_PFref",
-    "52514_Pref",
+    # "52513_Vref",
+    # "52513_Qref",
+    # "52513_PFref",
+    # "52514_Pref",
     # "5255_TOV",
     # "52513_Vgrid_droop",
 ]
@@ -50,12 +51,12 @@ SHEETS_TO_PROCESS_CSR = [
 
 SHEETS_TO_PROCESS_DMAT = [
     # "DMATFLAT",
-    # "324_325_Faults", #working
-    # "326_MFRT", #working
-    # "329_TOV", #partially working - need more TOV MVAR calcs
-    # "3210_Vref", #working
-    # "3210_Qref", #working
-    # "3210_PFref", #working
+    # "324_325_Faults",
+    # "326_MFRT", 
+    # "329_TOV", 
+    # "3210_Vref", 
+    # "3210_Qref", 
+    "3210_PFref",
     # "3211_Pref",  #working
     # "3217_Pref_POC_SCR1",
     # "3212_Fgrid",
@@ -128,28 +129,33 @@ ANALYSIS_TO_RUN = [
 SAV_VERSION = "v0-0-4"
 DYR_VERSION = "v0-0-4"
 
-XLSX_DIR = r"C:\Users\lhyett.GRID-LINK\Grid-Link\Projects - PROJECT_SPEC (1)"
-XLSX_PATH_CSR = os.path.join(XLSX_DIR,"HY_Spec_CSR_300.xlsx")
-XLSX_PATH_DMAT = os.path.join(XLSX_DIR,"HY_Spec_DMAT.xlsx")
-XLSX_PATH_DMAT_CRG = os.path.join(XLSX_DIR,"HY_Spec_DMAT_CRG.xlsx")
-XLSX_PATH_DMAT_FLATRUN = os.path.join(XLSX_DIR,"HY_Spec_FLATTEST.xlsx")
+# XLSX_DIR = r"C:\Users\lhyett.GRID-LINK\Grid-Link\Projects - PROJECT_SPEC (1)"
+# XLSX_PATH_CSR = os.path.join(XLSX_DIR,"HY_Spec_CSR_300.xlsx")
+# XLSX_PATH_DMAT = os.path.join(XLSX_DIR,"HY_Spec_DMAT.xlsx")
+# XLSX_PATH_DMAT_CRG = os.path.join(XLSX_DIR,"HY_Spec_DMAT_CRG.xlsx")
+# XLSX_PATH_DMAT_FLATRUN = os.path.join(XLSX_DIR,"HY_Spec_FLATTEST.xlsx")
 #FLATRUN_XLSX = os.path.join(r"C:\Grid\chen\cg\psse\flatrun_spec","CGBess_Spec_Flatrun.xlsx")
 
+XLSX_DIR = get_config("goyderbess", "spec_path")
+XLSX_PATH_CSR = os.path.join(XLSX_DIR,"GO_Spec_CSR_300.xlsx")
+XLSX_PATH_DMAT = os.path.join(XLSX_DIR,"GO_Spec_DMAT.xlsx")
+XLSX_PATH_DMAT_CRG = os.path.join(XLSX_DIR,"GO_Spec_DMAT_CRG.xlsx")
+XLSX_PATH_TESTING = os.path.join(XLSX_DIR,"GO_Spec_FLATTEST.xlsx")
+PROJECT_DIR = get_config("goyderbess", "project_directory")
 
 RUN_STUDIES = True
 if RUN_STUDIES:
-    slack_bus_num = 1000
-    MODEL_DIR = r"""D:\inputs\heywood\PSSE\Test_Model_tuning"""
-    plotter = heywoodbessPssePlotter(pre_process_fn=pre_process_dataframe)
-    RESULTS_DIR = os.path.join(r'''D:\results\heywoodbess\psse''',f"{SAV_VERSION}_sav_{DYR_VERSION}_dyr", now_str())
+    slack_bus_num = 500001
+    MODEL_DIR = os.path.join(PROJECT_DIR, r"""PSSE_TEST""")
+    plotter = goyderbessPssePlotter(pre_process_fn=pre_process_dataframe)
+    RESULTS_DIR = os.path.join(r'''C:\Grid\results\Goyderbess\psse''',f"{SAV_VERSION}_sav_{DYR_VERSION}_dyr", now_str())
     if not os.path.exists(RESULTS_DIR):
         os.makedirs(RESULTS_DIR)
 
     #Filtering spec
-    specification = load_specs_from_multiple_xlsx([XLSX_PATH_CSR,XLSX_PATH_DMAT,XLSX_PATH_DMAT_CRG,XLSX_PATH_DMAT_FLATRUN], sheet_names=[SHEETS_TO_PROCESS_CSR,
+    specification = load_specs_from_multiple_xlsx([XLSX_PATH_CSR,XLSX_PATH_DMAT,XLSX_PATH_DMAT_CRG], sheet_names=[SHEETS_TO_PROCESS_CSR,
                                                                                                                                SHEETS_TO_PROCESS_DMAT,
-                                                                                                                               SHEETS_TO_PROCESS_DMAT_CRG, 
-                                                                                                                               SHEETS_TO_PROCESS_FLATRUN])
+                                                                                                                               SHEETS_TO_PROCESS_DMAT_CRG])
     spec = get_vslacks(specification,MODEL_DIR,slack_bus_num)
     if "Vslack_pu_psse" in spec.columns:
         spec_non_vslack = specification[~specification["Vslack_pu_psse"].astype(str).str.contains(r"\$VSLACK")]
@@ -163,7 +169,7 @@ if RUN_STUDIES:
     # sys.exit()
     
 
-    # spec = spec[spec['Test No'] == 174]
+    # spec = spec[spec['Test No'] == 149]
     # spec = spec[spec['Test No'] <=167]
     #print(PREF_MW)
     # print(spec)0
@@ -176,7 +182,7 @@ if RUN_ANALYSIS:
     else:
         CSR_INPUTS_DIR = r"""D:\alvin\Heywood work folder\analysis_testresult\results\psse\v0-2-0_sav_v0-2-0_dyr\20250522_1339_51718295"""
     analysis_extension = ".out" 
-    ANALYSIS_OUTPUTS_DIR = os.path.join(r'''D:\alvin\results\heywoodbess\analysis''',f"_analysis_{NOW_STR}")
+    ANALYSIS_OUTPUTS_DIR = os.path.join(r'''D:\alvin\results\goyderbess\analysis''',f"_analysis_{NOW_STR}")
 
     DPDF_CHARACTERISTIC_POINTS = [(-9.94, 600), (-4.97, 300), (-0.015, 0), (0.015, 0), (4.97, -300), (9.94, -600)] #Updated for  Heywood
     VDROOP_CHARACTERISTIC_POINTS = [(-0.1, 118.5),(-0.02, 118.5), (0.02, -118.5), (0.1, -118.5)] # Updated for Heywood
@@ -206,7 +212,7 @@ if RUN_ANALYSIS:
 REPLOT_PSSE = False
 if REPLOT_PSSE:
     extension_replot = ".out"
-    replotter = heywoodbessPssePlotter(pre_process_fn=pre_process_dataframe)                                        
+    replotter = goyderbessPssePlotter(pre_process_fn=pre_process_dataframe)                                        
     PLOT_INPUTS_DIR = r"""C:\Grid\chen\cg\results\psse\v1-1-0_sav_v1-1-0_dyr\20250326_1234_16856156"""
     PLOT_OUT_PATH = os.path.join(r"""C:\Grid\chen\cg\results\psse\replots""") #DIR where you want png and pdf outputs of replots to be located
 
