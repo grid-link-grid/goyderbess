@@ -181,7 +181,7 @@ class goyderbessPscadPlotter(Plotter):
 
 #-----------------------------------------INV PLOTS----------------------------------------------------------------
         # [0,1] INV active Power 
-        scaling = [0.0001,1.0]
+        scaling = [0.0000927,1.0]
         axes[0,1].plot(df.index, df["pcomd:2"]*scaling[0], color=col_pallet[0], label='REF',linestyle="dashed",linewidth=1.5)
         axes[0,1].xaxis.set_label_position('top')
         axes[0,1].plot(df.index, df["P_inv_meter"]*scaling[1], color=col_pallet[1], label='MEAS',linewidth=1.5)

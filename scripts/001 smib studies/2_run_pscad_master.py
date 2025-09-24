@@ -61,8 +61,8 @@ SHEETS_TO_PROCESS_DMAT = [
     # "326_MFRT",
     # "329_TOV",
     # "3210_Vref",
-    "3210_Qref",
-    # "3210_PFref",
+    # "3210_Qref",
+    "3210_PFref",
     # "3211_Pref",
     # "3217_Pref_POC_SCR1",
     # "3212_Fgrid",
@@ -163,7 +163,7 @@ if RUN_STUDIES:
     # spec = spec[spec["Test No"] > 55]
     spec = spec[spec["Test No"] == 161]
     # spec = spec[spec["Test No"].isin({99, 97, 108, 144, 72, 12, 6, 42})]
-    # spec = spec[spec["Subtest No"] == 2]
+    # spec = spec[spec["Subtest No"] == 1]
     # spec =spec.head(1)
     print(spec)
     # spec.to_csv("spec.csv")
