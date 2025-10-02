@@ -28,9 +28,9 @@ import re
 import glob
 from pallet.specs import load_specs_from_xlsx
 import traceback
-from heywoodbess.utils.remove_underscores import caption_preprocessor
-from heywoodbess.utils.find_files_and_export_to_excel_sheets import find_files
-from heywoodbess.utils.find_files_and_export_to_excel_sheets import exportToExcelSheets
+from goyderbess.utils.remove_underscores import caption_preprocessor
+from goyderbess.utils.find_files_and_export_to_excel_sheets import find_files
+from goyderbess.utils.find_files_and_export_to_excel_sheets import exportToExcelSheets
 
 def runAnalysis_WAN_SS(inputsdir,outputsdir,filename):
 

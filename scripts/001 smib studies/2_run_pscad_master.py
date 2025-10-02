@@ -9,7 +9,7 @@ from pallet import load_specs_from_csv, load_specs_from_xlsx
 from pallet.specs import load_specs_from_multiple_xlsx
 from pallet.utils.time_utils import now_str
 from pallet import now_str
-from pallet.pandapower.initialisation import calc_tov_shunt_mvar_from_ppoc_qpoc_vpoc_vslack
+# from pallet.pandapower.initialisation import calc_tov_shunt_mvar_from_ppoc_qpoc_vpoc_vslack
 from pallet.config import get_config
 from pathlib import Path
 
@@ -21,7 +21,6 @@ from goyderbess.studyrunners.temp_pscad_study_runner import run_pscad_studies_te
 from goyderbess.analysis.run_analysis_pscad import run_analysis_pscad
 from goyderbess.plotting.goyderbessPscadPlotter import goyderbessPscadPlotter
 from goyderbess.plotting.goyderbessPscadReplotter import goyderbessPscadReplotter
-
 
 
 #----------------------------------------------------------------------------- CLAUSES TO RUN --------------------------------------------------------------------------------------
@@ -56,13 +55,13 @@ SHEETS_TO_PROCESS_CSR = [
 
 
 SHEETS_TO_PROCESS_DMAT = [
-    # "DMATFLAT",
+    "DMATFLAT",
     # "324_325_Faults",
     # "326_MFRT",
     # "329_TOV",
     # "3210_Vref",
     # "3210_Qref",
-    "3210_PFref",
+    # "3210_PFref",
     # "3211_Pref",
     # "3217_Pref_POC_SCR1",
     # "3212_Fgrid",
@@ -151,9 +150,9 @@ if RUN_STUDIES:
     CALC_TOV_SHUNT_VAR = True  #SET THIS TO FALSE, TOV values already calculated. 
     volley_size = 16
     plotter = goyderbessPscadPlotter(remove_first_seconds=REMOVE_INIT_TIME)
-    MODEL_DIR = os.path.join(PROJECT_DIR, r"""PSCAD\TeslaMP3_PSCAD_v25.20_x64""")
-    TEMP_DIR = os.path.join(r"""C:\Grid\results\Goyderbess""", "_temp", NOW_STR)
-    STUDY_RESULTS_DIR = os.path.join(r"""C:\Grid\results\Goyderbess""", f"_pscad_results_{NOW_STR}")   
+    MODEL_DIR = os.path.join(PROJECT_DIR, r"""PSCAD""")
+    TEMP_DIR = os.path.join(r"""C:\Grid\Goyder BESS results""", "_temp", NOW_STR)
+    STUDY_RESULTS_DIR = os.path.join(r"""C:\Grid\Goyder BESS results\PSCAD""", f"_pscad_results_{NOW_STR}")   
     PROJECT_NAME = "TeslaBESS_BESSonly_4hr"
     
     #Filtering spec
@@ -161,7 +160,7 @@ if RUN_STUDIES:
     spec = load_specs_from_multiple_xlsx([XLSX_PATH_CSR,XLSX_PATH_DMAT,XLSX_PATH_DMAT_CRG,XLSX_PATH_TESTING], sheet_names=[SHEETS_TO_PROCESS_CSR,SHEETS_TO_PROCESS_DMAT,SHEETS_TO_PROCESS_DMAT_CRG,SHEETS_TO_PROCESS_FLAT])
     spec = spec[spec["PSCAD"] == True]
     # spec = spec[spec["Test No"] > 55]
-    spec = spec[spec["Test No"] == 161]
+    # spec = spec[spec["Test No"] == 161]
     # spec = spec[spec["Test No"].isin({99, 97, 108, 144, 72, 12, 6, 42})]
     # spec = spec[spec["Subtest No"] == 1]
     # spec =spec.head(1)

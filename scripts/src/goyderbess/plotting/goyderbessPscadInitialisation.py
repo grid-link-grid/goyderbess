@@ -20,7 +20,7 @@ import re
 
 
 
-class heywoodbessPscadInitialisation(Plotter): 
+class goyderbessPscadInitialisation(Plotter): 
     def __init__(
             self,
             remove_first_seconds:bool

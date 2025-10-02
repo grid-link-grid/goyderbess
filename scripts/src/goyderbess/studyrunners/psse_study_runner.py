@@ -20,6 +20,7 @@ from pallet.specs import load_specs_from_csv, load_specs_from_xlsx
 from pallet.psse import system, statics
 from pallet.psse.initialiser.Initialiser import Initialiser
 from pallet.psse.case.CaseDefinition import CaseDefinition
+from pallet.psse.PssePallet_2 import PssePallet_2
 from pallet.psse.PssePallet import PssePallet
 from gridlink.utils.wan.wan_utils import find_files
 from pallet.psse.case.Bus import Bus, BusData
@@ -92,32 +93,59 @@ def run_psse_studies(
         if len(spec_subset) == 0:
             continue
 
-        p = PssePallet()
+        p = PssePallet_2(
+            results_dir=RESULTS_DIR,
+            result_basename_column="File_Name",
+            subfolder_column="Category",
+            explicit_frequency_dependence=False,
+            end_time_column="Post_Init_Duration_s",
+            fslack_hz_column='Fslack_Hz_sig',
+            vslack_pu_column='Vslack_pu_psse',
+            initialisation_skipped=False,
+            command_columns=["PSSE Commands"],
+            steps_per_write_column_name="Steps_Per_Write",
+        )
+        # p = PssePallet()
         try:
-                
-             
-            p.set_model_directory(MODEL_DIR)
+            # p.add_model(MODEL_DIR)
+            # p.set_model_directory(MODEL_DIR)
+            p.add_model_from_directory(name="PSSE SMIB", directory=MODEL_DIR)
+            # p.add_model(
+            #     name="SMIB"
+            #     sav_path=os.path.join(MODEL_DIR, "GOBESS.sav")
+            #     dyr_paths=[os.path.join(MODEL_DIR, "GOBESS.dyr")]
+            #     savdef_path=os.path.join(MODEL_DIR, "GOBESS.savdef")
+            #     chandef_path=os.path.join(MODEL_DIR, "GOBESS.chandef")
+            #     initdef_path=os.path.join(MODEL_DIR, "GOBESS.initdef")
+            # )
+
             # if i==0:
             #     spec = spec[(spec["Grid_SCR"] == float("INF"))]
             #     p.set_pre_initialisation_static_callback(callback=pre_init_callback())
             # if i==1:
             #     spec = spec[(spec["Grid_SCR"] != float("INF"))]
-            p.set_results_dir(RESULTS_DIR)
-            p.set_subfolder_column("Category")
-            p.set_result_basename_column("File_Name")
-            p.set_end_time_column("Post_Init_Duration_s")
-            p.set_command_column("PSSE Commands")
-            p.set_playback_columns(
-                    fslack_hz_column='Fslack_Hz_sig',
-                    vslack_pu_column='Vslack_pu_psse',
-                    )
-            p.set_dynamic_solution_parameters(
-                max_iterations = 1000,
-                acceleration_factor = 0.1,
-                convergence_tolerance = 0.0005,
-                time_step = 0.001,
-                frequency_filter = 0.016
-            )
+
+            # p.set_results_dir(RESULTS_DIR)
+            # p.set_subfolder_column("Category")
+            # p.set_result_basename_column("File_Name")
+            # p.set_end_time_column("Post_Init_Duration_s")
+            # p.set_command_column("PSSE Commands")
+            # p.set_playback_columns(
+            #         fslack_hz_column='Fslack_Hz_sig',
+            #         vslack_pu_column='Vslack_pu_psse',
+            #         )
+            p.max_iterations=100
+            p.acceleration_factor=0.1
+            p.convergence_tolerance=0.0005
+            p.time_step=0.001
+            p.frequency_filter=0.016
+            # p.set_dynamic_solution_parameters(
+            #     max_iterations = 1000,
+            #     acceleration_factor = 0.1,
+            #     convergence_tolerance = 0.0005,
+            #     time_step = 0.001,
+            #     frequency_filter = 0.016
+            # )
         
 
 
@@ -145,11 +173,11 @@ def run_psse_studies(
                 p.set_post_initialisation_static_callback(callback=post_init_callback)
             
             spec_subset.to_csv("running_spec"+"_"+str(int(is_infinite))+".csv")
-            p.set_spec(spec_subset)
-            p.disable_frequency_dependence()
-            p.add_plotter(plotter)
-            p.set_steps_per_write_column_name("Steps_Per_Write")
-            p.run()
+            # p.set_spec(spec_subset)
+            # p.disable_frequency_dependence()
+            p.add_plotter(name="SMIB", plotter=plotter, suffix=None)
+            # p.set_steps_per_write_column_name("Steps_Per_Write")
+            p.run(spec=spec_subset)
             spec_subset.to_csv(f"export_{int(is_infinite)}.csv")
             
         except Exception as e:

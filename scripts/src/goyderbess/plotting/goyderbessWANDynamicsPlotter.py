@@ -1,5 +1,5 @@
 """
-This is the class for the new plotter for heywoodbess wide area studies
+This is the class for the new plotter for goyderbess wide area studies
 
 """
 
@@ -25,7 +25,7 @@ import re
 
 
 
-class heywoodbessWANPlotter(Plotter): 
+class goyderbessWANPlotter(Plotter): 
     def __init__(
         self, 
         pre_process_fn: Optional[Callable] = None

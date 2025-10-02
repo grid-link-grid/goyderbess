@@ -30,7 +30,7 @@ import re
 
 
 
-class heywoodbessBenchmarkPlotter(): 
+class goyderbessBenchmarkPlotter(): 
    
     def plot_benchmarking(
             self,

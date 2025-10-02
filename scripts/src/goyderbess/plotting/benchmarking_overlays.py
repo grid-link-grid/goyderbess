@@ -13,8 +13,8 @@ from pathlib import Path
 
 from pallet import now_str
 
-from cgbess.utils.find_files_and_export_to_excel_sheets import find_files
-from cgbess.plotting.CGBessBenchmarkPlotter import CGBessBenchmarkPlotter
+from goyderbess.utils.find_files_and_export_to_excel_sheets import find_files
+from goyderbess.plotting.goyderbessBenchmarkPlotter import goyderbessBenchmarkPlotter
 
 from pallet import now_str
 

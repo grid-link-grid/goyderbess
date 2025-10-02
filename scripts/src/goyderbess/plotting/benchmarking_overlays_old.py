@@ -21,7 +21,7 @@ from pallet.psse.Out import Out
 from pallet import now_str
 
 from gridlink.utils.wan.wan_utils import find_files
-from heywoodbess.plotting.heywoodbessBenchmarkPlotter import heywoodbessBenchmarkPlotter
+from goyderbess.plotting.goyderbessBenchmarkPlotter import goyderbessBenchmarkPlotter
 
 from pallet.psse.Out import Out
 from pallet import now_str
