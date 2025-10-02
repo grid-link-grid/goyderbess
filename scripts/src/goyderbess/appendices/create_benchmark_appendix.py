@@ -13,8 +13,8 @@ from pallet import now_str
 from typing import List, Optional, Callable
 
 from pathlib import Path
-from heywoodbess.appendices.appendix_generation_heywoodbess import generate_appendix_heywoodbess
-from heywoodbess.appendices.replace_full_stops import replace_full_stops
+from goyderbess.appendices.appendix_generation_goyderbess import generate_appendix_goyderbess
+from goyderbess.appendices.replace_full_stops import replace_full_stops
 
 
 APPENDIX_LIST = [
@@ -87,8 +87,8 @@ def create_appendix_benchmarking(
                             title_crg = f"{apdx['title']} - Charging"
                             output_path = os.path.join(APPENDIX_OUTPUT_DIR,"Charging Appendix",f"{title_crg}.pdf")
 
-                            generate_appendix_heywoodbess(
-                                project_name="heywoodbess",
+                            generate_appendix_goyderbess(
+                                project_name="goyderbess",
                                 client="Enzen",
                                 title = title_crg,
                                 doc_number=f"GRID-LINK-DOC-NUMBER-{doc_number}",
@@ -110,8 +110,8 @@ def create_appendix_benchmarking(
                             title_dcrg = apdx["title"]
                             output_path = os.path.join(APPENDIX_OUTPUT_DIR,"Discharging Appendix",f"{title_dcrg}.pdf")
 
-                            generate_appendix_heywoodbess(
-                                project_name="heywoodbess",
+                            generate_appendix_goyderbess(
+                                project_name="goyderbess",
                                 client="Enzen",
                                 title = title_dcrg,
                                 doc_number=f"GRID-LINK-DOC-NUMBER-{doc_number}",
@@ -134,8 +134,8 @@ def create_appendix_benchmarking(
                     output_path = os.path.join(APPENDIX_OUTPUT_DIR,f"{title}.pdf")
 
 
-                    generate_appendix_heywoodbess(
-                        project_name="heywoodbess",
+                    generate_appendix_goyderbess(
+                        project_name="goyderbess",
                         client="Enzen",
                         title = title,
                         doc_number=f"GRID-LINK-DOC-NUMBER-{doc_number}",

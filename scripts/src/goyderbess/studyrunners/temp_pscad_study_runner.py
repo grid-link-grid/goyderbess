@@ -13,9 +13,9 @@ from pallet.pscad.launching import launch_pscad
 from pallet.pscad.validation import ValidatorBehaviour
 from pallet import load_specs_from_csv, load_specs_from_xlsx
 from pallet import now_str
-from heywoodbess.plotting.heywoodbessPscadPlotter import heywoodbessPscadPlotter
+from goyderbess.plotting.goyderbessPscadPlotter import goyderbessPscadPlotter
 from pathlib import Path
-from heywoodbess.utils.vslack import calc_vslacks_with_caching
+from goyderbess.utils.vslack import calc_vslacks_with_caching
 
 def run_pscad_studies_temp(
         SKIP_PANDAPOWER: bool,

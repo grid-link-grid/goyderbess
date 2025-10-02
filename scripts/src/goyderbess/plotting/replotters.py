@@ -56,7 +56,7 @@ def replot_pscad(
         from pallet.pscad.PscadPallet import PscadPallet
         from pallet.pscad.launching import launch_pscad
         from pallet.pscad.validation import ValidatorBehaviour
-        from heywoodbess.plotting.convert_to_pkl import psout_to_pkl
+        from goyderbess.plotting.convert_to_pkl import psout_to_pkl
     
     print("Replotting PSCAD plots ...")
     if extension == ".pkl":
@@ -166,14 +166,14 @@ def replot_psse(
         from pallet.psse.vslack_calculator import calc_vslack
         from pallet.psse.case.Bus import Bus, BusData
         from pallet.psse.case.Machine import Machine, MachineData
-        from heywoodbess.plotting.process_and_calc_psse import pre_process_dataframe
+        from goyderbess.plotting.process_and_calc_psse import pre_process_dataframe
         PSSBIN_PATH = r"""C:\Program Files (x86)\PTI\PSSE34\PSSBIN"""
         PSSPY_PATH = r"""C:\Program Files (x86)\PTI\PSSE34\PSSPY39"""
         sys.path.append(PSSBIN_PATH)
         sys.path.append(PSSPY_PATH)
         import psse34
         import psspy
-        from heywoodbess.plotting.convert_to_pkl import out_to_pkl
+        from goyderbess.plotting.convert_to_pkl import out_to_pkl
     
     print("Replotting PSSE plots ...")
     if extension == ".pkl":
@@ -271,12 +271,12 @@ def overlay_wan(
         from pallet.psse.vslack_calculator import calc_vslack
         from pallet.psse.case.Bus import Bus, BusData
         from pallet.psse.case.Machine import Machine, MachineData
-        from heywoodbess.plotting.process_and_calc_psse import pre_process_dataframe
+        from goyderbess.plotting.process_and_calc_psse import pre_process_dataframe
         PSSBIN_PATH = r"""C:\Program Files (x86)\PTI\PSSE34\PSSBIN"""
         PSSPY_PATH = r"""C:\Program Files (x86)\PTI\PSSE34\PSSPY39"""
         sys.path.append(PSSBIN_PATH)
         sys.path.append(PSSPY_PATH)
-        from heywoodbess.plotting.convert_to_pkl import out_to_pkl
+        from goyderbess.plotting.convert_to_pkl import out_to_pkl
     
     print("Replotting PSSE plots ...")
     if extension == ".pkl":

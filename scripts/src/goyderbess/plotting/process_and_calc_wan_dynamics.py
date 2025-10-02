@@ -138,7 +138,7 @@ def pre_process_dataframe(df:pd.DataFrame):
 
     # Calculate the HV/MV ratio for the main transformer. Insert a column into the dataframe that contains that information
     # Voltage signal on primary side of Tx / Voltage signal on secondary side of Tx
-    # UPDATE THESE VALUES WHEN WE HAVE THE ACTUAL SIGNALS FOR heywoodbess: Irms_HV_pu and VRMS_POC_PU ###########################################################
+    # UPDATE THESE VALUES WHEN WE HAVE THE ACTUAL SIGNALS FOR goyderbess: Irms_HV_pu and VRMS_POC_PU ###########################################################
     ############################################################################################################################
     
     df_copy['Main_Tx_HVMV_Ratio'] = df_copy['Irms_HV_pu']/df_copy['V_POC_PU']

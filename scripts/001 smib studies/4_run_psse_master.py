@@ -50,13 +50,13 @@ SHEETS_TO_PROCESS_CSR = [
 
 
 SHEETS_TO_PROCESS_DMAT = [
-    # "DMATFLAT",
+    "DMATFLAT",
     # "324_325_Faults",
     # "326_MFRT", 
     # "329_TOV", 
     # "3210_Vref", 
     # "3210_Qref", 
-    "3210_PFref",
+    # "3210_PFref",
     # "3211_Pref",  #working
     # "3217_Pref_POC_SCR1",
     # "3212_Fgrid",
@@ -146,9 +146,9 @@ PROJECT_DIR = get_config("goyderbess", "project_directory")
 RUN_STUDIES = True
 if RUN_STUDIES:
     slack_bus_num = 500001
-    MODEL_DIR = os.path.join(PROJECT_DIR, r"""PSSE_TEST""")
+    MODEL_DIR = os.path.join(PROJECT_DIR, r"""PSSE""")
     plotter = goyderbessPssePlotter(pre_process_fn=pre_process_dataframe)
-    RESULTS_DIR = os.path.join(r'''C:\Grid\results\Goyderbess\psse''',f"{SAV_VERSION}_sav_{DYR_VERSION}_dyr", now_str())
+    RESULTS_DIR = os.path.join(r'''C:\Grid\Goyder BESS results\PSSE''',f"{SAV_VERSION}_sav_{DYR_VERSION}_dyr", now_str())
     if not os.path.exists(RESULTS_DIR):
         os.makedirs(RESULTS_DIR)
 
@@ -169,7 +169,7 @@ if RUN_STUDIES:
     # sys.exit()
     
 
-    # spec = spec[spec['Test No'] == 149]
+    # spec = spec[spec['Test No'] == 3]
     # spec = spec[spec['Test No'] <=167]
     #print(PREF_MW)
     # print(spec)0

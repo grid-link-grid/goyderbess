@@ -1,4 +1,4 @@
-# heywoodBessWANOverlayer
+# goyderbessWANOverlayer
 """
 This is the class for the new plotter for heywood bess wide area studies
 
@@ -18,7 +18,7 @@ import ast
 
 
 
-class heywoodbessWANOverlayer(Plotter): 
+class goyderbessWANOverlayer(Plotter): 
     def __init__(
         self, 
         pre_process_fn: Optional[Callable] = None
